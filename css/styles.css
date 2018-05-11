@@ -4,6 +4,9 @@
 	margin: 0;
 	border: 0;
 	font-family: 'Bitter', sans-serif;
+	box-sizing: border-box;
+	line-height: 1.5;
+	overflow-x: hidden;
 }
 
 /* NAVBAR */
@@ -30,15 +33,22 @@ a.nav-link:hover {
 }
 
 /* INTRODUCTION */
-.jumbotron {
-	height: 320px;
-}
 
-.jumbotron h1 {
-	margin: 20px 0 0 9%;
-}
 
-.jumbotron p {
-	margin: 15px 0 0 10%;
-	font-size: 25px;
-}
+/* "ABOUT ME" SECTION */
+
+
+
+
+/* "MY PROJECTS" SECTION */
+
+
+
+/* FOOTER / CONTACTS SECTION */
+footer {margin-top: 20px;}
+footer h3 {}
+
+
+
+
+
