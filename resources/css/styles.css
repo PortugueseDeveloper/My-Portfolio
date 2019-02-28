@@ -1,3 +1,15 @@
+/*--------------*/
+/* GENERAL */
+/*--------------*/
+
+:root {
+    --light-blue: #3a7bd5;
+    --light-blue-transparent: rgb(58, 123, 213, 0.4);
+    --normal-blue: #245ba7;
+    --dark-blue: #122d53;
+    --dark-blue-transparent: rgba(18, 45, 83, 0.4);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +18,22 @@
 }
 
 body {
+    background-color: var(--dark-blue);
     font-family: 'Montserrat', Arial, Helvetica, sans-serif; 
     font-size: 16px;
     font-weight: 400;
     line-height: 1.7;
     color: #f2f2f2;
+}
+
+.header {
+    height: 100vh;
+    background-image: linear-gradient(
+        to right bottom, 
+        var(--light-blue-transparent), 
+        var(--dark-blue-transparent)),
+    url("/resources/css/img/placeholder-bg.jpg");
+    background-position: center;    
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
 }
