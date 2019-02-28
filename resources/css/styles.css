@@ -35,5 +35,46 @@ body {
     url("/resources/css/img/placeholder-bg.jpg");
     background-position: center;    
     background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
+    position: relative;
+}
+
+.logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.logo {
+    height: 35px;
+}
+
+.text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-primary {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header-primary-main {
+    display: block;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 8px;
+    white-space: nowrap;
+    margin-bottom: 15px;
+}
+
+.heading-primary-moto {
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
 }
