@@ -68,13 +68,76 @@ body {
     letter-spacing: 8px;
     white-space: nowrap;
     margin-bottom: 15px;
+    animation: moveInTop 1s ease-in-out;
 }
 
-.heading-primary-moto {
-    display: block;
+.heading-primary-moto-words {
+    display: flex;
+    flex-direction: row !important; 
     font-size: 25px;
     font-weight: 700;
     letter-spacing: 3px;
-    display: flex;
     justify-content: center;
 }
+
+.heading-primary-moto { margin-right: 15px; }
+
+.learning-moto { 
+    animation: moveInLeft 1s ease-in-out;
+}
+
+.creating-moto { 
+    animation: moveInBottom 1s ease-in-out; 
+}
+
+.evolving-moto { 
+    animation: moveInRight 1s ease-in-out;
+}
+
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translate(0, -100px);   
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}    
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translate(-100px, 0);   
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}    
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translate(0, 100px);   
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}    
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translate(100px, 0);   
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}    
