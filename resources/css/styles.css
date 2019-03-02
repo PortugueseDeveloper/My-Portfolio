@@ -68,7 +68,7 @@ body {
     letter-spacing: 8px;
     white-space: nowrap;
     margin-bottom: 15px;
-    animation: moveInTop 1s ease-in-out;
+    animation: moveInTop 1.2s ease-in-out;
 }
 
 .heading-primary-moto-words {
@@ -83,15 +83,15 @@ body {
 .heading-primary-moto { margin-right: 15px; }
 
 .learning-moto { 
-    animation: moveInLeft 1s ease-in-out;
+    animation: moveInLeft 1.2s ease-in-out;
 }
 
 .creating-moto { 
-    animation: moveInBottom 1s ease-in-out; 
+    animation: moveInBottom 1.2s ease-in-out; 
 }
 
 .evolving-moto { 
-    animation: moveInRight 1s ease-in-out;
+    animation: moveInRight 1.2s ease-in-out;
 }
 
 @keyframes moveInTop {
