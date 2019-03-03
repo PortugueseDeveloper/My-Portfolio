@@ -10,20 +10,23 @@
     --dark-blue-transparent: rgba(18, 45, 83, 0.4);
 }
 
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
+
+html { font-size: 62.5%; }
 
 body {
     background-color: var(--dark-blue);
     font-family: 'Montserrat', Arial, Helvetica, sans-serif; 
-    font-size: 16px;
     font-weight: 400;
     line-height: 1.7;
     color: #f2f2f2;
+    box-sizing: border-box;
 }
 
 .header {
@@ -41,12 +44,12 @@ body {
 
 .logo-box {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem;
 }
 
 .logo {
-    height: 35px;
+    height: 3.5rem;
 }
 
 .text-box {
@@ -56,48 +59,52 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.header-primary {
+.heading-primary {
     color: #fff;
     text-transform: uppercase;
+    backface-visibility: hidden;
 }
 
-.header-primary-main {
+.heading-primary-main {
     display: block;
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: 400;
-    letter-spacing: 8px;
+    letter-spacing: .8rem;
     white-space: nowrap;
     margin-bottom: 15px;
-    animation: moveInTop 1.2s ease-in-out;
+    animation: moveInTop 1s ease-in-out;
 }
 
 .heading-primary-moto-words {
     display: flex;
     flex-direction: row !important; 
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: 700;
-    letter-spacing: 3px;
+    letter-spacing: .3rem;
     justify-content: center;
 }
 
 .heading-primary-moto { margin-right: 15px; }
 
 .learning-moto { 
-    animation: moveInLeft 1.2s ease-in-out;
+    animation: moveInLeft 1s ease-in-out .50s;
+    animation-fill-mode: backwards;
 }
 
 .creating-moto { 
-    animation: moveInBottom 1.2s ease-in-out; 
+    animation: moveInBottom 1s ease-in-out .50s; 
+    animation-fill-mode: backwards;
 }
 
 .evolving-moto { 
-    animation: moveInRight 1.2s ease-in-out;
+    animation: moveInRight 1s ease-in-out .50s;
+    animation-fill-mode: backwards;
 }
 
 @keyframes moveInTop {
     0% {
         opacity: 0;
-        transform: translate(0, -100px);   
+        transform: translateY(-10rem);   
     }
 
     100% {
@@ -109,7 +116,7 @@ body {
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translate(-100px, 0);   
+        transform: translateX(-10rem);   
     }
 
     100% {
@@ -121,7 +128,7 @@ body {
 @keyframes moveInBottom {
     0% {
         opacity: 0;
-        transform: translate(0, 100px);   
+        transform: translateY(10rem);   
     }
 
     100% {
@@ -133,7 +140,7 @@ body {
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translate(100px, 0);   
+        transform: translateX(10rem);   
     }
 
     100% {
