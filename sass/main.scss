@@ -1,0 +1,146 @@
+$color-primary: #245ba7;
+$color-primary-light: #3a7bd5;
+$color-primary-light-transparent: rgba($color-primary-light, 0.4);
+$color-primary-dark: #122d53;
+$color-primary-dark-transparent: rgba($color-primary-dark, 0.4);
+
+$color-text: #fff;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html { font-size: 62.5%; }
+
+body {
+    background-color: $color-primary-dark;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif; 
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-text;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 100vh;
+    background-image: linear-gradient(
+        to right bottom, 
+        $color-primary-light-transparent, 
+        $color-primary-dark-transparent),
+    url("img/placeholder-bg.jpg");
+    background-position: center;    
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
+    position: relative;
+}
+
+.header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+}
+
+.header__logo {
+    height: 3.5rem;
+}
+
+.header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+}
+
+.heading-primary--main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: .8rem;
+    white-space: nowrap;
+    margin-bottom: 15px;
+    animation: moveInTop 1s ease-in-out;
+}
+
+.heading-primary--moto {
+    display: flex;
+    flex-direction: row !important; 
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    justify-content: center;
+}
+
+.heading-primary--moto-word { margin-right: 15px; }
+
+.learning-moto { 
+    animation: moveInLeft 1s ease-in-out .50s;
+    animation-fill-mode: backwards;
+}
+
+.creating-moto { 
+    animation: moveInBottom 1s ease-in-out .50s; 
+    animation-fill-mode: backwards;
+}
+
+.evolving-moto { 
+    animation: moveInRight 1s ease-in-out .50s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-10rem);   
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}    
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);   
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}    
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(10rem);   
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}    
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);   
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}    
