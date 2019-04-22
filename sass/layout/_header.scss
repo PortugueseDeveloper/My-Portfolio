@@ -1,0 +1,29 @@
+.header {
+    height: 100vh;
+    background-image: linear-gradient(
+        to right bottom, 
+        $color-primary-light-transparent, 
+        $color-primary-dark-transparent),
+    url("img/placeholder-bg.jpg");
+    background-position: center;    
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
+    position: relative;
+}
+
+.header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+}
+
+.header__logo {
+    height: 3.5rem;
+}
+
+.header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

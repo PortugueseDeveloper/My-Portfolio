@@ -1,3 +1,35 @@
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 *,
 *::before,
 *::after {
@@ -15,28 +47,6 @@ body {
   line-height: 1.7;
   color: #fff;
   box-sizing: border-box; }
-
-.header {
-  height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(58, 123, 213, 0.4), rgba(18, 45, 83, 0.4)), url("img/placeholder-bg.jpg");
-  background-position: center;
-  background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
-  position: relative; }
-
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem; }
-
-.header__logo {
-  height: 3.5rem; }
-
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
 
 .heading-primary {
   color: #fff;
@@ -75,34 +85,24 @@ body {
   animation: moveInRight 1s ease-in-out .50s;
   animation-fill-mode: backwards; }
 
-@keyframes moveInTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-10rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
+.header {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(58, 123, 213, 0.4), rgba(18, 45, 83, 0.4)), url("img/placeholder-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
+  position: relative; }
 
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
+.header__logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem; }
 
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(10rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
+.header__logo {
+  height: 3.5rem; }
 
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
