@@ -1,3 +1,7 @@
+@keyframes slideIn {
+  to {
+    transform: translateX(0); } }
+
 @keyframes moveInTop {
   0% {
     opacity: 0;
@@ -42,10 +46,8 @@ html {
 
 body {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  color: #fff;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
 ul li {
   list-style-type: none; }
@@ -95,23 +97,91 @@ ul li {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("img/bg.jpeg") center no-repeat;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
-  position: relative; }
+  position: relative;
+  font-weight: 400;
+  line-height: 1.7; }
 
 .top-bar {
   max-width: 120rem;
   width: 90%;
   margin: 0 auto; }
 
+.header__logo-box {
+  color: #f2f2f28e;
+  transform: translateX(-100rem);
+  animation: slideIn 1.7s forwards; }
+
 nav {
   margin-bottom: 5rem;
+  padding-top: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
   font-size: 1.6rem; }
 
+nav ul {
+  display: flex; }
+
+nav ul a {
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem 0;
+  margin: 0 3rem;
+  position: relative;
+  letter-spacing: 2px;
+  transform: translateX(100rem);
+  animation: slideIn 1.5s forwards; }
+
+nav ul a:nth-child(2) {
+  animation: slideIn 1.7s forwards; }
+
+nav ul a:last-child {
+  margin-right: 0;
+  animation: slideIn 1.9s forwards; }
+
+nav ul a::before,
+nav ul a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  left: 0;
+  transform: scaleX(0);
+  transition: all .5s; }
+
+nav ul a::before {
+  top: 0;
+  transform-origin: left; }
+
+nav ul a::after {
+  bottom: 0;
+  transform-origin: right; }
+
+nav ul a:hover::before,
+nav ul a:hover::after {
+  transform: scaleX(1); }
+
 .header__text-box {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%); }
+
+.about-container {
+  padding: 100px;
+  width: 500px;
+  display: block;
+  text-align: center;
+  margin: 0 auto; }
+
+.about-phrases {
+  font-size: 10px;
+  height: 50px;
+  vertical-align: middle;
+  overflow: hidden; }
+
+.about-phrases div {
+  height: 50px;
+  transition: margin-top 1s ease-in-out; }
