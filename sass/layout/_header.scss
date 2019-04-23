@@ -11,6 +11,8 @@
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
     position: relative;
+    font-weight: 400;
+    line-height: 1.7;
 }
 
 .top-bar {
@@ -30,6 +32,7 @@
 // }
 
 .header__logo-box { 
+    color: #f2f2f28e;
     transform: translateX(-100rem); 
     animation: slideIn 1.7s forwards;
 }

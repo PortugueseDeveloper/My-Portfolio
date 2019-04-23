@@ -1,0 +1,19 @@
+.about-container {
+    padding: 100px;
+    width: 500px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about-phrases {
+    font-size: 10px;
+    height: 50px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.about-phrases div {
+    height: 50px;
+    transition: margin-top 1s ease-in-out;
+} 

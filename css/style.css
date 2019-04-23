@@ -46,9 +46,6 @@ html {
 
 body {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  color: #fff;
   box-sizing: border-box;
   overflow-x: hidden; }
 
@@ -100,7 +97,9 @@ ul li {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("img/bg.jpeg") center no-repeat;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
-  position: relative; }
+  position: relative;
+  font-weight: 400;
+  line-height: 1.7; }
 
 .top-bar {
   max-width: 120rem;
@@ -108,6 +107,7 @@ ul li {
   margin: 0 auto; }
 
 .header__logo-box {
+  color: #f2f2f28e;
   transform: translateX(-100rem);
   animation: slideIn 1.7s forwards; }
 
@@ -168,3 +168,20 @@ nav ul a:hover::after {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%); }
+
+.about-container {
+  padding: 100px;
+  width: 500px;
+  display: block;
+  text-align: center;
+  margin: 0 auto; }
+
+.about-phrases {
+  font-size: 10px;
+  height: 50px;
+  vertical-align: middle;
+  overflow: hidden; }
+
+.about-phrases div {
+  height: 50px;
+  transition: margin-top 1s ease-in-out; }
