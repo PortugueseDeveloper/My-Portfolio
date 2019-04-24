@@ -41,15 +41,21 @@
     animation-fill-mode: backwards;
 }
 
-// 'About' section typography
-h2 {
-    color: red;
+// 'About' section typography 
+.about-heading {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    // color: transparent;
+    text-align: center;
+    letter-spacing: .2rem;
 }
 
-.paragraph {
-    font-size: $default-font-size;
+.about-paragraph {
+    font-size: 1.6rem;
 
     &:not(:last-child) {
-        margin-bottom: 3rem;
+        margin-bottom: 2.5rem;
     } 
 }
+
