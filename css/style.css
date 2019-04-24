@@ -191,6 +191,14 @@ nav ul a:hover::after {
 .about-section {
   padding: 100px; }
 
+.about-info-container {
+  width: 100%; }
+
+.about-info-container::after {
+  content: '';
+  display: block;
+  clear: both; }
+
 .about-col-left, .about-col-right {
   float: left; }
 
@@ -202,7 +210,7 @@ nav ul a:hover::after {
   height: 500px; }
 
 .about-col-right {
-  width: 55%; }
+  width: 65%; }
 
 .about-phrases {
   height: 50px;

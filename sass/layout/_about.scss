@@ -3,10 +3,13 @@
 }
 
 .about-info-container {
-    // display: flex;
-    // justify-content: space-between;
-    // width: 100%;
-    // background-color: red;
+    width: 100%;
+}
+
+.about-info-container::after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
 .about-col-left, .about-col-right {
@@ -23,7 +26,7 @@
 }
 
 .about-col-right {
-    width: 55%;
+    width: 65%;
 }
 
 .about-phrases {
