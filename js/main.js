@@ -1,12 +1,14 @@
-var current = 1; //keeps track of the current div
-var height = $('.about-phrases').height(); //the height of the roles div
-var numberDivs = $('.about-phrases').children().length; //the number of children of the roles div
-var first = $('.about-phrases div:nth-child(1)'); //the first div nested in roles div
+// 'About me' phrases animation
+let currentSentence = 1;
+let height = $('.about-phrases').height(); 
+let numberPrases = $('.about-phrases').children().length;
+let firstSentence = $('.about-phrases div:nth-child(1)');
+
 setInterval(function () {
-    var number = current * -height;
-    first.css('margin-top', number + 'px');
-    if (current === numberDivs) {
-        first.css('margin-top', '0px');
-        current = 1;
-    } else current++;
+    let number = currentSentence * -height;
+    firstSentence.css('margin-top', number + 'px');
+    if (currentSentence === numberPrases) {
+        firstSentence.css('margin-top', '0px');
+        currentSentence = 1;
+    } else currentSentence++;
 }, 2000);

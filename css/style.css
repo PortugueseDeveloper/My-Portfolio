@@ -52,43 +52,6 @@ body {
 ul li {
   list-style-type: none; }
 
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  backface-visibility: hidden; }
-
-.heading-primary--main {
-  display: block;
-  font-size: 5rem;
-  font-weight: 400;
-  letter-spacing: .8rem;
-  white-space: nowrap;
-  margin-bottom: 15px;
-  animation: moveInTop 1s ease-in-out; }
-
-.heading-primary--moto {
-  display: flex;
-  flex-direction: row !important;
-  font-size: 2.5rem;
-  font-weight: 700;
-  letter-spacing: .3rem;
-  justify-content: center; }
-
-.heading-primary--moto-word {
-  margin-right: 15px; }
-
-.learning-moto {
-  animation: moveInLeft 1s ease-in-out .50s;
-  animation-fill-mode: backwards; }
-
-.creating-moto {
-  animation: moveInBottom 1s ease-in-out .50s;
-  animation-fill-mode: backwards; }
-
-.evolving-moto {
-  animation: moveInRight 1s ease-in-out .50s;
-  animation-fill-mode: backwards; }
-
 .header__box {
   background-color: #f2f2f2; }
 
@@ -169,12 +132,16 @@ nav ul a:hover::after {
   left: 50%;
   transform: translate(-50%, -50%); }
 
-.about-container {
+.about-section {
   padding: 100px;
   width: 500px;
   display: block;
   text-align: center;
   margin: 0 auto; }
+
+.about-info-container {
+  display: flex;
+  justify-content: space-between; }
 
 .about-phrases {
   font-size: 10px;

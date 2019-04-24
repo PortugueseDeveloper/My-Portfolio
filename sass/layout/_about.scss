@@ -1,9 +1,14 @@
-.about-container {
+.about-section {
     padding: 100px;
     width: 500px;
     display: block;
     text-align: center;
     margin: 0 auto;
+}
+
+.about-info-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .about-phrases {
