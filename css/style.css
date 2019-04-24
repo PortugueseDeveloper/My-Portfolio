@@ -45,6 +45,7 @@ html {
   font-size: 62.5%; }
 
 body {
+  background-color: #f2f2f2;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   box-sizing: border-box;
   overflow-x: hidden; }
@@ -53,7 +54,7 @@ ul li {
   list-style-type: none; }
 
 .heading-primary {
-  color: #fff;
+  color: #f2f2f2;
   text-transform: uppercase;
   backface-visibility: hidden; }
 
@@ -97,12 +98,15 @@ ul li {
   letter-spacing: .2rem; }
 
 .about-paragraph {
-  font-size: 1.6rem; }
-  .about-paragraph:not(:last-child) {
-    margin-bottom: 2.5rem; }
+  font-size: 1.6rem;
+  margin-bottom: 2.5rem; }
+
+.about-phrases {
+  font-size: 1.5rem;
+  vertical-align: middle; }
 
 .heading-margin-bottom-small {
-  margin-bottom: 3rem; }
+  margin-bottom: 4rem; }
 
 .header__box {
   background-color: #f2f2f2; }
@@ -140,7 +144,7 @@ nav ul {
 
 nav ul a {
   text-decoration: none;
-  color: #fff;
+  color: #f2f2f2;
   padding: 1rem 0;
   margin: 0 3rem;
   position: relative;
@@ -161,7 +165,7 @@ nav ul a::after {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #fff;
+  background-color: #f2f2f2;
   left: 0;
   transform: scaleX(0);
   transition: all .5s; }
@@ -187,21 +191,21 @@ nav ul a:hover::after {
 .about-section {
   padding: 100px; }
 
-.about-info-container {
-  width: 100%; }
-
-.about-info-container .about-col-left, .about-info-container .about-col-right {
-  width: 50%;
+.about-col-left, .about-col-right {
   float: left; }
+
+.about-col-left {
+  width: 35%; }
 
 .about-col-left img {
   max-width: 100%;
   height: 500px; }
 
+.about-col-right {
+  width: 55%; }
+
 .about-phrases {
-  font-size: 10px;
   height: 50px;
-  vertical-align: middle;
   overflow: hidden; }
 
 .about-phrases div {

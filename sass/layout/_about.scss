@@ -5,12 +5,16 @@
 .about-info-container {
     // display: flex;
     // justify-content: space-between;
-    width: 100%;
+    // width: 100%;
+    // background-color: red;
 }
 
-.about-info-container .about-col-left, .about-info-container .about-col-right {
-    width: 50%;
+.about-col-left, .about-col-right {
     float: left;
+}
+
+.about-col-left {
+    width: 35%;
 }
 
 .about-col-left img {
@@ -18,10 +22,12 @@
     height: 500px;
 }
 
+.about-col-right {
+    width: 55%;
+}
+
 .about-phrases {
-    font-size: 10px;
     height: 50px;
-    vertical-align: middle;
     overflow: hidden;
 }
 

@@ -1,6 +1,6 @@
 // Header typography
 .heading-primary {
-    color: #fff;
+    color: $color-secondary;
     text-transform: uppercase;
     backface-visibility: hidden;
 }
@@ -53,9 +53,10 @@
 
 .about-paragraph {
     font-size: 1.6rem;
-
-    &:not(:last-child) {
-        margin-bottom: 2.5rem;
-    } 
+    margin-bottom: 2.5rem;
 }
 
+.about-phrases {
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
