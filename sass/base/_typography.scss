@@ -71,3 +71,12 @@
     text-align: center;
     letter-spacing: .2rem;
 }
+
+.text-hover-project-img {
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    float: left;
+    margin: 4px;
+    z-index: 99999;
+}

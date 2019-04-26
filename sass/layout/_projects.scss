@@ -40,3 +40,13 @@
 }
 
 .project-block:hover .project-block-layer { transform: translateY(-400px); }
+
+// testing
+.overlay-test {
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+    float: left;
+    margin: 4px;
+    background-size: 100%;
+}
