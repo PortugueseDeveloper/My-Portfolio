@@ -1,7 +1,9 @@
 .projects-section {
     padding: 100px;
+    // TODO: FIX HEIGHT
     // height: 210vh;
-    height: 100vh;
+    // height: 100vh;
+    height: 135vh;
     background: linear-gradient(to bottom, rgba(0, 0, 0, .8), rgba(0, 0, 0, .5)), url("img/projects-bg.jpeg") center no-repeat;
     background-size: cover;
     // clip-path: polygon(0 0, 100% 55vh, 100% 100%, 0 100%);
@@ -42,11 +44,21 @@
 .project-block:hover .project-block-layer { transform: translateY(-400px); }
 
 // testing
-.overlay-test {
-    width: 400px;
-    height: 200px;
-    overflow: hidden;
+.overlay-test-container {
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    margin: 80px auto 0;
     float: left;
-    margin: 4px;
-    background-size: 100%;
+}
+
+.overlay-test-container .box {
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: #fff;
+    margin: 15px;
+    float: left;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .8);
 }
