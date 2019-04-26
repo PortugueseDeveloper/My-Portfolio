@@ -288,8 +288,25 @@ nav ul a:hover::after {
   position: relative;
   width: calc(400px - 30px);
   height: calc(300px - 30px);
-  background: #fff;
+  background: #111;
   margin: 15px;
   float: left;
   overflow: hidden;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8); }
+
+.overlay-test-container .box::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transition: 1s;
+  transform: scaleX(0);
+  opacity: 0; }
+
+.overlay-test-container .box:hover::before {
+  transform: scaleX(1);
+  opacity: 1; }
