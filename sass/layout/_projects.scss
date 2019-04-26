@@ -55,7 +55,7 @@
 .overlay-test-container .box {
     position: relative;
     width: calc(400px - 30px);
-    height: calc(300px - 30px);
+    height: calc(300px - 55px);
     background: #111;
     margin: 15px;
     float: left;
@@ -80,6 +80,79 @@
 .overlay-test-container .box:hover::before {
     transform: scaleX(1);
     opacity: 1;
+}
+
+.overlay-test-container .box::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transition: 1s;
+    transform: scaleY(0);
+    opacity: 0;
+    z-index: 1;
+}
+
+.overlay-test-container .box:hover::after {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.overlay-test-container .box .img-box {
+    position: relative;
+}
+
+.overlay-test-container .box .img-box img {
+    // height: 100%;
+    width: 100%;
+    transition: 1s;
+}
+
+.overlay-test-container .box:hover .img-box img {
+    opacity: .2;
+    transform: scale(1.2);
+}
+
+.overlay-test-container .content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    z-index: 2;
+    text-align: center; 
+}
+
+.overlay-test-container .box .content h2 {
+    margin: 0 0 1rem;
+    padding: 0;
+    color: #fff;
+    transition: 1s;
+    transform: translateY(-3rem);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.overlay-test-container .box .content p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    transition: 1s;
+    transform: translateY(3rem);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.overlay-test-container .box:hover .content h2,
+.overlay-test-container .box:hover .content p {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition-delay: .2s;
 }
 
 // .overlay-test-container .box {
