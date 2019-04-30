@@ -1,3 +1,5 @@
+// TODO: ADD SASS PSEUDO
+
 .projects-section {
     padding: 100px;
     // TODO: FIX HEIGHT
@@ -148,24 +150,9 @@
     visibility: hidden;
 }
 
-.project-boxes-container .box .content .btn {
-    margin: 5px;
-    padding: 2px 5px;
-    color: #111;
-    text-transform: uppercase;
-    transition: 1s;
-    font-size: 1.2rem;
-    // TODO: ADD ANIM
-    opacity: 0; 
-    visibility: hidden;
-}
-
-.project-boxes-container .box .content .btn-1 { transform: translateX(-3rem); }
-.project-boxes-container .box .content .btn-2 { transform: translateX(3rem); }
-
 .project-boxes-container .box:hover .content h2,
 .project-boxes-container .box:hover .content p,
-.project-boxes-container .box:hover .content .btn {
+.project-boxes-container .box:hover .content .project-btn {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
