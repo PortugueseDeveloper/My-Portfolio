@@ -121,6 +121,14 @@ ul li {
   margin: 4px;
   z-index: 99999; }
 
+.section-heading-contacts {
+  color: #f2f2f2;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: .2rem; }
+
 .section-heading-about {
   margin: -2.4rem 0 4rem 0; }
 
@@ -372,3 +380,6 @@ nav ul a {
   visibility: visible;
   transform: translateY(0);
   transition-delay: .2s; }
+
+footer {
+  background-color: #111; }
