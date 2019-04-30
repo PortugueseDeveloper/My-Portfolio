@@ -1,0 +1,104 @@
+// TODO: ADD MEDIA QUERIES
+
+// Social media
+footer { background-color: #111; }
+
+.social-media-container {
+    margin: 0 auto;
+    width: 90%; 
+}
+
+.social-media-accordion {
+    background: #333;
+    width: 100%;
+    min-width: 800px;
+    display: block;
+    overflow: hidden;
+    height: 200px;
+    font-size: 0;
+
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+.social-media-tab {
+    display: inline-block;
+    background-color: #444;
+    border-right: #333 solid 1px;
+    width: 80px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    transition: all .8s ease-in-out 0.1s;
+
+    &:hover {
+        width: 450px;
+    }
+
+    &:hover .social-media a::before {
+        margin-left: -100px;
+    }
+
+    &:hover .social-media a::after {
+        margin-left: -5px;
+    }
+}
+
+.social-media-tab .social-media-content {
+    background: #fff;
+    width: 360px;
+    height: 200px;
+    margin-left: 80px;
+    position: relative;
+    padding: 50px 0 0 15px;
+}
+
+.social-media-tab .social-media-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.social-media-tab .social-media-content p {
+    font-size: .85rem;
+    line-height: 1.4rem;
+    padding-right: 30px;
+}
+
+.social-media a::before, 
+.social-media a::after {
+    width: 80px;
+    height: 200px;
+    position: absolute;
+    text-indent: 0;
+    padding-top: 90px;
+    padding-left: 25px;
+    display: block;
+    font: normal 30px Genericons;
+    color: #fff;
+    transition: all .8s ease-in-out 0.1s;
+}
+
+.social-media a::after {
+    font-size: 48px;
+    padding: 80px 0 0 20px;
+    margin-left: 85px;
+}
+
+.facebook a::before, .facebook a::after { content: "\f204"; }
+.facebook a::after { background-color: #3B5998; }
+
+.twitter a::before, .twitter a::after { content: "\f202"; }
+.twitter a::after { background-color: #1DA1F2; }
+
+.instagram a::before, .instagram a::after { content: "\f215"; }
+.instagram a::after { background-color: #F46F30; }
+
+.linkedin a::before, .linkedin a::after { content: "\f208"; }
+.linkedin a::after { background-color: #007BB5; }
+
+.github a::before, .github a::after { content: "\f200"; }
+.github a::after { background-color: #333; }
