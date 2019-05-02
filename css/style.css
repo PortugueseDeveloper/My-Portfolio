@@ -143,7 +143,7 @@ ul li {
   margin: -5.7rem 0 4.4rem 0; }
 
 .project-boxes-container .box .content .project-btn {
-  margin: 5px;
+  margin: 4px;
   padding: 5px;
   color: #f2f2f2;
   background: none;
@@ -151,6 +151,7 @@ ul li {
   font-size: 1.2rem;
   opacity: 0;
   visibility: hidden;
+  border: 1px solid #f2f2f2;
   cursor: pointer;
   transition: 1s;
   position: relative;
@@ -161,17 +162,21 @@ ul li {
     left: 0;
     width: 100%;
     height: 0;
-    background: #122d53;
+    background: #f2f2f2;
     z-index: -1;
     transition: 1s; }
   .project-boxes-container .box .content .project-btn:hover::before {
     height: 180%; }
 
 .project-boxes-container .box .content .project-btn-1 {
+  font-size: 13px;
   transform: translateX(-3rem); }
   .project-boxes-container .box .content .project-btn-1::before {
     top: 0;
     border-radius: 0 0 50% 50%; }
+  .project-boxes-container .box .content .project-btn-1:hover {
+    height: 180%;
+    color: #111; }
 
 .project-boxes-container .box .content .project-btn-2 {
   transform: translateX(3rem); }
@@ -179,7 +184,8 @@ ul li {
     bottom: 0;
     border-radius: 50% 50% 0 0; }
   .project-boxes-container .box .content .project-btn-2:hover {
-    height: 180%; }
+    height: 180%;
+    color: #111; }
 
 .header__box {
   background-color: #f2f2f2; }
