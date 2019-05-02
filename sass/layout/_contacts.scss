@@ -1,0 +1,216 @@
+// General
+footer {
+    // TODO: FIX HEIGHT
+    height: 80vh; 
+    background-color: #111; 
+    padding: 100px;
+    
+    width: 100%;
+
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+.social-media-container, .email-contact-container { 
+    float: left; 
+    width: 50%;
+}
+
+// Social media
+.social-media-container {
+    margin: 0 auto;
+    width: 50%; 
+
+    @media (max-width: 950px) {
+		width: 70%;
+    }
+
+    @media (max-width: 680px) {
+        width: 95%;
+    }
+
+}
+
+.social-media-accordion {
+    background: #333;
+    width: 60%;
+    min-width: 500px;
+    display: block;
+    overflow: hidden;
+    height: 150px;
+    font-size: 0;
+
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    @media (max-width: 950px) {
+        display: block;
+
+        min-width: 450px;
+        height: auto;
+    }
+
+    @media (max-width:  680px) {
+        width: 100%;
+        min-width: 350px;
+    }
+
+}
+
+.social-media-tab {
+    display: inline-block;
+    background-color: #444;
+    border-right: #333 solid 1px;
+    width: 80px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    transition: all .8s ease-in-out 0.1s;
+
+    &:hover {
+        width: 450px;
+
+        @media (max-width: 950px) {
+            width: 100%;
+        }
+    }
+
+    &:hover .social-media a::before {
+        margin-left: -100px;
+    }
+
+    &:hover .social-media a::after {
+        margin-left: -5px;
+    }
+
+    @media (max-width: 950px) {
+        display: block;
+        width: 100%;
+        border-bottom: 3px #333 solid;
+    }
+}
+
+.social-media-tab .social-media-content {
+    background: #fff;
+    width: 360px;
+    height: 200px;
+    margin-left: 80px;
+    position: relative;
+    padding: 50px 0 0 15px;
+
+    @media (max-width: 950px) {
+        width: 85%;
+    }
+}
+
+.social-media-tab .social-media-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.social-media-tab .social-media-content p {
+    font-size: .85rem;
+    line-height: 1.4rem;
+    padding-right: 30px;
+}
+
+.social-media a::before, 
+.social-media a::after {
+    width: 80px;
+    height: 200px;
+    position: absolute;
+    text-indent: 0;
+    padding-top: 90px;
+    padding-left: 25px;
+    display: block;
+    font: normal 30px Genericons;
+    color: #fff;
+    transition: all .8s ease-in-out 0.1s;
+}
+
+.social-media a::after {
+    font-size: 48px;
+    padding: 80px 0 0 20px;
+    margin-left: 85px;
+}
+
+.facebook a::before, .facebook a::after { content: "\f204"; }
+.facebook a::after { background-color: #3B5998; }
+
+.twitter a::before, .twitter a::after { content: "\f202"; }
+.twitter a::after { background-color: #1DA1F2; }
+
+.instagram a::before, .instagram a::after { content: "\f215"; }
+.instagram a::after { background-color: #F46F30; }
+
+.linkedin a::before, .linkedin a::after { content: "\f208"; }
+.linkedin a::after { background-color: #007BB5; }
+
+.github a::before, .github a::after { content: "\f200"; }
+.github a::after { background-color: #333; }
+
+// Email contact form
+.email-contact-container::after { 
+    // padding: 40px 0;
+    // content: ""; 
+    // display: block;
+    // clear: both;
+}
+
+.email-contact-container h1 {
+    text-align: center;
+    color: $color-secondary;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.contact-form-input {
+    color: $color-secondary;
+    padding: 2rem 4rem;
+    display: block;
+    width: 100%;
+    margin: 16px 0;
+    border: 0;  
+    background: #121212;
+    outline: none;
+    transition: .8s;
+
+    &:focus { box-shadow: 0 0 10px $color-secondary; }
+}
+
+textarea.contact-form-text {
+    resize: none;
+    height: 120px;
+}
+
+.submit-contact-form-btn {
+    color: #121212;
+    background: $color-secondary;
+    text-transform: uppercase;
+    position: absolute;
+    margin-top: 2rem;
+    left: 75%;
+    transform: translateX(-75%);
+    border: 0;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .8s;
+
+    &:hover {
+        background: #333;
+    }
+}
+
