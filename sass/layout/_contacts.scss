@@ -1,14 +1,28 @@
 // General
 footer {
     // TODO: FIX HEIGHT
-    height: 120vh; 
+    height: 80vh; 
     background-color: #111; 
+    padding: 100px;
+    
+    width: 100%;
+
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+.social-media-container, .email-contact-container { 
+    float: left; 
+    width: 50%;
 }
 
 // Social media
 .social-media-container {
     margin: 0 auto;
-    width: 90%; 
+    width: 50%; 
 
     @media (max-width: 950px) {
 		width: 70%;
@@ -22,11 +36,11 @@ footer {
 
 .social-media-accordion {
     background: #333;
-    width: 100%;
-    min-width: 800px;
+    width: 60%;
+    min-width: 500px;
     display: block;
     overflow: hidden;
-    height: 200px;
+    height: 150px;
     font-size: 0;
 
     &::after {
@@ -48,6 +62,7 @@ footer {
     }
 
 }
+
 .social-media-tab {
     display: inline-block;
     background-color: #444;
@@ -142,8 +157,11 @@ footer {
 .github a::after { background-color: #333; }
 
 // Email contact form
-.email-contact-container { 
-    padding: 40px 0; 
+.email-contact-container::after { 
+    // padding: 40px 0;
+    // content: ""; 
+    // display: block;
+    // clear: both;
 }
 
 .email-contact-container h1 {
@@ -178,10 +196,14 @@ textarea.contact-form-text {
 }
 
 .submit-contact-form-btn {
-    float: right;
-    border: 0;
-    background: $color-secondary;
     color: #121212;
+    background: $color-secondary;
+    text-transform: uppercase;
+    position: absolute;
+    margin-top: 2rem;
+    left: 75%;
+    transform: translateX(-75%);
+    border: 0;
     padding: 12px 50px;
     border-radius: 20px;
     cursor: pointer;
