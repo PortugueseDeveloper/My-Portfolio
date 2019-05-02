@@ -139,6 +139,9 @@ ul li {
 .section-heading-projects {
   margin: -5.7rem 0 -5.2rem 0; }
 
+.section-heading-contacts {
+  margin: -5.7rem 0 4.4rem 0; }
+
 .project-boxes-container .box .content .project-btn {
   margin: 5px;
   padding: 5px;
@@ -386,11 +389,22 @@ nav ul a {
   transition-delay: .2s; }
 
 footer {
-  background-color: #111; }
+  height: 80vh;
+  background-color: #111;
+  padding: 100px;
+  width: 100%; }
+  footer::after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.social-media-container, .email-contact-container {
+  float: left;
+  width: 50%; }
 
 .social-media-container {
   margin: 0 auto;
-  width: 90%; }
+  width: 50%; }
   @media (max-width: 950px) {
     .social-media-container {
       width: 70%; } }
@@ -400,11 +414,11 @@ footer {
 
 .social-media-accordion {
   background: #333;
-  width: 100%;
-  min-width: 800px;
+  width: 60%;
+  min-width: 500px;
   display: block;
   overflow: hidden;
-  height: 200px;
+  height: 150px;
   font-size: 0; }
   .social-media-accordion::after {
     content: "";
@@ -512,3 +526,46 @@ footer {
 
 .github a::after {
   background-color: #333; }
+
+.email-contact-container h1 {
+  text-align: center;
+  color: #f2f2f2; }
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden; }
+
+.contact-form-input {
+  color: #f2f2f2;
+  padding: 2rem 4rem;
+  display: block;
+  width: 100%;
+  margin: 16px 0;
+  border: 0;
+  background: #121212;
+  outline: none;
+  transition: .8s; }
+  .contact-form-input:focus {
+    box-shadow: 0 0 10px #f2f2f2; }
+
+textarea.contact-form-text {
+  resize: none;
+  height: 120px; }
+
+.submit-contact-form-btn {
+  color: #121212;
+  background: #f2f2f2;
+  text-transform: uppercase;
+  position: absolute;
+  margin-top: 2rem;
+  left: 75%;
+  transform: translateX(-75%);
+  border: 0;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .8s; }
+  .submit-contact-form-btn:hover {
+    background: #333; }
