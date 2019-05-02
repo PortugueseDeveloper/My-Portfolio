@@ -1,6 +1,11 @@
-// Social media
-footer { background-color: #111; }
+// General
+footer {
+    // TODO: FIX HEIGHT
+    height: 120vh; 
+    background-color: #111; 
+}
 
+// Social media
 .social-media-container {
     margin: 0 auto;
     width: 90%; 
@@ -32,6 +37,7 @@ footer { background-color: #111; }
 
     @media (max-width: 950px) {
         display: block;
+
         min-width: 450px;
         height: auto;
     }
@@ -42,7 +48,6 @@ footer { background-color: #111; }
     }
 
 }
-
 .social-media-tab {
     display: inline-block;
     background-color: #444;
@@ -75,7 +80,6 @@ footer { background-color: #111; }
         width: 100%;
         border-bottom: 3px #333 solid;
     }
-
 }
 
 .social-media-tab .social-media-content {
@@ -136,3 +140,55 @@ footer { background-color: #111; }
 
 .github a::before, .github a::after { content: "\f200"; }
 .github a::after { background-color: #333; }
+
+// Email contact form
+.email-contact-container { 
+    padding: 40px 0; 
+}
+
+.email-contact-container h1 {
+    text-align: center;
+    color: $color-secondary;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.contact-form-input {
+    color: $color-secondary;
+    padding: 2rem 4rem;
+    display: block;
+    width: 100%;
+    margin: 16px 0;
+    border: 0;  
+    background: #121212;
+    outline: none;
+    transition: .8s;
+
+    &:focus { box-shadow: 0 0 10px $color-secondary; }
+}
+
+textarea.contact-form-text {
+    resize: none;
+    height: 120px;
+}
+
+.submit-contact-form-btn {
+    float: right;
+    border: 0;
+    background: $color-secondary;
+    color: #121212;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .8s;
+
+    &:hover {
+        background: #333;
+    }
+}
+
