@@ -1,0 +1,87 @@
+// Header section buttons
+.hamburger {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80px;
+    width: 80%;
+    background: #000;
+}
+
+.hamburger span {
+    display: block;
+    width: 60px;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    transition: .5s;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .20);
+}
+
+// "My Projects" section buttons
+.project-boxes-container .box .content .project-btn {
+    margin: 4px;
+    padding: 5px;
+    color: $color-secondary;
+    background: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    opacity: 0; 
+    visibility: hidden;
+    border: 1px solid $color-secondary;
+    cursor: pointer;
+    transition: 1s;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 0;
+        // TODO: ADD BETTER BACKGROUND COLOR ON HOVER
+        background: $color-secondary;
+        z-index: -1;
+        transition: 1s; 
+    }
+
+    &:hover::before { height: 180%; } 
+}
+
+.project-boxes-container .box .content .project-btn-1 {
+    font-size: 13px;
+    transform: translateX(-3rem);
+
+    &::before {
+        top: 0;
+        border-radius: 0 0 50% 50%;
+    }
+
+    // TODO: FIX BTN'S COLOR
+    &:hover {
+        height: 180%;
+        color: #111;
+    }
+
+}
+
+.project-boxes-container .box .content .project-btn-2 { 
+    transform: translateX(3rem);
+
+    &::before {
+        bottom: 0;
+        border-radius: 50% 50% 0 0;
+    }
+
+    &:hover {
+        height: 180%;
+        color: #111;
+    }
+}
+
+// ADD FORM BTN HERE
