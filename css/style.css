@@ -66,6 +66,12 @@ ul li {
   white-space: nowrap;
   margin-bottom: 15px;
   animation: moveInTop 1s ease-in-out; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .heading-primary--main {
+      font-size: 2.8rem; } }
+  @media (min-width: 1024px) and (max-width: 1366px) {
+    .heading-primary--main {
+      font-size: 4rem; } }
 
 .heading-primary--moto {
   display: flex;
@@ -74,6 +80,12 @@ ul li {
   font-weight: 700;
   letter-spacing: .3rem;
   justify-content: center; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .heading-primary--moto {
+      font-size: 1.7rem; } }
+  @media (min-width: 1024px) and (max-width: 1366px) {
+    .heading-primary--moto {
+      font-size: 2.1rem; } }
 
 .heading-primary--moto-word {
   margin-right: 15px; }
@@ -202,6 +214,9 @@ ul li {
     .header {
       height: 40vh;
       clip-path: polygon(0 0, 100% 0, 100% 24vh, 0 100%); } }
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .header {
+      height: 10vh; } }
 
 .top-bar {
   max-width: 120rem;
@@ -223,7 +238,10 @@ nav {
   font-size: 1.6rem; }
   @media (min-width: 768px) and (max-width: 1024px) {
     nav {
-      font-size: 1.8rem; } }
+      font-size: 1.3rem; } }
+  @media (min-width: 1024px) and (max-width: 1366px) {
+    nav {
+      font-size: 1.4rem; } }
 
 nav ul {
   display: flex; }
