@@ -13,6 +13,11 @@
     position: relative;
     font-weight: 400;
     line-height: 1.7;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        height: 40vh;
+        clip-path: polygon(0 0, 100% 0, 100% 24vh, 0 100%);
+    }
 }
 
 .top-bar {
@@ -45,6 +50,10 @@ nav {
     align-items: center;
     text-transform: uppercase;
     font-size: 1.6rem;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 1.8rem;
+    }
 }
 
 nav ul { display: flex; }
@@ -97,4 +106,8 @@ nav ul a {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    // @media (min-width: 768px) and (max-width: 1024px) {
+    //     top: 40%;
+    // }
 }
