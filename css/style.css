@@ -154,6 +154,27 @@ ul li {
 .section-heading-contacts {
   margin: -5.7rem 0 4.4rem 0; }
 
+.hamburger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80px;
+  width: 80%;
+  background: #000; }
+
+.hamburger span {
+  display: block;
+  width: 60px;
+  height: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  transition: .5s;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
+
 .project-boxes-container .box .content .project-btn {
   margin: 4px;
   padding: 5px;
@@ -217,6 +238,9 @@ ul li {
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .header {
       height: 10vh; } }
+  @media (min-width: 481px) and (max-width: 767px) {
+    .header {
+      height: 80vh; } }
 
 .top-bar {
   max-width: 120rem;
@@ -242,6 +266,9 @@ nav {
   @media (min-width: 1024px) and (max-width: 1366px) {
     nav {
       font-size: 1.4rem; } }
+  @media (min-width: 481px) and (max-width: 767px) {
+    nav {
+      font-size: 1rem; } }
 
 nav ul {
   display: flex; }

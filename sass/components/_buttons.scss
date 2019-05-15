@@ -1,3 +1,28 @@
+// Header section buttons
+.hamburger {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80px;
+    width: 80%;
+    background: #000;
+}
+
+.hamburger span {
+    display: block;
+    width: 60px;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    transition: .5s;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .20);
+}
+
+// "My Projects" section buttons
 .project-boxes-container .box .content .project-btn {
     margin: 4px;
     padding: 5px;
