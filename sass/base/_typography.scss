@@ -13,6 +13,14 @@
     white-space: nowrap;
     margin-bottom: 15px;
     animation: moveInTop 1s ease-in-out;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 2.8rem;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1366px) {
+        font-size: 4rem;
+    }
 }
 
 .heading-primary--moto {
@@ -22,6 +30,14 @@
     font-weight: 700;
     letter-spacing: .3rem;
     justify-content: center;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 1.7rem;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1366px) {
+        font-size: 2.1rem;
+    }
 }
 
 .heading-primary--moto-word { margin-right: 15px; }
