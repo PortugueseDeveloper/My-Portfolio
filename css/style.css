@@ -156,17 +156,16 @@ ul li {
 
 .hamburger {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 5rem;
+  left: 90%;
   transform: translate(-50%, -50%);
-  height: 80px;
-  width: 80%;
-  background: #000; }
+  animation: moveInRight 1s ease-in-out .50s;
+  animation-fill-mode: backwards; }
 
 .hamburger span {
   display: block;
-  width: 60px;
-  height: 6px;
+  width: 25px;
+  height: 2px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -176,19 +175,19 @@ ul li {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
 
 .hamburger span:nth-child(1) {
-  transform: translate(-50%, -50%) translateY(-20px);
+  transform: translate(-50%, -50%) translateY(-10px);
   transition: .2s; }
 
 .hamburger span:nth-child(4) {
-  transform: translate(-50%, -50%) translateY(20px);
+  transform: translate(-50%, -50%) translateY(10px);
   transition: .2s; }
 
 .hamburger.active span:nth-child(1) {
-  transform: translate(-50%, -50%) translateY(-35px);
+  transform: translate(-50%, -50%) translateY(-20px);
   opacity: 0; }
 
 .hamburger.active span:nth-child(4) {
-  transform: translate(-50%, -50%) translateY(35px);
+  transform: translate(-50%, -50%) translateY(20px);
   opacity: 0; }
 
 .hamburger.active span:nth-child(2) {
@@ -293,9 +292,15 @@ nav {
   @media (min-width: 481px) and (max-width: 767px) {
     nav {
       font-size: 1rem; } }
+  @media (min-width: 375px) and (max-width: 812px) {
+    nav {
+      font-size: 1.2rem; } }
 
 nav ul {
   display: flex; }
+  @media (min-width: 375px) and (max-width: 812px) {
+    nav ul {
+      opacity: 0; } }
 
 nav ul a {
   text-decoration: none;

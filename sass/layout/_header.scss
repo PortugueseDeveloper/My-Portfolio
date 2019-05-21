@@ -70,9 +70,20 @@ nav {
     @media (min-width: 481px) and (max-width: 767px) {
         font-size: 1rem;
     }
+
+    @media (min-width: 375px) and (max-width: 812px) {
+        font-size: 1.2rem;
+    }
 }
 
-nav ul { display: flex; }
+nav ul { 
+    display: flex;
+    
+    // TODO: FIX THIS
+    @media (min-width: 375px) and (max-width: 812px) {
+        opacity: 0; 
+    }
+}
 
 nav ul a { 
     text-decoration: none; 

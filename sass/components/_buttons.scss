@@ -1,18 +1,17 @@
 // Header section buttons
 .hamburger {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 5rem;
+    left: 90%;
     transform: translate(-50%, -50%);
-    height: 80px;
-    width: 80%;
-    background: #000;
+    animation: moveInRight 1s ease-in-out .50s;
+    animation-fill-mode: backwards;
 }
 
 .hamburger span {
     display: block;
-    width: 60px;
-    height: 6px;
+    width: 25px;
+    height: 2px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -23,22 +22,22 @@
 }
 
 .hamburger span:nth-child(1) { 
-    transform: translate(-50%, -50%) translateY(-20px); 
+    transform: translate(-50%, -50%) translateY(-10px); 
     transition: .2s;
 }
     
 .hamburger span:nth-child(4) { 
-    transform: translate(-50%, -50%) translateY(20px); 
+    transform: translate(-50%, -50%) translateY(10px); 
     transition: .2s;
 }
 
 .hamburger.active span:nth-child(1) { 
-    transform: translate(-50%, -50%) translateY(-35px); 
+    transform: translate(-50%, -50%) translateY(-20px); 
     opacity: 0;
 }
 
 .hamburger.active span:nth-child(4) { 
-    transform: translate(-50%, -50%) translateY(35px); 
+    transform: translate(-50%, -50%) translateY(20px); 
     opacity: 0;
 }
 
