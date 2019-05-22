@@ -72,6 +72,10 @@ ul li {
   @media (min-width: 1024px) and (max-width: 1366px) {
     .heading-primary--main {
       font-size: 4rem; } }
+  @media (min-width: 375px) and (max-width: 812px) {
+    .heading-primary--main {
+      font-size: 1rem;
+      letter-spacing: .5; } }
 
 .heading-primary--moto {
   display: flex;
@@ -86,6 +90,9 @@ ul li {
   @media (min-width: 1024px) and (max-width: 1366px) {
     .heading-primary--moto {
       font-size: 2.1rem; } }
+  @media (min-width: 375px) and (max-width: 812px) {
+    .heading-primary--moto {
+      font-size: 1.3rem; } }
 
 .heading-primary--moto-word {
   margin-right: 15px; }
@@ -157,29 +164,30 @@ ul li {
 .hamburger {
   position: absolute;
   top: 5rem;
-  left: 90%;
+  top: 12%;
+  left: 93.7%;
   transform: translate(-50%, -50%);
   animation: moveInRight 1s ease-in-out .50s;
   animation-fill-mode: backwards; }
 
 .hamburger span {
   display: block;
-  width: 25px;
-  height: 2px;
+  width: 15px;
+  height: 1px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #fff;
+  background: #f2f2f2;
   transition: .5s;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
 
 .hamburger span:nth-child(1) {
-  transform: translate(-50%, -50%) translateY(-10px);
+  transform: translate(-50%, -50%) translateY(-6px);
   transition: .2s; }
 
 .hamburger span:nth-child(4) {
-  transform: translate(-50%, -50%) translateY(10px);
+  transform: translate(-50%, -50%) translateY(6px);
   transition: .2s; }
 
 .hamburger.active span:nth-child(1) {
@@ -264,6 +272,9 @@ ul li {
   @media (min-width: 481px) and (max-width: 767px) {
     .header {
       height: 80vh; } }
+  @media (min-width: 375px) and (max-width: 812px) {
+    .header {
+      height: 30vh; } }
 
 .top-bar {
   max-width: 120rem;
@@ -300,7 +311,7 @@ nav ul {
   display: flex; }
   @media (min-width: 375px) and (max-width: 812px) {
     nav ul {
-      opacity: 0; } }
+      display: none; } }
 
 nav ul a {
   text-decoration: none;
@@ -339,6 +350,9 @@ nav ul a {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%); }
+  @media (min-width: 375px) and (max-width: 812px) {
+    .header__text-box {
+      top: 60%; } }
 
 .about-section {
   padding: 100px; }

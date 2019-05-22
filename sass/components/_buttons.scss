@@ -2,7 +2,10 @@
 .hamburger {
     position: absolute;
     top: 5rem;
-    left: 90%;
+    top: 12%;
+
+    // TODO: FIX THIS LATER
+    left: 93.7%;
     transform: translate(-50%, -50%);
     animation: moveInRight 1s ease-in-out .50s;
     animation-fill-mode: backwards;
@@ -10,24 +13,24 @@
 
 .hamburger span {
     display: block;
-    width: 25px;
-    height: 2px;
+    width: 15px;
+    height: 1px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #fff;
+    background: $color-secondary;
     transition: .5s;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .20);
 }
 
 .hamburger span:nth-child(1) { 
-    transform: translate(-50%, -50%) translateY(-10px); 
+    transform: translate(-50%, -50%) translateY(-6px); 
     transition: .2s;
 }
     
 .hamburger span:nth-child(4) { 
-    transform: translate(-50%, -50%) translateY(10px); 
+    transform: translate(-50%, -50%) translateY(6px); 
     transition: .2s;
 }
 

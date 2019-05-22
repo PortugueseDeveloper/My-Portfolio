@@ -26,6 +26,10 @@
     @media (min-width: 481px) and (max-width: 767px) {
         height: 80vh;
     }
+
+    @media (min-width: 375px) and (max-width: 812px) {
+        height: 30vh;
+    }
 }
 
 .top-bar {
@@ -81,7 +85,7 @@ nav ul {
     
     // TODO: FIX THIS
     @media (min-width: 375px) and (max-width: 812px) {
-        opacity: 0; 
+        display: none;
     }
 }
 
@@ -135,6 +139,7 @@ nav ul a {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    // @media (min-width: 768px) and (max-width: 1024px) {
-    // }
+    @media (min-width: 375px) and (max-width: 812px) {
+        top: 60%;
+    }
 }

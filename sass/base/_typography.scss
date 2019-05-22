@@ -21,6 +21,11 @@
     @media (min-width: 1024px) and (max-width: 1366px) {
         font-size: 4rem;
     }
+
+    @media (min-width: 375px) and (max-width: 812px) {
+        font-size: 1rem;
+        letter-spacing: .5;
+    }
 }
 
 .heading-primary--moto {
@@ -37,6 +42,10 @@
 
     @media (min-width: 1024px) and (max-width: 1366px) {
         font-size: 2.1rem;
+    }
+
+    @media (min-width: 375px) and (max-width: 812px) {
+        font-size: 1.3rem;
     }
 }
 
