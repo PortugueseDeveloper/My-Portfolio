@@ -3,9 +3,10 @@
     position: absolute;
     top: 5rem;
     top: 12%;
-
     // TODO: FIX THIS LATER
     left: 93.7%;
+    display: none;
+    
     transform: translate(-50%, -50%);
     animation: moveInRight 1s ease-in-out .50s;
     animation-fill-mode: backwards;

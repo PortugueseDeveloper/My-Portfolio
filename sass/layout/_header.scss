@@ -15,7 +15,7 @@
     line-height: 1.7;
 
     @media (min-width: 768px) and (max-width: 1024px) {
-        height: 40vh;
+        height: 35vh;
         clip-path: polygon(0 0, 100% 0, 100% 24vh, 0 100%);
     }
 
@@ -27,9 +27,9 @@
         height: 80vh;
     }
 
-    @media (min-width: 375px) and (max-width: 812px) {
-        height: 30vh;
-    }
+    // @media (min-width: 375px) and (max-width: 812px) {
+    //     height: 30vh;
+    // }
 }
 
 .top-bar {
@@ -82,9 +82,12 @@ nav {
 
 nav ul { 
     display: flex;
+
+    // @media (min-width: 768px) and (max-width: 1024px) {
+    // }
     
     // TODO: FIX THIS
-    @media (min-width: 375px) and (max-width: 812px) {
+    @media (min-width: 375px) and (max-width: 767px) {
         display: none;
     }
 }
@@ -139,7 +142,11 @@ nav ul a {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    @media (min-width: 375px) and (max-width: 812px) {
-        top: 60%;
+    @media (min-width: 768px) and (max-width: 1024px) {
+        top: 46%;
     }
+
+    // @media (min-width: 375px) and (max-width: 812px) {
+    //     top: 60%;
+    // }
 }

@@ -15,17 +15,17 @@
     animation: moveInTop 1s ease-in-out;
 
     @media (min-width: 768px) and (max-width: 1024px) {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
     }
 
     @media (min-width: 1024px) and (max-width: 1366px) {
         font-size: 4rem;
     }
 
-    @media (min-width: 375px) and (max-width: 812px) {
-        font-size: 1rem;
-        letter-spacing: .5;
-    }
+    // @media (min-width: 375px) and (max-width: 812px) {
+    //     font-size: 1rem;
+    //     letter-spacing: .5;
+    // }
 }
 
 .heading-primary--moto {
@@ -37,16 +37,16 @@
     justify-content: center;
 
     @media (min-width: 768px) and (max-width: 1024px) {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
     }
 
     @media (min-width: 1024px) and (max-width: 1366px) {
         font-size: 2.1rem;
     }
 
-    @media (min-width: 375px) and (max-width: 812px) {
-        font-size: 1.3rem;
-    }
+    // @media (min-width: 375px) and (max-width: 812px) {
+    //     font-size: 1.3rem;
+    // }
 }
 
 .heading-primary--moto-word { margin-right: 15px; }

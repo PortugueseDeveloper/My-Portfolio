@@ -68,14 +68,10 @@ ul li {
   animation: moveInTop 1s ease-in-out; }
   @media (min-width: 768px) and (max-width: 1024px) {
     .heading-primary--main {
-      font-size: 2.8rem; } }
+      font-size: 2.5rem; } }
   @media (min-width: 1024px) and (max-width: 1366px) {
     .heading-primary--main {
       font-size: 4rem; } }
-  @media (min-width: 375px) and (max-width: 812px) {
-    .heading-primary--main {
-      font-size: 1rem;
-      letter-spacing: .5; } }
 
 .heading-primary--moto {
   display: flex;
@@ -86,13 +82,10 @@ ul li {
   justify-content: center; }
   @media (min-width: 768px) and (max-width: 1024px) {
     .heading-primary--moto {
-      font-size: 1.7rem; } }
+      font-size: 1.4rem; } }
   @media (min-width: 1024px) and (max-width: 1366px) {
     .heading-primary--moto {
       font-size: 2.1rem; } }
-  @media (min-width: 375px) and (max-width: 812px) {
-    .heading-primary--moto {
-      font-size: 1.3rem; } }
 
 .heading-primary--moto-word {
   margin-right: 15px; }
@@ -166,6 +159,7 @@ ul li {
   top: 5rem;
   top: 12%;
   left: 93.7%;
+  display: none;
   transform: translate(-50%, -50%);
   animation: moveInRight 1s ease-in-out .50s;
   animation-fill-mode: backwards; }
@@ -264,7 +258,7 @@ ul li {
   line-height: 1.7; }
   @media (min-width: 768px) and (max-width: 1024px) {
     .header {
-      height: 40vh;
+      height: 35vh;
       clip-path: polygon(0 0, 100% 0, 100% 24vh, 0 100%); } }
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .header {
@@ -272,9 +266,6 @@ ul li {
   @media (min-width: 481px) and (max-width: 767px) {
     .header {
       height: 80vh; } }
-  @media (min-width: 375px) and (max-width: 812px) {
-    .header {
-      height: 30vh; } }
 
 .top-bar {
   max-width: 120rem;
@@ -309,7 +300,7 @@ nav {
 
 nav ul {
   display: flex; }
-  @media (min-width: 375px) and (max-width: 812px) {
+  @media (min-width: 375px) and (max-width: 767px) {
     nav ul {
       display: none; } }
 
@@ -350,9 +341,9 @@ nav ul a {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%); }
-  @media (min-width: 375px) and (max-width: 812px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     .header__text-box {
-      top: 60%; } }
+      top: 46%; } }
 
 .about-section {
   padding: 100px; }
