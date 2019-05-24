@@ -5,11 +5,16 @@
     top: 12%;
     // TODO: FIX THIS LATER
     left: 93.7%;
-    display: none;
+    visibility: hidden;
+    z-index: 4;
     
     transform: translate(-50%, -50%);
     animation: moveInRight 1s ease-in-out .50s;
     animation-fill-mode: backwards;
+
+    @media (min-width: 375px) and (max-width: 767px) {
+        visibility: visible;    
+    }
 }
 
 .hamburger span {

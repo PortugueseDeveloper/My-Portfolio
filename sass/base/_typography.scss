@@ -22,6 +22,11 @@
         font-size: 4rem;
     }
 
+    @media (min-width: 375px) and (max-width: 767px) {
+        font-size: 1.4rem;
+        letter-spacing: 0.5rem;
+    }
+
     // @media (min-width: 375px) and (max-width: 812px) {
     //     font-size: 1rem;
     //     letter-spacing: .5;
@@ -42,6 +47,11 @@
 
     @media (min-width: 1024px) and (max-width: 1366px) {
         font-size: 2.1rem;
+    }
+
+    @media (min-width: 375px) and (max-width: 767px) {
+        font-size: .9rem;
+        letter-spacing: .3rem;
     }
 
     // @media (min-width: 375px) and (max-width: 812px) {

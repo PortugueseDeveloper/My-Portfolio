@@ -5,6 +5,11 @@ $(document).ready(function() {
         $('.hamburger').toggleClass('active');
     });
 
+    // Open main menu using responsive 'hamburger' button 
+    $('.hamburger').click(function() {
+        $(".main-menu").slideToggle(800, 'linear');
+    });
+
     // 'About me' phrases animation
     let currentSentence = 1;
     let height = $('.about-phrases').height(); 
