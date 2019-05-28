@@ -7,45 +7,42 @@
 
 .heading-primary--main {
     display: block;
-    font-size: 5rem;
+    font-size: 4.8rem;
     font-weight: 400;
     letter-spacing: .8rem;
     white-space: nowrap;
     margin-bottom: 15px;
     animation: moveInTop 1s ease-in-out;
 
-    @media (min-width: 768px) and (max-width: 1024px) {
-        font-size: 2.8rem;
+    @media (min-width: 481px) and (max-width: 767px) {
+        letter-spacing: .7rem;
     }
 
-    @media (min-width: 1024px) and (max-width: 1366px) {
-        font-size: 4rem;
-    }
-
-    @media (min-width: 375px) and (max-width: 812px) {
-        font-size: 1rem;
-        letter-spacing: .5;
+    @media (min-width: 320px) and (max-width: 480px) {
+        letter-spacing: .5rem;
     }
 }
 
 .heading-primary--moto {
     display: flex;
-    flex-direction: row !important; 
-    font-size: 2.5rem;
+    // flex-direction: row !important; 
+    // font-size: 3.5rem;
     font-weight: 700;
-    letter-spacing: .3rem;
+    letter-spacing: .6rem;
     justify-content: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-    @media (min-width: 768px) and (max-width: 1024px) {
-        font-size: 1.7rem;
+    @media (min-width: 481px) and (max-width: 767px) {
+        letter-spacing: .5rem;
     }
 
-    @media (min-width: 1024px) and (max-width: 1366px) {
-        font-size: 2.1rem;
-    }
+    @media (min-width: 320px) and (max-width: 480px) {
+        letter-spacing: .5rem;
+        margin-left: 3.8%;
 
-    @media (min-width: 375px) and (max-width: 812px) {
-        font-size: 1.3rem;
     }
 }
 

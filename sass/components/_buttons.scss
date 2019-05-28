@@ -3,12 +3,26 @@
     position: absolute;
     top: 5rem;
     top: 12%;
-
     // TODO: FIX THIS LATER
     left: 93.7%;
+    visibility: hidden;
+    z-index: 4;
+    
     transform: translate(-50%, -50%);
     animation: moveInRight 1s ease-in-out .50s;
     animation-fill-mode: backwards;
+
+    // @media (min-width: 375px or 768px or 1024px) and (max-width: 1366px) {
+    //     visibility: visible;    
+    // }
+      
+    @media (min-width: 375px) and (max-width: 767px) {
+        visibility: visible;    
+    }
+
+    @media (min-width: 320px) and (max-width: 374px) {
+        visibility: visible;    
+    }
 }
 
 .hamburger span {

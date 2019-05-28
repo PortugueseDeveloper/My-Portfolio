@@ -1,7 +1,7 @@
 .header__box { background-color: $color-secondary; }
 
 .header {
-    height: 100vh;
+    // height: 100vh;
     // background-image: linear-gradient(
     //     to right bottom, 
     //     $color-primary-light-transparent, 
@@ -9,27 +9,61 @@
     // url("img/placeholder-bg.jpg");
     background: linear-gradient(to bottom, rgba(0, 0, 0, .8), rgba(0, 0, 0, .5)), url("img/main-bg.jpeg") center no-repeat;
     background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
+    // clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
     position: relative;
     font-weight: 400;
     line-height: 1.7;
 
+    @media (min-width: 1281px) {
+        height: 100vh;
+        clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
+    }
+
+    @media (min-width: 1025px) and (max-width: 1280px) {
+        height: 100vh;
+        clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
+    }
+
     @media (min-width: 768px) and (max-width: 1024px) {
-        height: 40vh;
-        clip-path: polygon(0 0, 100% 0, 100% 24vh, 0 100%);
+        height: 50vh;
+        clip-path: polygon(0 0, 100% 0, 100% 28vh, 0 100%);
     }
 
     @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-        height: 10vh;
+        height: 50vh;
+        clip-path: polygon(0 0, 100% 0, 100% 28vh, 0 100%);
     }
 
     @media (min-width: 481px) and (max-width: 767px) {
-        height: 80vh;
+        height: 32vh;
+        clip-path: polygon(0 0, 100% 0, 100% 22vh, 0 100%);
     }
 
-    @media (min-width: 375px) and (max-width: 812px) {
-        height: 30vh;
+    @media (min-width: 320px) and (max-width: 480px) {
+        height: 25vh;
+        clip-path: polygon(0 0, 100% 0, 100% 15vh, 0 100%);
     }
+
+
+    // @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    //     height: 50vh;
+    //     clip-path: polygon(0 0, 100% 0, 100% 30vh, 0 100%);
+    // }
+
+    // @media (min-width: 414px) and (max-width: 767px) {
+    //     height: 28vh;
+    //     clip-path: polygon(0 0, 100% 0, 100% 18vh, 0 100%);
+    // }
+
+    // @media (min-width: 375px) and (max-width: 413px) {
+    //     height: 28vh;
+    //     clip-path: polygon(0 0, 100% 0, 100% 18vh, 0 100%);
+    // }
+
+    // @media (min-width: 320px) and (max-width: 374px) {
+    //     height: 28vh;
+    //     clip-path: polygon(0 0, 100% 0, 100% 30vh, 0 100%);
+    // }
 }
 
 .top-bar {
@@ -52,6 +86,9 @@
     color: #f2f2f28e;
     transform: translateX(-100rem); 
     animation: slideIn 1.7s forwards;
+
+    // TODO: FIX THIS WHEN USING REAL LOGO
+    font-size: .5em;
 }
 
 nav {
@@ -63,33 +100,71 @@ nav {
     text-transform: uppercase;
     font-size: 1.6rem;
 
-    @media (min-width: 768px) and (max-width: 1024px) {
-        font-size: 1.3rem;
-    }
+    // @media (min-width: 1281px) {
+    //     font-size: 1.7rem;
+    // }
 
-    @media (min-width: 1024px) and (max-width: 1366px) {
-        font-size: 1.4rem;
-    }
+    // @media (min-width: 1025px) and (max-width: 1280px) {
+    //     font-size: 1.6rem;
+    // }
 
-    @media (min-width: 481px) and (max-width: 767px) {
-        font-size: 1rem;
-    }
+    // @media (min-width: 768px) and (max-width: 1024px) {
+    //     font-size: 1.3rem;        
+    // }
 
-    @media (min-width: 375px) and (max-width: 812px) {
-        font-size: 1.2rem;
-    }
+    // @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+        
+    // }
+
+    // @media (min-width: 481px) and (max-width: 767px) {
+    
+    // }
+
+    // @media (min-width: 320px) and (max-width: 480px) {
+    
+    // }
+
+    // @media (min-width: 768px) and (max-width: 1024px) {
+    //     font-size: 1.3rem;
+    // }
+
+    // @media (min-width: 481px) and (max-width: 767px) {
+    //     font-size: 1rem;
+    // }
+
+    // @media (min-width: 375px) and (max-width: 812px) {
+    //     font-size: 1.2rem;
+    // }
 }
 
-nav ul { 
+nav ul.main-menu { 
     display: flex;
+
+    // @media (min-width: 768px) and (max-width: 1024px) {
+    //     display: none;
+    // }
+
+    // @media (min-width: 1024px) and (max-width: 1366px) {
+    //     display: none;
+    // }
     
     // TODO: FIX THIS
-    @media (min-width: 375px) and (max-width: 812px) {
+    @media (min-width: 320px) and (max-width: 767px) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
         display: none;
+        padding-top: 4.8rem;
+        z-index: 3;
+        background-color: $color-primary-dark-transparent;
+        font-size: 2.3rem;
+        text-align: center;
     }
 }
 
-nav ul a { 
+nav ul.main-menu a { 
     text-decoration: none; 
     color: $color-secondary; 
     padding: 1rem 0;
@@ -97,7 +172,11 @@ nav ul a {
     position: relative;
     letter-spacing: 2px;
     transform: translateX(100rem);  
-    animation: slideIn 1.5s forwards;  
+    animation: slideIn 1.5s forwards; 
+    
+    // @media (min-width: 375px) and (max-width: 767px) {
+    //     animation: slideIn 1.5s forwards; 
+    // }
 
     &:nth-child(2) {
         animation: slideIn 1.7s forwards;  
@@ -130,16 +209,30 @@ nav ul a {
     }
 
     &:hover::before, &:hover::after { transform: scaleX(1); }
-
 }
 
 .header__text-box {
     position: absolute;
     top: 40%;
     left: 50%;
+    padding-bottom: 5rem;
     transform: translate(-50%, -50%);
 
-    @media (min-width: 375px) and (max-width: 812px) {
-        top: 60%;
+    @media (min-width: 768px) and (max-width: 1024px) {
+        top: 40%;
     }
+
+    @media (min-width: 414px) and (max-width: 767px) {
+        top: 45%;
+        padding-bottom: 2.5rem;
+    }
+
+    @media (min-width: 320px) and (max-width: 413px) {
+        top: 42%;
+        padding-bottom: 1.9rem;
+    }
+
+    // @media (min-width: 375px) and (max-width: 374px) {
+    //     top: 40%;
+    // }
 }
