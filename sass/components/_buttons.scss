@@ -19,6 +19,10 @@
     @media (min-width: 375px) and (max-width: 767px) {
         visibility: visible;    
     }
+
+    @media (min-width: 320px) and (max-width: 374px) {
+        visibility: visible;    
+    }
 }
 
 .hamburger span {
