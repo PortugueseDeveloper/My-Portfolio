@@ -23,14 +23,20 @@
         height: 10vh;
     }
 
-    @media (min-width: 375px) and (max-width: 767px) {
-        height: 30vh;
-        clip-path: polygon(0 0, 100% 0, 100% 19vh, 0 100%);
+    @media (min-width: 414px) and (max-width: 767px) {
+        height: 28vh;
+        clip-path: polygon(0 0, 100% 0, 100% 18vh, 0 100%);
     }
 
-    // @media (min-width: 375px) and (max-width: 812px) {
-    //     height: 30vh;
-    // }
+    @media (min-width: 375px) and (max-width: 413px) {
+        height: 28vh;
+        clip-path: polygon(0 0, 100% 0, 100% 18vh, 0 100%);
+    }
+
+    @media (min-width: 320px) and (max-width: 374px) {
+        height: 28vh;
+        clip-path: polygon(0 0, 100% 0, 100% 30vh, 0 100%);
+    }
 }
 
 .top-bar {
@@ -53,6 +59,9 @@
     color: #f2f2f28e;
     transform: translateX(-100rem); 
     animation: slideIn 1.7s forwards;
+
+    // TODO: FIX THIS WHEN USING REAL LOGO
+    font-size: .5em;
 }
 
 nav {
@@ -85,14 +94,18 @@ nav ul.main-menu {
     display: flex;
 
     // @media (min-width: 768px) and (max-width: 1024px) {
+    //     display: none;
+    // }
+
+    // @media (min-width: 1024px) and (max-width: 1366px) {
+    //     display: none;
     // }
     
     // TODO: FIX THIS
-    @media (min-width: 375px) and (max-width: 767px) {
+    @media (min-width: 320px) and (max-width: 767px) {
         position: absolute;
         top: 0;
         right: 0;
-        display: block;
         width: 100%;
         height: 100%;
         display: none;
@@ -156,17 +169,23 @@ nav ul.main-menu a {
     position: absolute;
     top: 40%;
     left: 50%;
+    padding-bottom: 5rem;
     transform: translate(-50%, -50%);
 
     @media (min-width: 768px) and (max-width: 1024px) {
-        top: 46%;
+        top: 40%;
     }
 
-    @media (min-width: 375px) and (max-width: 767px) {
-        top: 42%;
+    @media (min-width: 414px) and (max-width: 767px) {
+        font-size: 1.4rem;
+        letter-spacing: .6rem;
     }
 
-    // @media (min-width: 375px) and (max-width: 812px) {
-    //     top: 60%;
-    // }
+    @media (min-width: 375px) and (max-width: 413px) {
+        top: 40%;
+    }
+
+    @media (min-width: 320px) and (max-width: 374px) {
+        top: 40%;
+    }
 }
