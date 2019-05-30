@@ -7,7 +7,7 @@ $(document).ready(function() {
 
     // Open main menu using responsive 'hamburger' button 
     $('.hamburger').click(function() {
-        $(".main-menu").slideToggle(800, 'linear');
+        $('.main-menu').slideToggle(800, 'linear');
     });
 
     // 'About me' phrases animation
