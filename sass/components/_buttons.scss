@@ -12,15 +12,11 @@
     animation: moveInRight 1s ease-in-out .50s;
     animation-fill-mode: backwards;
 
-    // @media (min-width: 375px or 768px or 1024px) and (max-width: 1366px) {
-    //     visibility: visible;    
-    // }
-      
     @media (min-width: 375px) and (max-width: 767px) {
         visibility: visible;    
     }
 
-    @media (min-width: 320px) and (max-width: 374px) {
+    @media (min-width: 320px) and (max-width: 480px) {
         visibility: visible;    
     }
 }
@@ -35,17 +31,30 @@
     transform: translate(-50%, -50%);
     background: $color-secondary;
     transition: .5s;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .20);
+    // box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .20);
+
+    @media (min-width: 320px) and (max-width: 480px) {
+        width: 12px;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .hamburger span:nth-child(1) { 
     transform: translate(-50%, -50%) translateY(-6px); 
     transition: .2s;
+
+    @media (min-width: 320px) and (max-width: 480px) {
+        transform: translate(-50%, -50%) translateY(-5px); 
+    }
 }
     
 .hamburger span:nth-child(4) { 
     transform: translate(-50%, -50%) translateY(6px); 
     transition: .2s;
+
+    @media (min-width: 320px) and (max-width: 374px) {
+        transform: translate(-50%, -50%) translateY(5px); 
+    }
 }
 
 .hamburger.active span:nth-child(1) { 
