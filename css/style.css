@@ -383,6 +383,36 @@ nav {
   text-transform: uppercase;
   font-size: 1.6rem; }
 
+@media (min-width: 768px) {
+  nav ul.main-menu {
+    display: flex !important; } }
+
+@media (min-width: 481px) and (max-width: 767px) {
+  nav ul.main-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 3;
+    background-color: rgba(18, 45, 83, 0.9);
+    font-size: 2.5rem;
+    text-align: center; } }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  nav ul.main-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 3;
+    background-color: rgba(18, 45, 83, 0.9);
+    font-size: 2.9rem;
+    text-align: center; } }
+
 .menu-items {
   display: flex; }
   @media (min-width: 481px) and (max-width: 767px) {
@@ -400,34 +430,7 @@ nav {
       left: 50%;
       transform: translate(-40%, -50%); } }
 
-nav ul.main-menu {
-  display: flex; }
-  @media (min-width: 481px) and (max-width: 767px) {
-    nav ul.main-menu {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      display: none;
-      z-index: 3;
-      background-color: rgba(18, 45, 83, 0.9);
-      font-size: 2.5rem;
-      text-align: center; } }
-  @media (min-width: 320px) and (max-width: 480px) {
-    nav ul.main-menu {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      display: none;
-      z-index: 3;
-      background-color: rgba(18, 45, 83, 0.9);
-      font-size: 2.9rem;
-      text-align: center; } }
-
-nav ul.main-menu a {
+nav ul.main-menu .menu-items a {
   text-decoration: none;
   color: #f2f2f2;
   padding: 1rem 0;
@@ -436,12 +439,12 @@ nav ul.main-menu a {
   letter-spacing: 2px;
   transform: translateX(100rem);
   animation: slideIn 1.5s forwards; }
-  nav ul.main-menu a:nth-child(2) {
+  nav ul.main-menu .menu-items a:nth-child(2) {
     animation: slideIn 1.7s forwards; }
-  nav ul.main-menu a:last-child {
+  nav ul.main-menu .menu-items a:last-child {
     margin-right: 0;
     animation: slideIn 1.9s forwards; }
-  nav ul.main-menu a::before, nav ul.main-menu a::after {
+  nav ul.main-menu .menu-items a::before, nav ul.main-menu .menu-items a::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -450,13 +453,13 @@ nav ul.main-menu a {
     left: 0;
     transform: scaleX(0);
     transition: all .5s; }
-  nav ul.main-menu a::before {
+  nav ul.main-menu .menu-items a::before {
     top: 0;
     transform-origin: left; }
-  nav ul.main-menu a::after {
+  nav ul.main-menu .menu-items a::after {
     bottom: 0;
     transform-origin: right; }
-  nav ul.main-menu a:hover::before, nav ul.main-menu a:hover::after {
+  nav ul.main-menu .menu-items a:hover::before, nav ul.main-menu .menu-items a:hover::after {
     transform: scaleX(1); }
 
 .header__text-box {
