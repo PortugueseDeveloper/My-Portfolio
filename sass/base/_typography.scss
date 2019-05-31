@@ -69,16 +69,59 @@
     font-weight: 400;
     text-align: center;
     letter-spacing: .2rem;
+    margin-bottom: 4rem;
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        font-size: 3.2rem;
+        margin-bottom: 3rem;
+    }
+
+    @media (min-width: 320px) and (max-width: 480px) {
+        font-size: 3.2rem;
+        margin-bottom: 2rem;
+    }
 }
 
 .about-paragraph {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     margin-bottom: 2.5rem;
+
+    @media (min-width: 1024px) and (max-width: 1280px) {
+        font-size: 1.8rem;
+    }
+    
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 1.9rem;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        font-size: 2rem;
+    }
+
+    @media (min-width: 320px) and (max-width: 480px) {
+        font-size: 2.3rem;
+    }
 }
 
 .about-phrases {
     font-size: 1.5rem;
     vertical-align: middle;
+
+    @media (min-width: 1024px) and (max-width: 1280px) {
+        font-size: 1.6rem;
+    }
+    
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 1.6rem;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        font-size: 1.8rem;
+    }
+
+    @media (min-width: 320px) and (max-width: 480px) {
+        font-size: 2.1rem;
+    }
 }
 
 // "My projects" section typography 
