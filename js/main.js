@@ -3,10 +3,6 @@ $(document).ready(function() {
     // Responsive 'hamburger' menu animation
     $('.hamburger').click(function() {
         $('.hamburger').toggleClass('active');
-    });
-
-    // Open main menu using responsive 'hamburger' button 
-    $('.hamburger').click(function() {
         $('.main-menu').slideToggle(800, 'linear');
     });
 
