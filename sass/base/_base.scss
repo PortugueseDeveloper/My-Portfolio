@@ -14,23 +14,23 @@ html {
     }
 
     @media (min-width: 1024px) and (max-width: 1280px) {
-        font-size: .5rem;
+        font-size: .6rem;
     }
 
     @media (min-width: 768px) and (max-width: 1023px) {
-        font-size: .4rem;
+        font-size: .6rem;
     }
 
     @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-        font-size: .4rem;
+        font-size: .5rem;
     }
 
     @media (min-width: 481px) and (max-width: 767px) {
-        font-size: .27rem;
+        font-size: .31rem;
     }
 
     @media (min-width: 320px) and (max-width: 480px) {
-        font-size: .18rem;
+        font-size: .22rem;
     }
 }
 
