@@ -510,7 +510,7 @@ nav ul.main-menu .menu-items a {
       padding-bottom: 3rem; } }
 
 .about-section {
-  padding: 100px; }
+  padding: 0 100px 100px 100px; }
   @media (min-width: 481px) and (max-width: 767px) {
     .about-section {
       padding: 30px; } }
