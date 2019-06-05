@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+    // Responsive 'hamburger' menu animation
+    $('.hamburger').click(function() {
+        $('.hamburger').toggleClass('active');
+        $('.main-menu').slideToggle(800, 'linear');
+    });
+
     // 'About me' phrases animation
     let currentSentence = 1;
     let height = $('.about-phrases').height(); 

@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 
-    <!-- MetaTags -->
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Paulo Cunha's Web Developer portfolio. Paulo Cunha is a web developer front Portugal, which concentrates his special focus on front-end modern applications.">
 
@@ -37,14 +37,25 @@
                     <div class="header__logo-box">
                          Logo here
                     </div>
+
+                    <!-- "Hamburger" for the smallest screen sizes -->
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     
                     <!-- Main nav -->
-                    <ul>
-                        <a href="#"><li>About me</li></a>
-                        <!-- <a href="#"><li>My skills</li></a> -->
-                        <a href="#"><li>My projects</li></a>
-                        <a href="#"><li>Contact</li></a>
+                    <ul class="main-menu">
+                        <div class="menu-items">
+                            <a href="#"><li>About me</li></a>
+                            <!-- <a href="#"><li>My skills</li></a> -->
+                            <a href="#"><li>My projects</li></a>
+                            <a href="#"><li>Contact</li></a>     
+                        </div>
                     </ul>
+
                 </nav>
             </div>
             
@@ -82,7 +93,7 @@
                         <div class="about-text">
 
                             <p class="about-paragraph">
-                                Hey there! My name's Paulo. I'm a web developer student and enthusiast from São Miguel, an island that is part of the Azores archipelago, in
+                                Hey there! My name's Paulo. I'm from an island named São Miguel, part of the Azores archipelago, in
                                 Portugal. From front-end to back-end, I'm always amazed by the programming world and enjoy learning new things everyday.
                             </p>
                             
@@ -94,7 +105,7 @@
                             <div class="about-phrases">
                             
                                 <div>
-                                    I'm a dreamer.
+                                    I'm a learner.
                                 </div>
                             
                                 <div>
@@ -124,7 +135,7 @@
         <!-- Skills section -->
         <!-- <section class="skills-section">
             test
-        </section> -->
+        </s<ection> -->
 
         <!-- Projects section -->
         <section class="projects-section">
@@ -216,7 +227,7 @@
     </main>
 
     <!-- Footer/Contacts -->
-    <footer>
+    <!-- <footer>
         
         <h2 class="section-heading-contacts">Say me something</h2>
         
@@ -285,12 +296,12 @@
 
         </div>
 
-    </footer>
+    </footer> -->
 
 </body>
 
 <!-- Including jQuery -->
-<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/jquery/dist/jquery.js"></script>
 
 <!-- Custom JavaScript -->
 <script src="js/main.js"></script>
