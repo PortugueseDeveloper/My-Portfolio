@@ -224,7 +224,8 @@ ul li {
   text-transform: uppercase;
   font-weight: 400;
   text-align: center;
-  letter-spacing: .2rem; }
+  letter-spacing: .2rem;
+  margin: 7rem 0 4rem; }
 
 .text-hover-project-img {
   width: 300px;
@@ -328,7 +329,7 @@ ul li {
   transform: translate(-50%, -50%) rotate(-45deg);
   transition-delay: .2s; }
 
-.project-boxes-container .box .content .project-btn {
+.projects-container .box .content .project-btn {
   margin: 4px;
   padding: 5px;
   color: #f2f2f2;
@@ -342,7 +343,7 @@ ul li {
   transition: 1s;
   position: relative;
   overflow: hidden; }
-  .project-boxes-container .box .content .project-btn::before {
+  .projects-container .box .content .project-btn::before {
     content: "";
     position: absolute;
     left: 0;
@@ -351,25 +352,25 @@ ul li {
     background: #f2f2f2;
     z-index: -1;
     transition: 1s; }
-  .project-boxes-container .box .content .project-btn:hover::before {
+  .projects-container .box .content .project-btn:hover::before {
     height: 180%; }
 
-.project-boxes-container .box .content .project-btn-1 {
+.projects-container .box .content .project-btn-1 {
   font-size: 13px;
   transform: translateX(-3rem); }
-  .project-boxes-container .box .content .project-btn-1::before {
+  .projects-container .box .content .project-btn-1::before {
     top: 0;
     border-radius: 0 0 50% 50%; }
-  .project-boxes-container .box .content .project-btn-1:hover {
+  .projects-container .box .content .project-btn-1:hover {
     height: 180%;
     color: #111; }
 
-.project-boxes-container .box .content .project-btn-2 {
+.projects-container .box .content .project-btn-2 {
   transform: translateX(3rem); }
-  .project-boxes-container .box .content .project-btn-2::before {
+  .projects-container .box .content .project-btn-2::before {
     bottom: 0;
     border-radius: 50% 50% 0 0; }
-  .project-boxes-container .box .content .project-btn-2:hover {
+  .projects-container .box .content .project-btn-2:hover {
     height: 180%;
     color: #111; }
 
@@ -634,21 +635,21 @@ nav ul.main-menu .menu-items a {
   transition: margin-top 1s ease-in-out; }
 
 .projects-section {
-  padding: 100px;
-  height: 126vh;
+  padding: 0 100px;
+  height: 132.5vh;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("img/projects-bg.jpeg") center no-repeat;
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 8vh, 100% 122vh, 0 100%);
   position: relative; }
 
-.project-boxes-container {
+.projects-container {
   position: relative;
   width: 1200px;
   height: 600px;
-  margin: 80px auto 0;
+  margin: 0 auto;
   float: left; }
 
-.project-boxes-container .box {
+.projects-container .box {
   position: relative;
   width: calc(400px - 30px);
   height: calc(300px - 55px);
@@ -657,7 +658,9 @@ nav ul.main-menu .menu-items a {
   float: left;
   overflow: hidden;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8); }
-  .project-boxes-container .box:before {
+  .projects-container .box:nth-child(-n+4) {
+    margin-top: 0; }
+  .projects-container .box:before {
     content: "";
     position: absolute;
     top: 10px;
@@ -669,10 +672,10 @@ nav ul.main-menu .menu-items a {
     transition: 1s;
     transform: scaleX(0);
     opacity: 0; }
-  .project-boxes-container .box:hover::before {
+  .projects-container .box:hover::before {
     transform: scaleX(1);
     opacity: 1; }
-  .project-boxes-container .box::after {
+  .projects-container .box::after {
     content: '';
     position: absolute;
     top: 10px;
@@ -685,22 +688,22 @@ nav ul.main-menu .menu-items a {
     transform: scaleY(0);
     opacity: 0;
     z-index: 1; }
-  .project-boxes-container .box:hover::after {
+  .projects-container .box:hover::after {
     transform: scaleY(1);
     opacity: 1; }
 
-.project-boxes-container .box .img-box {
+.projects-container .box .img-box {
   position: relative; }
 
-.project-boxes-container .box .img-box img {
+.projects-container .box .img-box img {
   width: 100%;
   transition: 1s; }
 
-.project-boxes-container .box:hover .img-box img {
+.projects-container .box:hover .img-box img {
   opacity: .2;
   transform: scale(1.2); }
 
-.project-boxes-container .content {
+.projects-container .content {
   position: absolute;
   width: 100%;
   top: 50%;
@@ -709,7 +712,7 @@ nav ul.main-menu .menu-items a {
   z-index: 2;
   text-align: center; }
 
-.project-boxes-container .box .content h2 {
+.projects-container .box .content h2 {
   margin: 0 0 1rem;
   padding: 0;
   color: #fff;
@@ -718,7 +721,7 @@ nav ul.main-menu .menu-items a {
   opacity: 0;
   visibility: hidden; }
 
-.project-boxes-container .box .content p {
+.projects-container .box .content p {
   margin: 0 0 1rem;
   padding: 0;
   color: #fff;
@@ -729,9 +732,9 @@ nav ul.main-menu .menu-items a {
   opacity: 0;
   visibility: hidden; }
 
-.project-boxes-container .box:hover .content h2,
-.project-boxes-container .box:hover .content p,
-.project-boxes-container .box:hover .content .project-btn {
+.projects-container .box:hover .content h2,
+.projects-container .box:hover .content p,
+.projects-container .box:hover .content .project-btn {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
