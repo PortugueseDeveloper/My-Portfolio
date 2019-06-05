@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 
-    <!-- MetaTags -->
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Paulo Cunha's Web Developer portfolio. Paulo Cunha is a web developer front Portugal, which concentrates his special focus on front-end modern applications.">
 
@@ -37,14 +37,25 @@
                     <div class="header__logo-box">
                          Logo here
                     </div>
+
+                    <!-- "Hamburger" for the smallest screen sizes -->
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     
                     <!-- Main nav -->
-                    <ul>
-                        <a href="#"><li>About me</li></a>
-                        <!-- <a href="#"><li>My skills</li></a> -->
-                        <a href="#"><li>My projects</li></a>
-                        <a href="#"><li>Contact</li></a>
+                    <ul class="main-menu">
+                        <div class="menu-items">
+                            <a href="#"><li>About me</li></a>
+                            <!-- <a href="#"><li>My skills</li></a> -->
+                            <a href="#"><li>My projects</li></a>
+                            <a href="#"><li>Contact</li></a>     
+                        </div>
                     </ul>
+
                 </nav>
             </div>
             
@@ -66,9 +77,10 @@
 
     <main>
         
+        <!-- About section -->
         <section class="about-section">
     
-            <h2 class="about-heading section-heading-about">Who am I?</h2>
+            <h2 class="about-heading">Who am I?</h2>
                 
                 <div class="about-info-container">
                    
@@ -81,7 +93,7 @@
                         <div class="about-text">
 
                             <p class="about-paragraph">
-                                Hey there! My name's Paulo. I'm a web developer student and enthusiast from São Miguel, an island that is part of the Azores archipelago, in
+                                Hey there! My name's Paulo. I'm from an island named São Miguel, part of the Azores archipelago, in
                                 Portugal. From front-end to back-end, I'm always amazed by the programming world and enjoy learning new things everyday.
                             </p>
                             
@@ -93,7 +105,7 @@
                             <div class="about-phrases">
                             
                                 <div>
-                                    I'm a dreamer.
+                                    I'm a learner.
                                 </div>
                             
                                 <div>
@@ -120,75 +132,176 @@
 
         </section>
 
+        <!-- Skills section -->
         <!-- <section class="skills-section">
             test
-        </section> -->
+        </s<ection> -->
 
+        <!-- Projects section -->
         <section class="projects-section">
-            
-            <div class="projects-gallery">
-                
-                <h2 class="projects-heading section-heading-projects">Some of my projects</h2>
-                
-                <table cellspacing="25">
-                    
-                    <tr>
+                            
+                <h2 class="projects-heading">Some of my projects</h2>
 
-                        <td>
-                            <div class="project-block">
-                                <img src="img/project-ph.jpeg" alt="Project 1 image" id="project-1-img">
-                                <div class="project-block-layer">
-
-                                </div>
+                    <div class="project-boxes-container">
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="img/project-color-ph.jpeg" alt="">
                             </div>
-                        </td>
-
-                        <td>
-                            <div class="project-block">
-                                <img src="img/project-ph.jpeg" alt="Project 2 image" id="project-2-img">
-                                <div class="project-block-layer">
-                        
-                                </div>
+                            <div class="content">
+                                <h2>Image hover effects</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio distinctio quibusdam doloribus impedit velit repudiandae ut culpa quas, dolorum neque?</p>
+                                <button class="project-btn project-btn-1">Show me the project</button>
+                                <button class="project-btn project-btn-2">Show me the code</button>
                             </div>
-                        </td>
+                        </div>
 
-                    </tr>
-
-                    <tr>
-
-                        <td>
-                            <div class="project-block">
-                                <img src="img/project-ph.jpeg" alt="Project 3 image" id="project-3-img">
-                                <div class="project-block-layer">
-                        
-                                </div>
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="img/project-color-ph.jpeg" alt="">
                             </div>
-                        </td>
-
-                        <td>
-                            <div class="project-block">
-                                <img src="img/project-ph.jpeg" alt="Project 4 image" id="project-4-img">
-                                <div class="project-block-layer">
-                        
-                                </div>
+                            <div class="content">
+                                <h2>Image hover effects</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio distinctio quibusdam doloribus impedit velit repudiandae ut culpa quas,
+                                    dolorum neque?</p>
+                                <button class="project-btn project-btn-1">Show me the project</button>
+                                <button class="project-btn project-btn-2">Show me the code</button>
                             </div>
-                        </td>
+                        </div>
 
-                    </tr>
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="img/project-color-ph.jpeg" alt="">
+                            </div>
+                            <div class="content">
+                                <h2>Image hover effects</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio distinctio quibusdam doloribus impedit velit repudiandae ut culpa quas,
+                                    dolorum neque?</p>
+                                <button class="project-btn project-btn-1">Show me the project</button>
+                                <button class="project-btn project-btn-2">Show me the code</button>
+                            </div>
+                        </div>
 
-                </table>
-                
-            </div>  
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="img/project-color-ph.jpeg" alt="">
+                            </div>
+                            <div class="content">
+                                <h2>Image hover effects</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio distinctio quibusdam doloribus impedit velit repudiandae ut culpa quas,
+                                    dolorum neque?</p>
+                                <button class="project-btn project-btn-1">Show me the project</button>
+                                <button class="project-btn project-btn-2">Show me the code</button>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="img/project-color-ph.jpeg" alt="">
+                            </div>
+                            <div class="content">
+                                <h2>Image hover effects</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio distinctio quibusdam doloribus impedit velit repudiandae ut culpa quas,
+                                    dolorum neque?</p>
+                                <button class="project-btn project-btn-1">Show me the project</button>
+                                <button class="project-btn project-btn-2">Show me the code</button>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="img/project-color-ph.jpeg" alt="">
+                            </div>
+                            <div class="content">
+                                <h2>Image hover effects</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio distinctio quibusdam doloribus impedit velit repudiandae ut culpa quas,
+                                    dolorum neque?</p>
+                                <button class="project-btn project-btn-1">Show me the project</button>
+                                <button class="project-btn project-btn-2">Show me the code</button>
+                            </div>
+                        </div>
+
+                    </div> 
 
         </section>
 
     </main>
 
+    <!-- Footer/Contacts -->
+    <!-- <footer>
+        
+        <h2 class="section-heading-contacts">Say me something</h2>
+        
+        <div class="social-media-container">
+            
+            
+                <ul class="social-media-accordion">
+        
+                    <li class="social-media-tab">
+                        <div class="social-media facebook">
+                            <a href="#" target="_blank">Facebook</a>
+                        </div>
+                        <div class="social-media-content">
+                            <h1>Facebook</h1>
+                        </div>
+                    </li>
+        
+                    <li class="social-media-tab">
+                        <div class="social-media twitter">
+                            <a href="#" target="_blank">Twitter</a>
+                        </div>
+                        <div class="social-media-content">
+                            <h1>Twitter</h1>
+                        </div>
+                    </li>
+        
+                    <li class="social-media-tab">
+                        <div class="social-media instagram">
+                            <a href="#" target="_blank">Instagram</a>
+                        </div>
+                        <div class="social-media-content">
+                            <h1>Instagram</h1>
+                        </div>
+                    </li>
+        
+                    <li class="social-media-tab">
+                        <div class="social-media linkedin">
+                            <a href="#" target="_blank">LinkedIn</a>
+                        </div>
+                        <div class="social-media-content">
+                            <h1>LinkedIn</h1>
+                        </div>
+                    </li>
+        
+                    <li class="social-media-tab">
+                        <div class="social-media github">
+                            <a href="#" target="_blank">GitHub</a>
+                        </div>
+                        <div class="social-media-content">
+                            <h1>GitHub</h1>
+                        </div>
+                    </li>
+        
+                </ul>
+
+        </div>
+
+        <div class="email-contact-container">
+
+            <form action="index.html" class="contact-form" method="POST">
+                <input type="text" class="contact-form-input" placeholder="Enter your name">
+                <input type="email" class="contact-form-input" placeholder="Enter your email">
+                <textarea name="message" class="contact-form-input" placeholder="Tell me something :)"></textarea>
+                <input type="submit" class="submit-contact-form-btn" value="Send message">
+            </form>
+
+        </div>
+
+    </footer> -->
 
 </body>
 
 <!-- Including jQuery -->
-<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/jquery/dist/jquery.js"></script>
 
 <!-- Custom JavaScript -->
 <script src="js/main.js"></script>
