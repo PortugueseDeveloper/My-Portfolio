@@ -1,26 +1,23 @@
 .projects-section {
-    padding: 100px;
+    padding: 0 100px;
     // TODO: FIX HEIGHT
-    // height: 210vh;
-    // height: 100vh;
-    height: 126vh;
+    height: 132.5vh;
     background: linear-gradient(to bottom, rgba(0, 0, 0, .8), rgba(0, 0, 0, .5)), url("img/projects-bg.jpeg") center no-repeat;
     background-size: cover;
     // TODO: PROBABLY CHANGE POLYGON SHAPE
-    // clip-path: polygon(0 0, 100% 55vh, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 8vh, 100% 122vh, 0 100%);
     position: relative;
 }
 
-.project-boxes-container {
+.projects-container {
     position: relative;
     width: 1200px;
     height: 600px;
-    margin: 80px auto 0;
+    margin: 0 auto;
     float: left;
 }
 
-.project-boxes-container .box {
+.projects-container .box {
     position: relative;
     width: calc(400px - 30px);
     height: calc(300px - 55px);
@@ -29,6 +26,10 @@
     float: left;
     overflow: hidden;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .8);
+
+    &:nth-child(-n+4) {
+        margin-top: 0;
+    }
 
     &:before {
         content: "";
@@ -70,21 +71,21 @@
     }
 }
 
-.project-boxes-container .box .img-box {
+.projects-container .box .img-box {
     position: relative;
 }
 
-.project-boxes-container .box .img-box img {
+.projects-container .box .img-box img {
     width: 100%;
     transition: 1s;
 }
 
-.project-boxes-container .box:hover .img-box img {
+.projects-container .box:hover .img-box img {
     opacity: .2;
     transform: scale(1.2);
 }
 
-.project-boxes-container .content {
+.projects-container .content {
     position: absolute;
     width: 100%;
     top: 50%;
@@ -94,7 +95,7 @@
     text-align: center; 
 }
 
-.project-boxes-container .box .content h2 {
+.projects-container .box .content h2 {
     margin: 0 0 1rem;
     padding: 0;
     color: #fff;
@@ -104,7 +105,7 @@
     visibility: hidden;
 }
 
-.project-boxes-container .box .content p {
+.projects-container .box .content p {
     margin: 0 0 1rem;
     padding: 0;
     color: #fff;
@@ -116,9 +117,9 @@
     visibility: hidden;
 }
 
-.project-boxes-container .box:hover .content h2,
-.project-boxes-container .box:hover .content p,
-.project-boxes-container .box:hover .content .project-btn {
+.projects-container .box:hover .content h2,
+.projects-container .box:hover .content p,
+.projects-container .box:hover .content .project-btn {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
