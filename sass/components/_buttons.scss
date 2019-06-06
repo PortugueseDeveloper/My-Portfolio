@@ -120,6 +120,12 @@
 
     &:hover::before { height: 180%; }
 
+    @media (min-width: 411px) and (max-width: 480px) {
+        font-size: 1.72rem;
+        margin: .7px;
+        padding: 4px;
+    }
+
     @media (min-width: 360px) and (max-width: 374px) {
         font-size: 2rem;
         margin: 1.7px;
@@ -128,7 +134,7 @@
     
     @media (min-width: 320px) and (max-width: 359px) {
         font-size: 2.1rem;
-        margin: 0.5px;
+        margin: .5px;
         padding: 3px;
     }
 }

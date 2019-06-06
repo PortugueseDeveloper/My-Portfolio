@@ -183,6 +183,16 @@
     letter-spacing: .2rem;
     padding: 4rem;
     // margin: 0 7rem;
+
+    @media (min-width: 411px) and (max-width: 480px) {
+        font-size: 3.4rem;
+    }
+
+    @media (min-width: 375px) and (max-width: 410px) {
+        height: 218vh;
+        padding: 0;
+        // clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+    }
     
      @media (min-width: 360px) and (max-width: 374px) {
         font-size: 3.3rem;
@@ -203,6 +213,7 @@
 }
 
 .projects-container .box .content h2 {
+    font-size: 1.7rem;
     margin: 0 0 1rem;
     padding: 0;
     color: #fff;
@@ -211,12 +222,16 @@
     opacity: 0;
     visibility: hidden;
 
-     @media (min-width: 360px) and (max-width: 374px) {
-        font-size: 2.6rem;
+    @media (min-width: 411px) and (max-width: 480px) {
+        font-size: 2.3rem;
+    }
+
+    @media (min-width: 360px) and (max-width: 374px) {
+        font-size: 2.8rem;
     }
 
     @media (min-width: 320px) and (max-width: 359px) {
-        font-size: 2.7rem;
+        font-size: 3rem;
     }
 }
 
@@ -225,11 +240,23 @@
     padding: 0;
     color: #fff;
     transition: 1s;
-    font-size: 12px;
+    font-size: 1.5rem;
     cursor: pointer;
     transform: translateY(3rem);
     opacity: 0;
     visibility: hidden;
+
+    @media (min-width: 411px) and (max-width: 480px) {
+        font-size: 1.7rem;
+    }
+
+     @media (min-width: 360px) and (max-width: 374px) {
+        font-size: 2.4rem;
+    }
+
+    @media (min-width: 320px) and (max-width: 359px) {
+        font-size: 2.7rem;
+    }
 }
 
 .projects-container .box:hover .content h2,
