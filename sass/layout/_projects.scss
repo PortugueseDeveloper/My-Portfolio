@@ -34,6 +34,7 @@
     @media (min-width: 360px) and (max-width: 374px) {
         height: 60vh;
         clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%);
+        // TODO: FIX PROJ ON THIS RANGE
     }
 
     @media (min-width: 320px) and (max-width: 359px) {
@@ -147,35 +148,4 @@
     padding: 20px;
     z-index: 2;
     text-align: center; 
-}
-
-.projects-container .box .content h2 {
-    margin: 0 0 1rem;
-    padding: 0;
-    color: #fff;
-    transition: 1s;
-    transform: translateY(-3rem);
-    opacity: 0;
-    visibility: hidden;
-}
-
-.projects-container .box .content p {
-    margin: 0 0 1rem;
-    padding: 0;
-    color: #fff;
-    transition: 1s;
-    font-size: 12px;
-    cursor: pointer;
-    transform: translateY(3rem);
-    opacity: 0;
-    visibility: hidden;
-}
-
-.projects-container .box:hover .content h2,
-.projects-container .box:hover .content p,
-.projects-container .box:hover .content .project-btn {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    transition-delay: .2s;
 }
