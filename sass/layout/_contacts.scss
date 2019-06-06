@@ -72,7 +72,7 @@ footer {
     overflow: hidden;
     position: relative;
     margin: 0;
-    transition: all .8s ease-in-out 0.1s;
+    transition: all .8s ease-in-out .1s;
 
     &:hover {
         width: 450px;
@@ -132,7 +132,7 @@ footer {
     display: block;
     font: normal 30px Genericons;
     color: #fff;
-    transition: all .8s ease-in-out 0.1s;
+    transition: all .8s ease-in-out .1s;
 }
 
 .social-media a::after {

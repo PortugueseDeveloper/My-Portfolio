@@ -98,7 +98,7 @@
     color: $color-secondary;
     background: none;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     opacity: 0; 
     visibility: hidden;
     border: 1px solid $color-secondary;
@@ -113,17 +113,45 @@
         left: 0;
         width: 100%;
         height: 0;
-        // TODO: ADD BETTER BACKGROUND COLOR ON HOVER
         background: $color-secondary;
         z-index: -1;
         transition: 1s; 
     }
 
-    &:hover::before { height: 180%; } 
+    &:hover::before { height: 180%; }
+
+    @media (min-width: 414px) and (max-width: 480px) {
+        font-size: 1.72rem;
+        margin: .7px;
+        padding: 4px;
+    }
+
+    @media (min-width: 411px) and (max-width: 413px) {
+        font-size: 1.72rem;
+        margin: .7px;
+        padding: 4px;
+    }
+
+    @media (min-width: 375px) and (max-width: 410px) {
+        font-size: 1.9rem;
+        margin: 1.4px;
+        padding: 3px;
+    }
+
+    @media (min-width: 360px) and (max-width: 374px) {
+        font-size: 2rem;
+        margin: 1.7px;
+        padding: 3px;
+    }
+    
+    @media (min-width: 320px) and (max-width: 359px) {
+        font-size: 2.1rem;
+        margin: .5px;
+        padding: 3px;
+    }
 }
 
 .projects-container .box .content .project-btn-1 {
-    font-size: 13px;
     transform: translateX(-3rem);
 
     &::before {
@@ -151,6 +179,10 @@
         height: 180%;
         color: #111;
     }
+}
+
+.projects-container .box:hover .content .project-btn {
+    @include project-box-elements-transition();
 }
 
 // ADD FORM BTN HERE
