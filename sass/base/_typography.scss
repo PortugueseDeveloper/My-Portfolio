@@ -120,7 +120,7 @@
     }
 
     @media (min-width: 411px) and (max-width: 480px) {
-        font-size: 2.6rem;
+        font-size: 2.6rem;  
     }
 
     @media (min-width: 375px) and (max-width: 410px) {
@@ -189,9 +189,7 @@
     }
 
     @media (min-width: 375px) and (max-width: 410px) {
-        height: 218vh;
-        padding: 0;
-        // clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+        font-size: 3.4rem;
     }
     
      @media (min-width: 360px) and (max-width: 374px) {
@@ -222,8 +220,16 @@
     opacity: 0;
     visibility: hidden;
 
-    @media (min-width: 411px) and (max-width: 480px) {
-        font-size: 2.3rem;
+    @media (min-width: 414px) and (max-width: 480px) {
+        font-size: 2.6rem;
+    }
+
+    @media (min-width: 411px) and (max-width: 413px) {
+        font-size: 2.5rem;
+    }
+
+    @media (min-width: 375px) and (max-width: 410px) {
+        font-size: 2.9rem;
     }
 
     @media (min-width: 360px) and (max-width: 374px) {
@@ -245,9 +251,18 @@
     transform: translateY(3rem);
     opacity: 0;
     visibility: hidden;
+    
+    // TODO: FIX THIS
+    @media (min-width: 414px) and (max-width: 480px) {
+        font-size: 2.4rem;
+    }
 
-    @media (min-width: 411px) and (max-width: 480px) {
-        font-size: 1.7rem;
+    @media (min-width: 411px) and (max-width: 414px) {
+        font-size: 2.4rem;
+    }
+
+     @media (min-width: 375px) and (max-width: 410px) {
+        font-size: 2.4rem;
     }
 
      @media (min-width: 360px) and (max-width: 374px) {
