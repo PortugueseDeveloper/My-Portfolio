@@ -850,10 +850,9 @@ nav ul.main-menu .menu-items a {
     opacity: 1; }
   @media (min-width: 768px) and (max-width: 1024px) {
     .projects-container .box {
-      width: 320px;
       height: 195px; }
       .projects-container .box:nth-child(-n+6) {
-        margin: 30px 32px; } }
+        margin: 30px 3rem; } }
   @media (min-width: 414px) and (max-width: 480px) {
     .projects-container .box {
       width: 300px;
