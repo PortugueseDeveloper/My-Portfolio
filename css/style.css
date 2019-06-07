@@ -225,7 +225,7 @@ ul li {
   font-weight: 400;
   text-align: center;
   letter-spacing: .2rem;
-  padding: 4rem; }
+  padding: 7rem 0 4rem; }
   @media (min-width: 411px) and (max-width: 480px) {
     .projects-heading {
       font-size: 3.4rem; } }
@@ -749,18 +749,21 @@ nav ul.main-menu .menu-items a {
 
 .projects-section {
   padding: 0 100px;
-  height: 132.5vh;
+  height: 132vh;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("img/projects-bg.jpeg") center no-repeat;
   background-size: cover;
+  clip-path: polygon(0 0, 100% 8vh, 100% 124vh, 0 100%);
   position: relative; }
   @media (min-width: 1024px) and (max-width: 1280px) {
     .projects-section {
-      height: 217vh;
-      padding: 0; } }
+      height: 93vh;
+      padding: 0;
+      clip-path: polygon(0 0, 100% 3vh, 100% 90vh, 0 100%); } }
   @media (min-width: 768px) and (max-width: 1023px) {
     .projects-section {
-      height: 217vh;
-      padding: 0; } }
+      height: 93vh;
+      padding: 0;
+      clip-path: polygon(0 0, 100% 3vh, 100% 90vh, 0 100%); } }
   @media (min-width: 481px) and (max-width: 767px) {
     .projects-section {
       height: 218vh;
@@ -789,8 +792,8 @@ nav ul.main-menu .menu-items a {
   @media (min-width: 1024px) and (max-width: 1280px) {
     .projects-container {
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 30px;
-      margin: 0 30px; } }
+      grid-gap: 40px;
+      margin: 0 40px; } }
   @media (min-width: 768px) and (max-width: 1023px) {
     .projects-container {
       grid-template-columns: repeat(2, 1fr);

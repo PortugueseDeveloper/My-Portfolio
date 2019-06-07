@@ -1,20 +1,21 @@
 .projects-section {
     padding: 0 100px;
-    height: 132.5vh;
+    height: 132vh;
     background: linear-gradient(to bottom, rgba(0, 0, 0, .8), rgba(0, 0, 0, .5)), url("img/projects-bg.jpeg") center no-repeat;
     background-size: cover;
-    // clip-path: polygon(0 0, 100% 8vh, 100% 122vh, 0 100%);
+    clip-path: polygon(0 0, 100% 8vh, 100% 124vh, 0 100%);
     position: relative;
 
     @media (min-width: 1024px) and (max-width: 1280px) {
-        height: 217vh;
+        height: 93vh;
         padding: 0;
-        // clip-path: polygon(0 0, 100% 0, 100% 25vh, 0 100%);
+        clip-path: polygon(0 0, 100% 3vh, 100% 90vh, 0 100%);
     }
 
     @media (min-width: 768px) and (max-width: 1023px) {
-        height: 217vh;
+        height: 93vh;
         padding: 0;
+        clip-path: polygon(0 0, 100% 3vh, 100% 90vh, 0 100%);
     }
 
     @media (min-width: 481px) and (max-width: 767px) {
@@ -55,8 +56,8 @@
 
     @media (min-width: 1024px) and (max-width: 1280px) {
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 30px;
-        margin: 0 30px;
+        grid-gap: 40px;
+        margin: 0 40px;
     }
 
     @media (min-width: 768px) and (max-width: 1023px) {
