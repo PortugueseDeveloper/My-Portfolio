@@ -952,29 +952,27 @@ footer {
   grid-gap: 20px; }
 
 .social-media-accordion {
-  background: #333;
-  width: 60%;
+  background: rgba(10, 10, 10, 0.9);
+  width: 50%;
   min-width: 500px;
   display: block;
   overflow: hidden;
-  height: 150px;
+  height: 200px;
   font-size: 0; }
 
 .social-media-tab {
   display: inline-block;
-  background-color: #444;
-  border-right: #333 solid 1px;
-  width: 80px;
+  background-color: rgba(10, 10, 10, 0.9);
+  border-right: #f2f2f2 solid 1px;
+  width: 100px;
   height: 200px;
   overflow: hidden;
   position: relative;
   margin: 0;
   transition: all .8s ease-in-out .1s; }
-  .social-media-tab:hover {
-    width: 450px; }
-    @media (max-width: 950px) {
-      .social-media-tab:hover {
-        width: 100%; } }
+  @media (max-width: 950px) {
+    .social-media-tab:hover {
+      width: 100%; } }
   .social-media-tab:hover .social-media a::before {
     margin-left: -100px; }
   .social-media-tab:hover .social-media a::after {
@@ -985,34 +983,21 @@ footer {
       width: 100%;
       border-bottom: 3px #333 solid; } }
 
-.social-media-tab .social-media-content {
-  background: #fff;
-  width: 360px;
-  height: 200px;
-  margin-left: 80px;
-  position: relative;
-  padding: 50px 0 0 15px; }
-  @media (max-width: 950px) {
-    .social-media-tab .social-media-content {
-      width: 85%; } }
-
 .social-media a::before,
 .social-media a::after {
-  width: 80px;
-  height: 200px;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-indent: 0;
-  padding-top: 90px;
-  padding-left: 25px;
   display: block;
   font: normal 30px Genericons;
-  color: #fff;
+  color: #f2f2f2;
   transition: all .8s ease-in-out .1s; }
 
 .social-media a::after {
   font-size: 48px;
-  padding: 80px 0 0 20px;
-  margin-left: 85px; }
+  margin-left: 100px; }
 
 .facebook a::before, .facebook a::after {
   content: "\f204"; }
@@ -1043,9 +1028,6 @@ footer {
 
 .github a::after {
   background-color: #333; }
-
-.email-contact-container {
-  margin: 0; }
 
 .contact-form {
   max-width: 600px;
