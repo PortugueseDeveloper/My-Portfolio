@@ -114,6 +114,7 @@
         width: 100%;
         height: 0;
         background: $color-secondary;
+        border: none;
         z-index: -1;
         transition: 1s; 
     }
@@ -185,4 +186,48 @@
     @include project-box-elements-transition();
 }
 
-// ADD FORM BTN HERE
+// "Contacts" section submit button
+.submit-btn-wrapper { text-align: center; margin-top: 3rem;}
+
+.submit-contact-form-btn {
+    color: $color-secondary;
+    background: $color-tertiary;
+    // border: 1px solid $color-tertiary;
+    text-transform: uppercase;
+    padding: 12px 50px;
+    border: 0;
+    cursor: pointer;
+    transition: .8s;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: $color-secondary;
+        z-index: -1;
+        transition: 1s; 
+    }
+
+    // &:hover {
+    //     color: $color-secondary;
+    // }
+
+    font-size: 1.4rem;
+
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     left: 0;
+    //     // width: 100%;
+    //     height: 0;
+    //     background: $color-secondary;
+    //     z-index: -1;
+    //     transition: 1s; 
+    // }
+
+    // &:hover::before { height: 180%; }
+}

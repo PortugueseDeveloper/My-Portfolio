@@ -1,6 +1,6 @@
 // General
 footer {
-    height: 80vh; 
+    height: 75.9vh; 
     background-color: $color-secondary; 
     padding: 0 100px;
     width: 100%;
@@ -114,7 +114,6 @@ footer {
 //     }
 // }
 
-// TODO: CONTINUAR A VER PROBLEMA DO ICONE DESVIADO
 .social-media a::before, 
 .social-media a::after {
     // width: 80px;
@@ -171,6 +170,26 @@ footer {
     overflow: hidden;
 }
 
+// TODO: FIX WHITESPACE (?)
+.inline-inputs {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+input.name-input {
+    width: 35%;
+    margin-top: 0;
+    margin-right: 5%;
+}
+
+input.email-input {
+    width: 60%;
+    margin-top: 0;
+}
+
 .contact-form-input {
     color: $color-secondary;
     padding: 2rem 4rem;
@@ -181,13 +200,8 @@ footer {
     background: #121212;
     outline: none;
     transition: .8s;
-
-    &:nth-child(1) {
-        margin-top: 0;
-    }
-
     // TODO: FIX FOCUS
-    &:focus { box-shadow: 0 0 10px $color-tertiary; }
+    // &:focus { box-shadow: 0 0 9px $color-tertiary; }
 }
 
 textarea.contact-form-text {
@@ -195,21 +209,4 @@ textarea.contact-form-text {
     height: 120px;
 }
 
-.submit-contact-form-btn {
-    color: #121212;
-    background: $color-secondary;
-    text-transform: uppercase;
-    position: absolute;
-    margin-top: 2rem;
-    left: 75%;
-    transform: translateX(-75%);
-    border: 0;
-    padding: 12px 50px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: .8s;
-
-    &:hover {
-        background: #333;
-    }
-}
+::placeholder { color: #bdc3c7; }

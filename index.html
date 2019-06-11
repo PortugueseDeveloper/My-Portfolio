@@ -290,10 +290,15 @@
             <div class="email-contact-container">
             
                 <form action="index.html" class="contact-form" method="POST">
-                    <input type="text" class="contact-form-input" placeholder="Enter your name">
-                    <input type="email" class="contact-form-input" placeholder="Enter your email">
-                    <textarea name="message" class="contact-form-input" placeholder="Tell me something :)"></textarea>
-                    <input type="submit" class="submit-contact-form-btn" value="Send message">
+                    <div class="inline-inputs">
+                        <input type="text" name="name" class="contact-form-input name-input" placeholder="Enter your name">
+                        <input type="email" name="email" class="contact-form-input email-input" placeholder="Enter your email">
+                    </div>
+                    <textarea name="message" class="contact-form-input message-input" rows="8" placeholder="Tell me something :)"></textarea>
+
+                    <div class="submit-btn-wrapper">
+                        <input type="submit" class="submit-contact-form-btn" value="Send message">
+                    </div>
                 </form>
             
             </div>
