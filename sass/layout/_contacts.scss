@@ -1,73 +1,77 @@
 // General
 footer {
-    // TODO: FIX HEIGHT
-    height: 80vh; 
-    background-color: #111; 
-    padding: 100px;
-    
+    height: 75.9vh; 
+    background-color: $color-secondary; 
+    padding: 0 100px;
     width: 100%;
 
-    &::after {
-        content: "";
-        display: block;
-        clear: both;
-    }
+    // &::after {
+    //     content: "";
+    //     display: block;
+    //     clear: both;
+    // }
+}
+
+.contacts-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
 }
 
 .social-media-container, .email-contact-container { 
-    float: left; 
-    width: 50%;
+    // float: left; 
+    // width: 50%;
 }
 
 // Social media
 .social-media-container {
-    margin: 0 auto;
-    width: 50%; 
+    // margin: 0 auto;
+    // width: 50%; 
 
-    @media (max-width: 950px) {
-		width: 70%;
-    }
+    // @media (max-width: 950px) {
+	// 	width: 70%;
+    // }
 
-    @media (max-width: 680px) {
-        width: 95%;
-    }
+    // @media (max-width: 680px) {
+    //     width: 95%;
+    // }
 
 }
 
 .social-media-accordion {
-    background: #333;
-    width: 60%;
+    background: $color-tertiary;
+    width: 50%;
     min-width: 500px;
     display: block;
     overflow: hidden;
-    height: 150px;
+    height: 200px;
     font-size: 0;
 
-    &::after {
-        content: "";
-        display: block;
-        clear: both;
-    }
+    // &::after {
+    //     content: "";
+    //     display: block;
+    //     clear: both;
+    // }
 
-    @media (max-width: 950px) {
-        display: block;
+    // @media (max-width: 950px) {
+    //     display: block;
 
-        min-width: 450px;
-        height: auto;
-    }
+    //     min-width: 450px;
+    //     height: auto;
+    // }
 
-    @media (max-width:  680px) {
-        width: 100%;
-        min-width: 350px;
-    }
+    // @media (max-width:  680px) {
+    //     width: 100%;
+    //     min-width: 350px;
+    // }
 
 }
 
 .social-media-tab {
     display: inline-block;
-    background-color: #444;
-    border-right: #333 solid 1px;
-    width: 80px;
+    background-color: $color-tertiary;
+    border-right: $color-secondary solid 1px;
+    width: 100px;
     height: 200px;
     overflow: hidden;
     position: relative;
@@ -75,7 +79,7 @@ footer {
     transition: all .8s ease-in-out .1s;
 
     &:hover {
-        width: 450px;
+        // width: 450px;
 
         @media (max-width: 950px) {
             width: 100%;
@@ -87,7 +91,7 @@ footer {
     }
 
     &:hover .social-media a::after {
-        margin-left: -5px;
+        margin-left: 0;
     }
 
     @media (max-width: 950px) {
@@ -97,48 +101,39 @@ footer {
     }
 }
 
-.social-media-tab .social-media-content {
-    background: #fff;
-    width: 360px;
-    height: 200px;
-    margin-left: 80px;
-    position: relative;
-    padding: 50px 0 0 15px;
+// .social-media-tab .social-media-content {
+//     background: #fff;
+//     width: 360px;
+//     height: 200px;
+//     margin-left: 80px;
+//     position: relative;
+//     padding: 50px 0 0 15px;
 
-    @media (max-width: 950px) {
-        width: 85%;
-    }
-}
-
-.social-media-tab .social-media-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.social-media-tab .social-media-content p {
-    font-size: .85rem;
-    line-height: 1.4rem;
-    padding-right: 30px;
-}
+//     @media (max-width: 950px) {
+//         width: 85%;
+//     }
+// }
 
 .social-media a::before, 
 .social-media a::after {
-    width: 80px;
-    height: 200px;
+    // width: 80px;
+    // height: 200px;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-indent: 0;
-    padding-top: 90px;
-    padding-left: 25px;
+    padding: 90px 26px;
     display: block;
     font: normal 30px Genericons;
-    color: #fff;
+    color: $color-secondary;
     transition: all .8s ease-in-out .1s;
 }
 
 .social-media a::after {
     font-size: 48px;
-    padding: 80px 0 0 20px;
-    margin-left: 85px;
+    // padding: 80px 0 0;
+    margin-left: 100px;
 }
 
 .facebook a::before, .facebook a::after { content: "\f204"; }
@@ -157,6 +152,10 @@ footer {
 .github a::after { background-color: #333; }
 
 // Email contact form
+.email-contact-container {
+    // margin: 0;
+}
+
 .email-contact-container::after { 
     // padding: 40px 0;
     // content: ""; 
@@ -164,16 +163,31 @@ footer {
     // clear: both;
 }
 
-.email-contact-container h1 {
-    text-align: center;
-    color: $color-secondary;
-}
-
 .contact-form {
     max-width: 600px;
-    margin: auto;
-    padding: 0 10px;
+    margin: 0;
+    // padding: 0 10px;
     overflow: hidden;
+}
+
+// TODO: FIX WHITESPACE (?)
+.inline-inputs {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+input.name-input {
+    width: 35%;
+    margin-top: 0;
+    margin-right: 5%;
+}
+
+input.email-input {
+    width: 60%;
+    margin-top: 0;
 }
 
 .contact-form-input {
@@ -181,13 +195,13 @@ footer {
     padding: 2rem 4rem;
     display: block;
     width: 100%;
-    margin: 16px 0;
+    margin-top: 16px;
     border: 0;  
     background: #121212;
     outline: none;
     transition: .8s;
-
-    &:focus { box-shadow: 0 0 10px $color-secondary; }
+    // TODO: FIX FOCUS
+    // &:focus { box-shadow: 0 0 9px $color-tertiary; }
 }
 
 textarea.contact-form-text {
@@ -195,22 +209,4 @@ textarea.contact-form-text {
     height: 120px;
 }
 
-.submit-contact-form-btn {
-    color: #121212;
-    background: $color-secondary;
-    text-transform: uppercase;
-    position: absolute;
-    margin-top: 2rem;
-    left: 75%;
-    transform: translateX(-75%);
-    border: 0;
-    padding: 12px 50px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: .8s;
-
-    &:hover {
-        background: #333;
-    }
-}
-
+::placeholder { color: #bdc3c7; }
