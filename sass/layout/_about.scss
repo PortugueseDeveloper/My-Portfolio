@@ -1,7 +1,21 @@
-.about-section { padding: 100px; }
+.about-section { 
+    padding: 0 100px 100px 100px; 
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        padding: 30px; 
+    }
+
+    @media (min-width: 320px) and (max-width: 480px) {
+        padding: 20px; 
+    }
+}
 
 .about-info-container {
     width: 100%;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
 
     &::after {
         content: "";
@@ -12,14 +26,96 @@
 
 .about-col-left, .about-col-right { float: left; }
 
-.about-col-left { width: 35%; }
+.about-col-left { 
+    width: 35%; 
+
+    @media (min-width: 1024px) and (max-width: 1280px) {
+        width: 35%;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        width: 37%;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        width: 38%;
+    }
+
+    // @media (min-width: 413px) and (max-width: 480px) {
+    //     width: 29%;
+    // }
+    
+    // @media (min-width: 375px) and (max-width: 412px) {
+    //     width: 32%;
+    // }
+
+    @media (min-width: 411px) and (max-width: 480px) {
+        width: 30%;
+    }
+
+    @media (min-width: 360px) and (max-width: 410px) {
+        width: 32%;
+    }
+    
+    @media (min-width: 320px) and (max-width: 359px) {
+        width: 37%;
+    }
+}
 
 .about-col-left img {
     max-width: 100%;
     height: 500px;
+
+    @media (min-width: 1024px) and (max-width: 1280px) {
+        height: 400px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        height: 300px;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        height: 200px;
+    }
+
+    @media (min-width: 320px) and (max-width: 480px) {
+        height: 130px;
+    }
 }
 
-.about-col-right { width: 65%; }
+.about-col-right { 
+    width: 65%;
+
+    @media (min-width: 1024px) and (max-width: 1280px) {
+        width: 65%;
+        padding-left: 5rem;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        width: 63%;
+        padding-left: 5rem;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        width: 62%;
+    }
+
+    // @media (min-width: 413px) and (max-width: 480px) {
+    //     width: 71%;
+    // }
+
+    @media (min-width: 411px) and (max-width: 480px) {
+        width: 70%;
+    }
+
+    @media (min-width: 360px) and (max-width: 410px) {
+        width: 68%;
+    }
+
+    @media (min-width: 320px) and (max-width: 359px) {
+        width: 63%;
+    }
+}
 
 .about-phrases {
     height: 50px;
