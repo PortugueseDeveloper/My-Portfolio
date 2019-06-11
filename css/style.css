@@ -976,7 +976,7 @@ footer {
   .social-media-tab:hover .social-media a::before {
     margin-left: -100px; }
   .social-media-tab:hover .social-media a::after {
-    margin-left: -5px; }
+    margin-left: 0; }
   @media (max-width: 950px) {
     .social-media-tab {
       display: block;
@@ -990,6 +990,7 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   text-indent: 0;
+  padding: 90px 26px;
   display: block;
   font: normal 30px Genericons;
   color: #f2f2f2;

@@ -91,7 +91,7 @@ footer {
     }
 
     &:hover .social-media a::after {
-        margin-left: -5px;
+        margin-left: 0;
     }
 
     @media (max-width: 950px) {
@@ -114,6 +114,7 @@ footer {
 //     }
 // }
 
+// TODO: CONTINUAR A VER PROBLEMA DO ICONE DESVIADO
 .social-media a::before, 
 .social-media a::after {
     // width: 80px;
@@ -123,8 +124,7 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     text-indent: 0;
-    // padding-top: 90px;
-    // padding-left: 25px;
+    padding: 90px 26px;
     display: block;
     font: normal 30px Genericons;
     color: $color-secondary;
