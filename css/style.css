@@ -412,8 +412,8 @@ ul li {
   padding: 5px;
   color: #f2f2f2;
   background: none;
-  text-transform: uppercase;
   font-size: 1.3rem;
+  text-transform: uppercase;
   opacity: 0;
   visibility: hidden;
   border: 1px solid #f2f2f2;
@@ -483,30 +483,38 @@ ul li {
   transform: translateY(0);
   transition-delay: .2s; }
 
-.submit-btn-wrapper {
+.email-contact-container .submit-btn-wrapper {
   text-align: center;
   margin-top: 3rem; }
 
-.submit-contact-form-btn {
-  color: #f2f2f2;
-  background: rgba(10, 10, 10, 0.9);
-  text-transform: uppercase;
+.main-button {
+  border: 1px solid #111;
+  background: none;
   padding: 12px 50px;
-  border: 0;
+  font-size: 1.4rem;
   cursor: pointer;
   transition: .8s;
+  margin: 10px;
   position: relative;
-  overflow: hidden;
-  font-size: 1.4rem; }
-  .submit-contact-form-btn::before {
+  overflow: hidden; }
+  .main-button::before {
     content: "";
     position: absolute;
     left: 0;
     width: 100%;
     height: 0;
-    background: #f2f2f2;
-    z-index: -1;
-    transition: 1s; }
+    background: red;
+    transition: .8s; }
+
+.submit-contact-form-btn {
+  color: green; }
+  .submit-contact-form-btn:hover {
+    color: #f2f2f2; }
+  .submit-contact-form-btn::before {
+    bottom: 0;
+    border-radius: 50% 50% 0 0; }
+  .submit-contact-form-btn:hover::before {
+    height: 180%; }
 
 .header__box {
   background-color: #f2f2f2; }
