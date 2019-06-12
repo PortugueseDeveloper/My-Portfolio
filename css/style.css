@@ -418,7 +418,7 @@ ul li {
   visibility: hidden;
   border: 1px solid #f2f2f2;
   cursor: pointer;
-  transition: 1s;
+  transition: .8s;
   position: relative;
   overflow: hidden; }
   .projects-container .box .content .project-btn::before {
@@ -430,7 +430,7 @@ ul li {
     background: #f2f2f2;
     border: none;
     z-index: -1;
-    transition: 1s; }
+    transition: .8s; }
   .projects-container .box .content .project-btn:hover::before {
     height: 180%; }
   @media (min-width: 414px) and (max-width: 480px) {
@@ -488,13 +488,16 @@ ul li {
   margin-top: 3rem; }
 
 .main-button {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: rgba(10, 10, 10, 0.9);
+  padding: 12px 50px;
   border: 1px solid #111;
   background: none;
-  padding: 12px 50px;
+  z-index: 1;
   font-size: 1.4rem;
   cursor: pointer;
   transition: .8s;
-  margin: 10px;
   position: relative;
   overflow: hidden; }
   .main-button::before {
@@ -503,18 +506,22 @@ ul li {
     left: 0;
     width: 100%;
     height: 0;
-    background: red;
+    background: rgba(10, 10, 10, 0.9);
+    z-index: -1;
     transition: .8s; }
-
-.submit-contact-form-btn {
-  color: green; }
-  .submit-contact-form-btn:hover {
-    color: #f2f2f2; }
-  .submit-contact-form-btn::before {
-    bottom: 0;
-    border-radius: 50% 50% 0 0; }
-  .submit-contact-form-btn:hover::before {
+  .main-button:hover::before {
     height: 180%; }
+
+.submit-contact-form-btn:hover {
+  color: #f2f2f2; }
+
+.submit-contact-form-btn::before {
+  bottom: 0;
+  border-radius: 50% 50% 0 0; }
+
+.submit-contact-form-btn:hover::before {
+  height: 200%;
+  color: #f2f2f2; }
 
 .header__box {
   background-color: #f2f2f2; }
