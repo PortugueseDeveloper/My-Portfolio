@@ -5,17 +5,71 @@ footer {
     padding: 0 100px;
     width: 100%;
 
-    // &::after {
-    //     content: "";
-    //     display: block;
-    //     clear: both;
-    // }
+    @media (min-width: 1024px) and (max-width: 1280px) {
+        height: 50vh;
+    }
+
+     @media (min-width: 768px) and (max-width: 1023px) {
+        height: 53vh;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        height: 55vh;
+    }
+
+    @media (min-width: 411px) and (max-width: 480px) {
+        height: 55vh;
+        clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+    }
+
+    @media (min-width: 375px) and (max-width: 410px) {
+        height: 50vh;
+    }
+
+    @media (min-width: 360px) and (max-width: 374px) {
+        height: 60vh;
+    }
+
+    @media (min-width: 320px) and (max-width: 359px) {
+        height: 60vh;
+    }
 }
 
 .contacts-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
+
+    @media (min-width: 1024px) and (max-width: 1280px) {
+        grid-template-columns: 1fr;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        height: 53vh;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        height: 55vh;
+    }
+
+    @media (min-width: 411px) and (max-width: 480px) {
+        height: 55vh;
+        clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+    }
+
+    @media (min-width: 375px) and (max-width: 410px) {
+        height: 50vh;
+    }
+
+    @media (min-width: 360px) and (max-width: 374px) {
+        height: 60vh;
+    }
+
+    @media (min-width: 320px) and (max-width: 359px) {
+        height: 60vh;
+    }
+
+
 }
 
 .social-media-container, .email-contact-container { 
@@ -35,6 +89,10 @@ footer {
     // @media (max-width: 680px) {
     //     width: 95%;
     // }
+
+    @media (min-width: 1024px) and (max-width: 1280px) {
+        margin: 0 auto;
+    }
 
 }
 
@@ -171,28 +229,20 @@ footer {
 }
 
 // TODO: FIX WHITESPACE (?)
+.form-group { width: 50%; }
+
 .inline-inputs {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: space-between;
+    width: 100%;
     margin-bottom: 3rem;
 }
 
-input.name-input {
-    width: 35%;
-    margin-top: 0;
-    margin-right: 5%;
-}
-
-input.email-input {
-    width: 60%;
-    margin-top: 0;
-}
-
 .contact-form-input {
+    font-size: 1.6rem;
     color: $color-secondary;
-    padding: 2rem 4rem;
+    padding: 2rem;
     display: block;
     width: 100%;
     margin-top: 16px;
@@ -204,9 +254,20 @@ input.email-input {
     // &:focus { box-shadow: 0 0 9px $color-tertiary; }
 }
 
-textarea.contact-form-text {
-    resize: none;
-    height: 120px;
+input.name-input {
+    width: 77%;
+    margin-top: .5rem;
 }
 
-::placeholder { color: #bdc3c7; }
+input.email-input {
+    width: 100%;
+    margin-top: .5rem;
+}
+
+textarea.message-input {
+    resize: none;
+    height: 120px;
+    margin-top: .5rem;
+}
+
+// ::placeholder { color: #bdc3c7; }

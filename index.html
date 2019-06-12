@@ -291,19 +291,27 @@
             
                 <form action="index.html" class="contact-form" method="POST">
                     <div class="inline-inputs">
-                        <input type="text" name="name" class="contact-form-input name-input" placeholder="Enter your name">
-                        <input type="email" name="email" class="contact-form-input email-input" placeholder="Enter your email">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" class="contact-form-input name-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" class="contact-form-input email-input">
+                        </div>
                     </div>
-                    <textarea name="message" class="contact-form-input message-input" rows="8" placeholder="Tell me something :)"></textarea>
+                    <label for="message">Message</label>
+                    <textarea name="message" class="contact-form-input message-input" rows="8"></textarea>
 
                     <div class="submit-btn-wrapper">
-                        <input type="submit" class="submit-contact-form-btn" value="Send message">
+                        <button type="submit" class="main-button submit-contact-form-btn">Send message</button>
                     </div>
                 </form>
-            
+                
             </div>
-
+            
         </div>
+        
        
     </footer>
 
