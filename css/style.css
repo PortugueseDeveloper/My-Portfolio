@@ -1021,7 +1021,7 @@ footer {
       grid-template-columns: 1fr; } }
   @media (min-width: 768px) and (max-width: 1023px) {
     .contacts-container {
-      height: 53vh; } }
+      grid-template-columns: 1fr; } }
   @media (min-width: 481px) and (max-width: 767px) {
     .contacts-container {
       height: 55vh; } }
@@ -1043,14 +1043,40 @@ footer {
   .social-media-container {
     margin: 0 auto; } }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .social-media-container {
+    margin: 0 auto; } }
+
 .social-media-accordion {
   background: rgba(10, 10, 10, 0.9);
-  width: 50%;
-  min-width: 500px;
+  width: 500px;
+  height: 200px;
   display: block;
   overflow: hidden;
-  height: 200px;
   font-size: 0; }
+  @media (min-width: 1024px) and (max-width: 1280px) {
+    .social-media-accordion {
+      width: 100%; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .social-media-accordion {
+      width: 100%;
+      height: 180px; } }
+  @media (min-width: 481px) and (max-width: 767px) {
+    .social-media-accordion {
+      height: 55vh; } }
+  @media (min-width: 411px) and (max-width: 480px) {
+    .social-media-accordion {
+      height: 55vh;
+      clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%); } }
+  @media (min-width: 375px) and (max-width: 410px) {
+    .social-media-accordion {
+      height: 50vh; } }
+  @media (min-width: 360px) and (max-width: 374px) {
+    .social-media-accordion {
+      height: 60vh; } }
+  @media (min-width: 320px) and (max-width: 359px) {
+    .social-media-accordion {
+      height: 60vh; } }
 
 .social-media-tab {
   display: inline-block;
@@ -1062,18 +1088,33 @@ footer {
   position: relative;
   margin: 0;
   transition: all .8s ease-in-out .1s; }
-  @media (max-width: 950px) {
-    .social-media-tab:hover {
-      width: 100%; } }
   .social-media-tab:hover .social-media a::before {
     margin-left: -100px; }
   .social-media-tab:hover .social-media a::after {
     margin-left: 0; }
-  @media (max-width: 950px) {
+  @media (min-width: 1024px) and (max-width: 1280px) {
     .social-media-tab {
-      display: block;
-      width: 100%;
-      border-bottom: 3px #333 solid; } }
+      width: 140px; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .social-media-tab {
+      width: 110px;
+      height: 180px; } }
+  @media (min-width: 481px) and (max-width: 767px) {
+    .social-media-tab {
+      height: 55vh; } }
+  @media (min-width: 411px) and (max-width: 480px) {
+    .social-media-tab {
+      height: 55vh;
+      clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%); } }
+  @media (min-width: 375px) and (max-width: 410px) {
+    .social-media-tab {
+      height: 50vh; } }
+  @media (min-width: 360px) and (max-width: 374px) {
+    .social-media-tab {
+      height: 60vh; } }
+  @media (min-width: 320px) and (max-width: 359px) {
+    .social-media-tab {
+      height: 60vh; } }
 
 .social-media a::before,
 .social-media a::after {
@@ -1084,13 +1125,70 @@ footer {
   text-indent: 0;
   padding: 90px 26px;
   display: block;
-  font: normal 30px Genericons;
+  font: normal 45px Genericons;
   color: #f2f2f2;
   transition: all .8s ease-in-out .1s; }
+  @media (min-width: 1024px) and (max-width: 1280px) {
+    .social-media a::before,
+    .social-media a::after {
+      padding: 90px 48px; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .social-media a::before,
+    .social-media a::after {
+      padding: 90px 47px; } }
+  @media (min-width: 481px) and (max-width: 767px) {
+    .social-media a::before,
+    .social-media a::after {
+      height: 55vh; } }
+  @media (min-width: 411px) and (max-width: 480px) {
+    .social-media a::before,
+    .social-media a::after {
+      height: 55vh;
+      clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%); } }
+  @media (min-width: 375px) and (max-width: 410px) {
+    .social-media a::before,
+    .social-media a::after {
+      height: 50vh; } }
+  @media (min-width: 360px) and (max-width: 374px) {
+    .social-media a::before,
+    .social-media a::after {
+      height: 60vh; } }
+  @media (min-width: 320px) and (max-width: 359px) {
+    .social-media a::before,
+    .social-media a::after {
+      height: 60vh; } }
 
 .social-media a::after {
   font-size: 48px;
-  margin-left: 100px; }
+  margin-left: 140px; }
+  @media (min-width: 1024px) and (max-width: 1280px) {
+    .social-media a::after {
+      margin-left: 140px;
+      font: normal 50px Genericons;
+      font-size: inital;
+      margin-left: initial; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .social-media a::after {
+      margin-left: 140px;
+      font: normal 45px Genericons;
+      font-size: inital;
+      margin-left: initial; } }
+  @media (min-width: 481px) and (max-width: 767px) {
+    .social-media a::after {
+      height: 55vh; } }
+  @media (min-width: 411px) and (max-width: 480px) {
+    .social-media a::after {
+      height: 55vh;
+      clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%); } }
+  @media (min-width: 375px) and (max-width: 410px) {
+    .social-media a::after {
+      height: 50vh; } }
+  @media (min-width: 360px) and (max-width: 374px) {
+    .social-media a::after {
+      height: 60vh; } }
+  @media (min-width: 320px) and (max-width: 359px) {
+    .social-media a::after {
+      height: 60vh; } }
 
 .facebook a::before, .facebook a::after {
   content: "\f204"; }
