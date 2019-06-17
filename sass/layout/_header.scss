@@ -105,9 +105,9 @@
 
 .header__logo-box { 
     color: #f2f2f28e;
-    position: absolute;
     // TODO: FIX LOGO HEIGHT WHEN PLACEHOLDERS STOPS BEING USED
-    top: 9%;
+    // position: absolute;
+    // top: 9%;
     transform: translateX(-100rem); 
     animation: slideIn 1.7s forwards;
 
@@ -166,21 +166,21 @@ nav ul.main-menu {
 
     @media (min-width: 481px) and (max-width: 767px) {
         @include mobile-menu-styling();
-        font-size: 2.2rem;
+        font-size: 2.24rem;
         text-align: center;
         // padding-top: 3.6rem;
     }
 
     @media (min-width: 360px) and (max-width: 480px) {
         @include mobile-menu-styling();
-        font-size: 2.4rem;
+        font-size: 2.2rem;
         text-align: center;
         // padding-top: 2.5rem;
     }
 
     @media (min-width: 320px) and (max-width: 359px) {
         @include mobile-menu-styling();
-        font-size: 2.4rem;
+        font-size: 2.2rem;
         text-align: center;
         // padding-top: 2.5rem;
     }
@@ -261,7 +261,7 @@ nav ul.main-menu .menu-items a {
     }
 
     @media (min-width: 481px) and (max-width: 767px) {
-        top: 47%;
+        top: 48%;
         // padding-bottom: 2.5rem;
     }
 
