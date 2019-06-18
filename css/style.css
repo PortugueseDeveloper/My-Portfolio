@@ -287,6 +287,9 @@ ul li {
   transform: translateY(-3rem);
   opacity: 0;
   visibility: hidden; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .projects-container .box .content h2 {
+      font-size: 2rem; } }
   @media (min-width: 414px) and (max-width: 480px) {
     .projects-container .box .content h2 {
       font-size: 2.6rem; } }
@@ -313,6 +316,9 @@ ul li {
   transform: translateY(3rem);
   opacity: 0;
   visibility: hidden; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .projects-container .box .content p {
+      font-size: 1.9rem; } }
   @media (min-width: 414px) and (max-width: 480px) {
     .projects-container .box .content p {
       font-size: 2.4rem; } }
@@ -456,19 +462,19 @@ ul li {
   transition-delay: .2s; }
 
 .projects-container .box .content .project-btn {
-  margin: 4px;
-  padding: 5px;
+  font-size: 1.4rem;
   color: #f2f2f2;
-  background: none;
-  font-size: 1.3rem;
   text-transform: uppercase;
+  background: none;
+  margin: 2px;
+  padding: 3px;
   opacity: 0;
   visibility: hidden;
   border: 1px solid #f2f2f2;
   cursor: pointer;
-  transition: .8s;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: .8s; }
   .projects-container .box .content .project-btn::before {
     content: "";
     position: absolute;
@@ -481,6 +487,31 @@ ul li {
     transition: .8s; }
   .projects-container .box .content .project-btn:hover::before {
     height: 180%; }
+  @media (min-width: 1295px) and (max-width: 1366px) {
+    .projects-container .box .content .project-btn {
+      font-size: 1.2rem;
+      margin: .7px;
+      padding: 4px; } }
+  @media (min-width: 1281px) and (max-width: 1294px) {
+    .projects-container .box .content .project-btn {
+      font-size: 1.2rem;
+      margin: .7px;
+      padding: 3px; } }
+  @media (min-width: 1150px) and (max-width: 1280px) {
+    .projects-container .box .content .project-btn {
+      font-size: 1.5rem;
+      margin: 7px;
+      padding: 5px; } }
+  @media (min-width: 1024px) and (max-width: 1149px) {
+    .projects-container .box .content .project-btn {
+      font-size: 1.5rem;
+      margin: 5px;
+      padding: 4px; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .projects-container .box .content .project-btn {
+      font-size: 1.7rem;
+      margin: 7px;
+      padding: 5px; } }
   @media (min-width: 414px) and (max-width: 480px) {
     .projects-container .box .content .project-btn {
       font-size: 1.72rem;
@@ -1092,13 +1123,19 @@ nav ul.main-menu .menu-items a {
   position: absolute;
   width: 100%;
   top: 50%;
-  transform: translateY(-50%);
-  padding: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px 18px;
   z-index: 2;
   text-align: center; }
-  @media (min-width: 1024px) and (max-width: 1280px) {
+  @media (min-width: 1149px) and (max-width: 1281px) {
     .projects-container .content {
-      padding: 35px; } }
+      padding: 0 25px;
+      line-height: 1.4; } }
+  @media (min-width: 1024px) and (max-width: 1149px) {
+    .projects-container .content {
+      padding: 0 25px;
+      line-height: 1.4; } }
 
 footer {
   height: 75.9vh;

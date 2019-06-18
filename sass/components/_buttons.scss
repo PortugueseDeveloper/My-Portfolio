@@ -93,19 +93,19 @@
 
 // "My Projects" section buttons
 .projects-container .box .content .project-btn {
-    margin: 4px;
-    padding: 5px;
+    font-size: 1.4rem;
     color: $color-secondary;
-    background: none;
-    font-size: 1.3rem;
     text-transform: uppercase;
+    background: none;
+    margin: 2px;
+    padding: 3px;
     opacity: 0; 
     visibility: hidden;
     border: 1px solid $color-secondary;
     cursor: pointer;
-    transition: .8s;
     position: relative;
     overflow: hidden;
+    transition: .8s;
 
     &::before {
         content: "";
@@ -121,6 +121,37 @@
 
     &:hover::before { height: 180%; }
 
+    // TODO: FIX UPPER RANGE AFTER TRUE CONTENT IS ADDED
+    @media (min-width: 1295px) and (max-width: 1366px) {
+        font-size: 1.2rem;
+        margin: .7px;
+        padding: 4px;
+    }
+    
+    @media (min-width: 1281px) and (max-width: 1294px) {
+        font-size: 1.2rem;
+        margin: .7px;
+        padding: 3px;
+    }
+    
+    @media (min-width: 1150px) and (max-width: 1280px) { 
+        font-size: 1.5rem;
+        margin: 7px;
+        padding: 5px;
+    }
+    
+    @media (min-width: 1024px) and (max-width: 1149px) {
+        font-size: 1.5rem;
+        margin: 5px;
+        padding: 4px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 1.7rem;
+        margin: 7px;
+        padding: 5px;
+    }
+    
     @media (min-width: 414px) and (max-width: 480px) {
         font-size: 1.72rem;
         margin: .7px;
