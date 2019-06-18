@@ -122,6 +122,8 @@
     &:hover::before { height: 180%; }
 
     // TODO: FIX UPPER RANGE AFTER TRUE CONTENT IS ADDED
+
+    // TODO: FIX TWO BELLOW
     @media (min-width: 1295px) and (max-width: 1366px) {
         font-size: 1.2rem;
         margin: .7px;
@@ -151,36 +153,60 @@
         margin: 7px;
         padding: 5px;
     }
-    
-    @media (min-width: 414px) and (max-width: 480px) {
-        font-size: 1.72rem;
-        margin: .7px;
-        padding: 4px;
-    }
 
-    @media (min-width: 411px) and (max-width: 413px) {
-        font-size: 1.72rem;
-        margin: .7px;
-        padding: 4px;
-    }
+    // @media (min-width: 836px) and (max-width: 895px) {
+    //     font-size: 1.6rem;
+    //     margin: 4px;
+    //     padding: 5px;
+    // }
 
-    @media (min-width: 375px) and (max-width: 410px) {
-        font-size: 1.9rem;
-        margin: 1.4px;
-        padding: 3px;
-    }
+    // @media (min-width: 768px) and (max-width: 835px) {
+    //     font-size: 1.5rem;
+    //     margin: 2px;
+    //     padding: 3px;
+    // }
 
-    @media (min-width: 360px) and (max-width: 374px) {
+     @media (min-width: 595px) and (max-width: 767px) {
         font-size: 2rem;
-        margin: 1.7px;
-        padding: 3px;
+        margin: 6px;
+        padding: 6px;
+    }
+
+    @media (min-width: 481px) and (max-width: 594px) {
+        font-size: 2rem;
+        margin: 3px;
+        padding: 4px;
     }
     
-    @media (min-width: 320px) and (max-width: 359px) {
-        font-size: 2.1rem;
-        margin: .5px;
-        padding: 3px;
-    }
+    // @media (min-width: 414px) and (max-width: 480px) {
+    //     font-size: 1.72rem;
+    //     margin: .7px;
+    //     padding: 4px;
+    // }
+
+    // @media (min-width: 411px) and (max-width: 413px) {
+    //     font-size: 1.72rem;
+    //     margin: .7px;
+    //     padding: 4px;
+    // }
+
+    // @media (min-width: 375px) and (max-width: 410px) {
+    //     font-size: 1.9rem;
+    //     margin: 1.4px;
+    //     padding: 3px;
+    // }
+
+    // @media (min-width: 360px) and (max-width: 374px) {
+    //     font-size: 2rem;
+    //     margin: 1.7px;
+    //     padding: 3px;
+    // }
+    
+    // @media (min-width: 320px) and (max-width: 359px) {
+    //     font-size: 2.1rem;
+    //     margin: .5px;
+    //     padding: 3px;
+    // }
 }
 
 .projects-container .box .content .project-btn-1 {

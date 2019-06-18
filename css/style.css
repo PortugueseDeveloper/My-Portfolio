@@ -256,6 +256,7 @@ ul li {
       font-size: 2.8rem; } }
   @media (min-width: 481px) and (max-width: 767px) {
     .projects-heading {
+      font-size: 3.3rem;
       padding: 2.2rem 0 4.5rem; } }
   @media (min-width: 411px) and (max-width: 480px) {
     .projects-heading {
@@ -290,6 +291,9 @@ ul li {
   @media (min-width: 768px) and (max-width: 1024px) {
     .projects-container .box .content h2 {
       font-size: 2rem; } }
+  @media (min-width: 481px) and (max-width: 767px) {
+    .projects-container .box .content h2 {
+      font-size: 2.5rem; } }
   @media (min-width: 414px) and (max-width: 480px) {
     .projects-container .box .content h2 {
       font-size: 2.6rem; } }
@@ -319,6 +323,9 @@ ul li {
   @media (min-width: 768px) and (max-width: 1024px) {
     .projects-container .box .content p {
       font-size: 1.9rem; } }
+  @media (min-width: 481px) and (max-width: 767px) {
+    .projects-container .box .content p {
+      font-size: 2.4rem; } }
   @media (min-width: 414px) and (max-width: 480px) {
     .projects-container .box .content p {
       font-size: 2.4rem; } }
@@ -512,31 +519,16 @@ ul li {
       font-size: 1.7rem;
       margin: 7px;
       padding: 5px; } }
-  @media (min-width: 414px) and (max-width: 480px) {
-    .projects-container .box .content .project-btn {
-      font-size: 1.72rem;
-      margin: .7px;
-      padding: 4px; } }
-  @media (min-width: 411px) and (max-width: 413px) {
-    .projects-container .box .content .project-btn {
-      font-size: 1.72rem;
-      margin: .7px;
-      padding: 4px; } }
-  @media (min-width: 375px) and (max-width: 410px) {
-    .projects-container .box .content .project-btn {
-      font-size: 1.9rem;
-      margin: 1.4px;
-      padding: 3px; } }
-  @media (min-width: 360px) and (max-width: 374px) {
+  @media (min-width: 595px) and (max-width: 767px) {
     .projects-container .box .content .project-btn {
       font-size: 2rem;
-      margin: 1.7px;
-      padding: 3px; } }
-  @media (min-width: 320px) and (max-width: 359px) {
+      margin: 6px;
+      padding: 6px; } }
+  @media (min-width: 481px) and (max-width: 594px) {
     .projects-container .box .content .project-btn {
-      font-size: 2.1rem;
-      margin: .5px;
-      padding: 3px; } }
+      font-size: 2rem;
+      margin: 3px;
+      padding: 4px; } }
 
 .projects-container .box .content .project-btn-1 {
   transform: translateX(-3rem); }
@@ -1012,7 +1004,7 @@ nav ul.main-menu .menu-items a {
       padding-bottom: 120px; } }
   @media (min-width: 481px) and (max-width: 767px) {
     .projects-container {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       grid-gap: 30px;
       padding-bottom: 66px; } }
   @media (min-width: 414px) and (max-width: 480px) {
@@ -1082,10 +1074,25 @@ nav ul.main-menu .menu-items a {
   @media (min-width: 768px) and (max-width: 1024px) {
     .projects-container .box {
       margin: 0 auto; } }
+  @media (min-width: 595px) and (max-width: 767px) {
+    .projects-container .box {
+      width: 530px;
+      height: 350px;
+      margin: 0 auto; } }
+  @media (min-width: 567px) and (max-width: 594px) {
+    .projects-container .box {
+      width: 500px;
+      height: 300px;
+      margin: 0 auto; } }
+  @media (min-width: 481px) and (max-width: 566px) {
+    .projects-container .box {
+      width: 490px;
+      height: 260px;
+      margin: 0 auto; } }
   @media (min-width: 414px) and (max-width: 480px) {
     .projects-container .box {
-      width: 340px;
-      height: 180px;
+      width: 440px;
+      height: 260px;
       margin: 0 auto; } }
   @media (min-width: 411px) and (max-width: 413px) {
     .projects-container .box {
@@ -1135,6 +1142,12 @@ nav ul.main-menu .menu-items a {
   @media (min-width: 1024px) and (max-width: 1149px) {
     .projects-container .content {
       padding: 0 25px;
+      line-height: 1.4; } }
+  @media (min-width: 595px) and (max-width: 767px) {
+    .projects-container .content {
+      line-height: 1.4; } }
+  @media (min-width: 481px) and (max-width: 594px) {
+    .projects-container .content {
       line-height: 1.4; } }
 
 footer {
