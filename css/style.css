@@ -802,6 +802,11 @@ nav ul.main-menu .menu-items a {
     left: 0;
     transform: scaleX(0);
     transition: all .5s; }
+    @media (max-width: 1024px) {
+      nav ul.main-menu .menu-items a::before, nav ul.main-menu .menu-items a::after {
+        background-color: initial;
+        transform: initial;
+        transition: initial; } }
   nav ul.main-menu .menu-items a::before {
     top: 0;
     transform-origin: left; }
