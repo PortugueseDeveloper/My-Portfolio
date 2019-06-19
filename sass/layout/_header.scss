@@ -1,5 +1,6 @@
 .header__box { background-color: $color-secondary; }
 
+// TODO: GENERAL - CHANGE ORIENTATION ON DEV TOOLS
 .header {
     height: 100vh;
     clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);

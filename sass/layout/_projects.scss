@@ -263,15 +263,16 @@
         margin: 0 auto;
     }
 
+    // TODO: CONTINUE FIXING RANGES BELLOW (SIZE OF BOXES AND THEIR CONTENT)
     @media (min-width: 481px) and (max-width: 566px) {
-        width: 490px;
-        height: 260px;
+        width: 400px;
+        height: 250px;
         margin: 0 auto;
     }
 
     @media (min-width: 414px) and (max-width: 480px) {
-        width: 440px;
-        height: 260px;
+        width: 400px;
+        height: 250px;
         margin: 0 auto;
         // margin-top: 0;
 

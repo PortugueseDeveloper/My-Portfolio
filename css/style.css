@@ -519,12 +519,37 @@ ul li {
       font-size: 1.7rem;
       margin: 7px;
       padding: 5px; } }
-  @media (min-width: 595px) and (max-width: 767px) {
+  @media (min-width: 567px) and (max-width: 767px) {
     .projects-container .box .content .project-btn {
       font-size: 2rem;
       margin: 6px;
       padding: 6px; } }
-  @media (min-width: 481px) and (max-width: 594px) {
+  @media (min-width: 481px) and (max-width: 566px) {
+    .projects-container .box .content .project-btn {
+      font-size: 2rem;
+      margin: 3px;
+      padding: 4px; } }
+  @media (min-width: 414px) and (max-width: 480px) {
+    .projects-container .box .content .project-btn {
+      font-size: 2rem;
+      margin: 3px;
+      padding: 4px; } }
+  @media (min-width: 411px) and (max-width: 413px) {
+    .projects-container .box .content .project-btn {
+      font-size: 2rem;
+      margin: 3px;
+      padding: 4px; } }
+  @media (min-width: 375px) and (max-width: 410px) {
+    .projects-container .box .content .project-btn {
+      font-size: 2rem;
+      margin: 3px;
+      padding: 4px; } }
+  @media (min-width: 360px) and (max-width: 374px) {
+    .projects-container .box .content .project-btn {
+      font-size: 2rem;
+      margin: 3px;
+      padding: 4px; } }
+  @media (min-width: 320px) and (max-width: 359px) {
     .projects-container .box .content .project-btn {
       font-size: 2rem;
       margin: 3px;
@@ -1086,13 +1111,13 @@ nav ul.main-menu .menu-items a {
       margin: 0 auto; } }
   @media (min-width: 481px) and (max-width: 566px) {
     .projects-container .box {
-      width: 490px;
-      height: 260px;
+      width: 400px;
+      height: 250px;
       margin: 0 auto; } }
   @media (min-width: 414px) and (max-width: 480px) {
     .projects-container .box {
-      width: 440px;
-      height: 260px;
+      width: 400px;
+      height: 250px;
       margin: 0 auto; } }
   @media (min-width: 411px) and (max-width: 413px) {
     .projects-container .box {
@@ -1478,7 +1503,7 @@ footer {
     margin: 0 auto; } }
 
 .contact-form {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden; }
   @media (min-width: 1024px) and (max-width: 1280px) {

@@ -226,7 +226,7 @@ footer {
     @media (min-width: 320px) and (max-width: 359px) { padding: 90px 47px; }
 }
 
-// TODO: CHECK FOR TOUCH SCREEN AND IMPLEMENT HOVER ACCORDINGLY (SEE TODO'S ON LIST)
+// TODO: CHECK FOR TOUCH SCREEN AND IMPLEMENT HOVER ACCORDINGLY 
 .social-media a::after {
     font-size: 48px;
     margin-left: 140px; 
@@ -329,7 +329,7 @@ footer {
 }
 
 .contact-form {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     // padding: 0 10px;
     overflow: hidden;
@@ -373,7 +373,7 @@ footer {
     background: #121212;
     outline: none;
     transition: .8s;
-    // TODO: FIX FOCUS
+    // TODO: FIX FORM FOCUS
     // &:focus { box-shadow: 0 0 9px $color-tertiary; }
 }
 
