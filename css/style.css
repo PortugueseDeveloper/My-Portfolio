@@ -195,7 +195,7 @@ ul li {
   @media (min-width: 1024px) and (max-width: 1280px) {
     .about-paragraph {
       font-size: 1.8rem; } }
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1023px) {
     .about-paragraph {
       font-size: 2.2rem; } }
   @media (min-width: 481px) and (max-width: 767px) {
@@ -220,11 +220,8 @@ ul li {
   color: rgba(10, 10, 10, 0.9); }
   @media (min-width: 1024px) and (max-width: 1280px) {
     .about-phrases {
-      font-size: 1.5rem; } }
-  @media (min-width: 1024px) and (max-width: 1280px) {
-    .about-phrases {
-      font-size: 1.8rem; } }
-  @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 1.7rem; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
     .about-phrases {
       font-size: 2.1rem; } }
   @media (min-width: 481px) and (max-width: 767px) {
@@ -288,27 +285,30 @@ ul li {
   transform: translateY(-3rem);
   opacity: 0;
   visibility: hidden; }
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 1024px) and (max-width: 1366px) {
+    .projects-container .box .content h2 {
+      font-size: 1.8rem; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
     .projects-container .box .content h2 {
       font-size: 2rem; } }
   @media (min-width: 481px) and (max-width: 767px) {
     .projects-container .box .content h2 {
-      font-size: 2.5rem; } }
+      font-size: 1.8rem; } }
   @media (min-width: 414px) and (max-width: 480px) {
     .projects-container .box .content h2 {
-      font-size: 2.6rem; } }
+      font-size: 1.8rem; } }
   @media (min-width: 411px) and (max-width: 413px) {
     .projects-container .box .content h2 {
-      font-size: 2.5rem; } }
+      font-size: 1.8rem; } }
   @media (min-width: 375px) and (max-width: 410px) {
     .projects-container .box .content h2 {
-      font-size: 2.9rem; } }
+      font-size: 1.8rem; } }
   @media (min-width: 360px) and (max-width: 374px) {
     .projects-container .box .content h2 {
-      font-size: 2.8rem; } }
+      font-size: 1.8rem; } }
   @media (min-width: 320px) and (max-width: 359px) {
     .projects-container .box .content h2 {
-      font-size: 3rem; } }
+      font-size: 1.8rem; } }
 
 .projects-container .box .content p {
   margin: 0 0 1rem;
@@ -320,9 +320,12 @@ ul li {
   transform: translateY(3rem);
   opacity: 0;
   visibility: hidden; }
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 1024px) and (max-width: 1366px) {
     .projects-container .box .content p {
-      font-size: 1.9rem; } }
+      font-size: 1.8rem; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .projects-container .box .content p {
+      font-size: 2rem; } }
   @media (min-width: 481px) and (max-width: 767px) {
     .projects-container .box .content p {
       font-size: 2.4rem; } }
@@ -492,6 +495,17 @@ ul li {
     border: none;
     z-index: -1;
     transition: .8s; }
+    @media (max-width: 1024px) {
+      .projects-container .box .content .project-btn::before {
+        content: "";
+        position: initial;
+        left: initial;
+        width: initial;
+        height: initial;
+        background: rgba(10, 10, 10, 0.9);
+        border: initial;
+        z-index: initial;
+        transition: initial; } }
   .projects-container .box .content .project-btn:hover::before {
     height: 180%; }
   @media (min-width: 1295px) and (max-width: 1366px) {
@@ -512,13 +526,13 @@ ul li {
   @media (min-width: 1024px) and (max-width: 1149px) {
     .projects-container .box .content .project-btn {
       font-size: 1.5rem;
-      margin: 5px;
-      padding: 4px; } }
-  @media (min-width: 768px) and (max-width: 1024px) {
-    .projects-container .box .content .project-btn {
-      font-size: 1.7rem;
-      margin: 7px;
+      margin: 8px;
       padding: 5px; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .projects-container .box .content .project-btn {
+      font-size: 1.6rem;
+      margin: 2px;
+      padding: 4px; } }
   @media (min-width: 567px) and (max-width: 767px) {
     .projects-container .box .content .project-btn {
       font-size: 2rem;
@@ -563,6 +577,10 @@ ul li {
   .projects-container .box .content .project-btn-1:hover {
     height: 180%;
     color: rgba(10, 10, 10, 0.9); }
+    @media (max-width: 1024px) {
+      .projects-container .box .content .project-btn-1:hover {
+        height: initial;
+        color: #f2f2f2; } }
 
 .projects-container .box .content .project-btn-2 {
   transform: translateX(3rem); }
@@ -572,6 +590,10 @@ ul li {
   .projects-container .box .content .project-btn-2:hover {
     height: 180%;
     color: rgba(10, 10, 10, 0.9); }
+    @media (max-width: 1024px) {
+      .projects-container .box .content .project-btn-2:hover {
+        height: initial;
+        color: #f2f2f2; } }
 
 .projects-container .box:hover .content .project-btn {
   opacity: 1;
@@ -849,6 +871,9 @@ nav ul.main-menu .menu-items a {
 
 .about-section {
   padding: 0 100px 100px 100px; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .about-section {
+      padding: 0 40px 40px 40px; } }
   @media (min-width: 481px) and (max-width: 767px) {
     .about-section {
       padding: 30px; } }

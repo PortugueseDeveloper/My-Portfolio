@@ -91,10 +91,7 @@
     color: $color-tertiary;
     margin: 4rem;
 
-    @media (min-width: 768px) and (max-width: 1023px) {
-        font-size: 2.8rem;
-        margin: 3rem;
-    }
+    @media (min-width: 768px) and (max-width: 1023px) { font-size: 2.8rem; margin: 3rem; }
 
     @media (min-width: 481px) and (max-width: 767px) {
         font-size: 3.3rem;
@@ -127,33 +124,13 @@
     color: $color-tertiary;
     margin-bottom: 2.5rem;
 
-    @media (min-width: 1024px) and (max-width: 1280px) {
-        font-size: 1.8rem;
-    }
-    
-    @media (min-width: 768px) and (max-width: 1024px) {
-        font-size: 2.2rem;
-    }
-
-    @media (min-width: 481px) and (max-width: 767px) {
-        font-size: 2.2rem;
-    }
-
-    @media (min-width: 411px) and (max-width: 480px) {
-        font-size: 2.5rem;  
-    }
-
-    @media (min-width: 375px) and (max-width: 410px) {
-        font-size: 2.6rem;
-    }
-
-     @media (min-width: 360px) and (max-width: 374px) {
-        font-size: 2.7rem;
-    }
-
-    @media (min-width: 320px) and (max-width: 359px) {
-        font-size: 2.9rem;
-    }
+    @media (min-width: 1024px) and (max-width: 1280px) { font-size: 1.8rem; }
+    @media (min-width: 768px) and (max-width: 1023px) { font-size: 2.2rem; }
+    @media (min-width: 481px) and (max-width: 767px) { font-size: 2.2rem; }
+    @media (min-width: 411px) and (max-width: 480px) { font-size: 2.5rem; }
+    @media (min-width: 375px) and (max-width: 410px) { font-size: 2.6rem; }
+    @media (min-width: 360px) and (max-width: 374px) { font-size: 2.7rem; }
+    @media (min-width: 320px) and (max-width: 359px) { font-size: 2.9rem; }
 }   
 
 // TODO: FIX PHRASES ON MOBILE (MOV BUG)
@@ -162,37 +139,14 @@
     vertical-align: middle;
     color: $color-tertiary;
 
-    @media (min-width: 1024px) and (max-width: 1280px) {
-        font-size: 1.5rem;
-    }
-
-    @media (min-width: 1024px) and (max-width: 1280px) {
-        font-size: 1.8rem;
-    }
-    
-    @media (min-width: 768px) and (max-width: 1024px) {
-        font-size: 2.1rem;
-    }
-
-    @media (min-width: 481px) and (max-width: 767px) {
-        font-size: 2.1rem;
-    }
-
-    @media (min-width: 411px) and (max-width: 480px) {
-        font-size: 2.4rem;
-    }
-
-    @media (min-width: 375px) and (max-width: 410px) {
-        font-size: 2.56rem;
-    }
-
-    @media (min-width: 360px) and (max-width: 374px) {
-        font-size: 2.6rem;
-    }
-
-    @media (min-width: 320px) and (max-width: 359px) {
-        font-size: 2.8rem;
-    }
+    // @media (min-width: 1024px) and (max-width: 1280px) { font-size: 1.5rem; }
+    @media (min-width: 1024px) and (max-width: 1280px) { font-size: 1.7rem; }
+    @media (min-width: 768px) and (max-width: 1023px) { font-size: 2.1rem; }
+    @media (min-width: 481px) and (max-width: 767px) { font-size: 2.1rem; }
+    @media (min-width: 411px) and (max-width: 480px) { font-size: 2.4rem; }
+    @media (min-width: 375px) and (max-width: 410px) { font-size: 2.56rem; }
+    @media (min-width: 360px) and (max-width: 374px) { font-size: 2.6rem; }
+    @media (min-width: 320px) and (max-width: 359px) { font-size: 2.8rem; }
 }
 
 // "My projects" section typography 
@@ -250,33 +204,14 @@
     opacity: 0;
     visibility: hidden;
 
-    @media (min-width: 768px) and (max-width: 1024px) {
-        font-size: 2rem;
-    }
-
-    @media (min-width: 481px) and (max-width: 767px) {
-        font-size: 2.5rem;
-    }
-
-    @media (min-width: 414px) and (max-width: 480px) {
-        font-size: 2.6rem;
-    }
-
-    @media (min-width: 411px) and (max-width: 413px) {
-        font-size: 2.5rem;
-    }
-
-    @media (min-width: 375px) and (max-width: 410px) {
-        font-size: 2.9rem;
-    }
-
-    @media (min-width: 360px) and (max-width: 374px) {
-        font-size: 2.8rem;
-    }
-
-    @media (min-width: 320px) and (max-width: 359px) {
-        font-size: 3rem;
-    }
+    @media (min-width: 1024px) and (max-width: 1366px) { font-size: 1.8rem; }
+    @media (min-width: 768px) and (max-width: 1023px) { font-size: 2rem; }
+    @media (min-width: 481px) and (max-width: 767px) { font-size: 1.8rem; }
+    @media (min-width: 414px) and (max-width: 480px) { font-size: 1.8rem; }
+    @media (min-width: 411px) and (max-width: 413px) { font-size: 1.8rem; }
+    @media (min-width: 375px) and (max-width: 410px) { font-size: 1.8rem; }
+    @media (min-width: 360px) and (max-width: 374px) { font-size: 1.8rem; }
+    @media (min-width: 320px) and (max-width: 359px) { font-size: 1.8rem; }
 }
 
 .projects-container .box .content p {
@@ -291,10 +226,8 @@
     visibility: hidden;
     
     // TODO: FIX THIS
-    @media (min-width: 768px) and (max-width: 1024px) {
-        font-size: 1.9rem;
-    }
-
+    @media (min-width: 1024px) and (max-width: 1366px) { font-size: 1.8rem; }
+    @media (min-width: 768px) and (max-width: 1023px) { font-size: 2rem; }
     @media (min-width: 481px) and (max-width: 767px) {
         font-size: 2.4rem;
     }
