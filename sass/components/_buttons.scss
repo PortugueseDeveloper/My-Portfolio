@@ -13,6 +13,7 @@
     animation-fill-mode: backwards;
 
     @media (min-width: 375px) and (max-width: 767px) {
+        top: 8%;
         visibility: visible;    
     }
 
@@ -201,14 +202,14 @@
 
     @media (min-width: 411px) and (max-width: 413px) {
         font-size: 2rem;
-        margin: 3px;
-        padding: 4px;
+        margin: 4px;
+        padding: 4px;   
     }
 
     @media (min-width: 375px) and (max-width: 410px) {
-        font-size: 2rem;
-        margin: 3px;
-        padding: 4px;
+        font-size: 2.2rem;
+        margin: 4px;
+        padding: 4px; 
     }
 
     @media (min-width: 360px) and (max-width: 374px) {
