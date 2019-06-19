@@ -1,3 +1,5 @@
+// TODO: GENERAL - NEED TO FIX HEADING SIZES (SAME PROPORTIONS FOR DIFFERENT SECTIONS)
+
 // Header typography
 .heading-primary {
     color: $color-secondary;
@@ -23,8 +25,9 @@
     @media (min-width: 481px) and (max-width: 559px) { font-size: 3.5rem; }
     
     @media (min-width: 320px) and (max-width: 480px) {
-        font-size: 4rem;
+        font-size: 3.5rem;
         letter-spacing: .3rem;
+        margin-bottom: 0;
     }
 }
 
@@ -59,7 +62,7 @@
     // TODO: MAYBE FIX FZ ON THIS RANGE (?)
     @media (min-width: 320px) and (max-width: 480px) {
         letter-spacing: .4rem;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         margin-left: 3.8%;
     }
 }
@@ -91,10 +94,7 @@
     color: $color-tertiary;
     margin: 4rem;
 
-    @media (min-width: 768px) and (max-width: 1023px) {
-        font-size: 2.8rem;
-        margin: 3rem;
-    }
+    @media (min-width: 768px) and (max-width: 1023px) { font-size: 2.8rem; margin: 3rem; }
 
     @media (min-width: 481px) and (max-width: 767px) {
         font-size: 3.3rem;
@@ -107,7 +107,7 @@
     }
 
     @media (min-width: 375px) and (max-width: 410px) {
-        font-size: 3.4rem;
+        font-size: 3.2rem;
         margin: 2rem;
     }
 
@@ -127,71 +127,29 @@
     color: $color-tertiary;
     margin-bottom: 2.5rem;
 
-    @media (min-width: 1024px) and (max-width: 1280px) {
-        font-size: 1.8rem;
-    }
-    
-    @media (min-width: 768px) and (max-width: 1024px) {
-        font-size: 2.2rem;
-    }
+    @media (min-width: 1024px) and (max-width: 1280px) { font-size: 1.8rem; }
+    @media (min-width: 768px) and (max-width: 1023px) { font-size: 2.2rem; }
+    @media (min-width: 481px) and (max-width: 767px) { font-size: 2.2rem; }
+    @media (min-width: 411px) and (max-width: 480px) { font-size: 2.5rem; }
+    @media (min-width: 375px) and (max-width: 410px) { font-size: 2.6rem; }
+    @media (min-width: 360px) and (max-width: 374px) { font-size: 2.7rem; }
+    @media (min-width: 320px) and (max-width: 359px) { font-size: 2.9rem; }
+}   
 
-    @media (min-width: 481px) and (max-width: 767px) {
-        font-size: 2.2rem;
-    }
-
-    @media (min-width: 411px) and (max-width: 480px) {
-        font-size: 2.5rem;  
-    }
-
-    @media (min-width: 375px) and (max-width: 410px) {
-        font-size: 2.6rem;
-    }
-
-     @media (min-width: 360px) and (max-width: 374px) {
-        font-size: 2.7rem;
-    }
-
-    @media (min-width: 320px) and (max-width: 359px) {
-        font-size: 2.9rem;
-    }
-}
-
+// TODO: FIX PHRASES ON MOBILE (MOV BUG)
 .about-phrases {
     font-size: 1.7rem;
     vertical-align: middle;
     color: $color-tertiary;
 
-    @media (min-width: 1024px) and (max-width: 1280px) {
-        font-size: 1.5rem;
-    }
-
-    @media (min-width: 1024px) and (max-width: 1280px) {
-        font-size: 1.8rem;
-    }
-    
-    @media (min-width: 768px) and (max-width: 1024px) {
-        font-size: 2.1rem;
-    }
-
-    @media (min-width: 481px) and (max-width: 767px) {
-        font-size: 2.1rem;
-    }
-
-    @media (min-width: 411px) and (max-width: 480px) {
-        font-size: 2.4rem;
-    }
-
-    @media (min-width: 375px) and (max-width: 410px) {
-        font-size: 2.56rem;
-    }
-
-    @media (min-width: 360px) and (max-width: 374px) {
-        font-size: 2.6rem;
-    }
-
-    @media (min-width: 320px) and (max-width: 359px) {
-        font-size: 2.8rem;
-    }
+    // @media (min-width: 1024px) and (max-width: 1280px) { font-size: 1.5rem; }
+    @media (min-width: 1024px) and (max-width: 1280px) { font-size: 1.7rem; }
+    @media (min-width: 768px) and (max-width: 1023px) { font-size: 2.1rem; }
+    @media (min-width: 481px) and (max-width: 767px) { font-size: 2.1rem; }
+    @media (min-width: 411px) and (max-width: 480px) { font-size: 2.4rem; }
+    @media (min-width: 375px) and (max-width: 410px) { font-size: 2.56rem; }
+    @media (min-width: 360px) and (max-width: 374px) { font-size: 2.6rem; }
+    @media (min-width: 320px) and (max-width: 359px) { font-size: 2.8rem; }
 }
 
 // "My projects" section typography 
@@ -218,7 +176,7 @@
     }
 
     @media (min-width: 375px) and (max-width: 410px) {
-        font-size: 3.4rem;
+        font-size: 3.2rem;
     }
     
      @media (min-width: 360px) and (max-width: 374px) {
@@ -249,33 +207,14 @@
     opacity: 0;
     visibility: hidden;
 
-    @media (min-width: 768px) and (max-width: 1024px) {
-        font-size: 2rem;
-    }
-
-    @media (min-width: 481px) and (max-width: 767px) {
-        font-size: 2.5rem;
-    }
-
-    @media (min-width: 414px) and (max-width: 480px) {
-        font-size: 2.6rem;
-    }
-
-    @media (min-width: 411px) and (max-width: 413px) {
-        font-size: 2.5rem;
-    }
-
-    @media (min-width: 375px) and (max-width: 410px) {
-        font-size: 2.9rem;
-    }
-
-    @media (min-width: 360px) and (max-width: 374px) {
-        font-size: 2.8rem;
-    }
-
-    @media (min-width: 320px) and (max-width: 359px) {
-        font-size: 3rem;
-    }
+    @media (min-width: 1024px) and (max-width: 1366px) { font-size: 1.8rem; }
+    @media (min-width: 768px) and (max-width: 1023px) { font-size: 2rem; }
+    @media (min-width: 481px) and (max-width: 767px) { font-size: 1.8rem; }
+    @media (min-width: 414px) and (max-width: 480px) { font-size: 2.3rem; }
+    @media (min-width: 411px) and (max-width: 413px) { font-size: 2.3rem; }
+    @media (min-width: 375px) and (max-width: 410px) { font-size: 2.5rem; }
+    @media (min-width: 360px) and (max-width: 374px) { font-size: 1.8rem; }
+    @media (min-width: 320px) and (max-width: 359px) { font-size: 1.8rem; }
 }
 
 .projects-container .box .content p {
@@ -290,24 +229,14 @@
     visibility: hidden;
     
     // TODO: FIX THIS
-    @media (min-width: 768px) and (max-width: 1024px) {
-        font-size: 1.9rem;
-    }
-
-    @media (min-width: 481px) and (max-width: 767px) {
-        font-size: 2.4rem;
-    }
-
-    @media (min-width: 414px) and (max-width: 480px) {
-        font-size: 2.4rem;
-    }
-
-    @media (min-width: 411px) and (max-width: 414px) {
-        font-size: 2.4rem;
-    }
+    @media (min-width: 1024px) and (max-width: 1366px) { font-size: 1.8rem; }
+    @media (min-width: 768px) and (max-width: 1023px) { font-size: 2rem; }
+    @media (min-width: 481px) and (max-width: 767px) { font-size: 2.4rem; }
+    @media (min-width: 414px) and (max-width: 480px) { font-size: 2rem; }
+    @media (min-width: 411px) and (max-width: 414px) { font-size: 2.4rem; }
 
      @media (min-width: 375px) and (max-width: 410px) {
-        font-size: 2.4rem;
+        font-size: 2.6rem;
     }
 
      @media (min-width: 360px) and (max-width: 374px) {
@@ -320,12 +249,10 @@
 }
 
 .projects-container .box:hover .content h2,
-.projects-container .box:hover .content p {
-    @include project-box-elements-transition();
-}
+.projects-container .box:hover .content p { @include project-box-elements-transition(); }
 
 // "Footer/Contacts" typography 
-.heading-contacts {
+.contacts-heading {
     color: $color-tertiary;    
     font-size: 2.8rem;
     text-transform: uppercase;
@@ -334,8 +261,34 @@
     letter-spacing: .2rem;
     padding: 3rem 0 4rem;
 
+    // TODO: NEED TO FIX CONTACTS HEADING PROPORTIONS FOR MOBILE DEVICES
+    @media (min-width: 768px) and (max-width: 1023px) {
+        font-size: 2.8rem;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        font-size: 3.3rem;
+        padding: 2.2rem 0 4.5rem;
+    }
+
+    @media (min-width: 411px) and (max-width: 480px) {
+        font-size: 3.2rem;
+    }
+
     @media (min-width: 375px) and (max-width: 410px) {
-        font-size: 2.7rem;
+        font-size: 3.2rem;
+    }
+    
+     @media (min-width: 360px) and (max-width: 374px) {
+        font-size: 3.3rem;
+    }
+
+    @media (min-width: 320px) and (max-width: 359px) {
+        font-size: 3.6rem;
+    }
+
+    @media (min-width: 375px) and (max-width: 410px) {
+        font-size: 3.2rem;
     }
 }
 

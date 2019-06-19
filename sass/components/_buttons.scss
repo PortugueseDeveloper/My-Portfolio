@@ -13,6 +13,7 @@
     animation-fill-mode: backwards;
 
     @media (min-width: 375px) and (max-width: 767px) {
+        top: 8%;
         visibility: visible;    
     }
 
@@ -117,6 +118,18 @@
         border: none;
         z-index: -1;
         transition: .8s; 
+
+        @media (max-width: 1024px) { 
+            content: "";
+            position: initial;
+            left: initial;
+            width: initial;
+            height: initial;
+            background: $color-tertiary;
+            border: initial;
+            z-index: initial;
+            transition: initial; 
+        }
     }
 
     &:hover::before { height: 180%; }
@@ -140,18 +153,21 @@
         font-size: 1.5rem;
         margin: 7px;
         padding: 5px;
+        // font-size: 1.5rem;
+        // margin: 8px;
+        // padding: 5px;
     }
     
     @media (min-width: 1024px) and (max-width: 1149px) {
         font-size: 1.5rem;
-        margin: 5px;
-        padding: 4px;
+        margin: 8px;
+        padding: 5px;
     }
 
-    @media (min-width: 768px) and (max-width: 1024px) {
-        font-size: 1.7rem;
-        margin: 7px;
-        padding: 5px;
+    @media (min-width: 768px) and (max-width: 1023px) {
+        font-size: 1.6rem;
+        margin: 2px;
+        padding: 4px;
     }
 
     // @media (min-width: 836px) and (max-width: 895px) {
@@ -159,54 +175,54 @@
     //     margin: 4px;
     //     padding: 5px;
     // }
-
+        
     // @media (min-width: 768px) and (max-width: 835px) {
     //     font-size: 1.5rem;
     //     margin: 2px;
     //     padding: 3px;
     // }
 
-     @media (min-width: 595px) and (max-width: 767px) {
+     @media (min-width: 567px) and (max-width: 767px) {
         font-size: 2rem;
         margin: 6px;
         padding: 6px;
     }
 
-    @media (min-width: 481px) and (max-width: 594px) {
+    @media (min-width: 481px) and (max-width: 566px) {
         font-size: 2rem;
         margin: 3px;
         padding: 4px;
     }
     
-    // @media (min-width: 414px) and (max-width: 480px) {
-    //     font-size: 1.72rem;
-    //     margin: .7px;
-    //     padding: 4px;
-    // }
+    @media (min-width: 414px) and (max-width: 480px) {
+        font-size: 2rem;
+        margin: 3px;
+        padding: 4px;
+    }
 
-    // @media (min-width: 411px) and (max-width: 413px) {
-    //     font-size: 1.72rem;
-    //     margin: .7px;
-    //     padding: 4px;
-    // }
+    @media (min-width: 411px) and (max-width: 413px) {
+        font-size: 2rem;
+        margin: 4px;
+        padding: 4px;   
+    }
 
-    // @media (min-width: 375px) and (max-width: 410px) {
-    //     font-size: 1.9rem;
-    //     margin: 1.4px;
-    //     padding: 3px;
-    // }
+    @media (min-width: 375px) and (max-width: 410px) {
+        font-size: 2.2rem;
+        margin: 4px;
+        padding: 4px; 
+    }
 
-    // @media (min-width: 360px) and (max-width: 374px) {
-    //     font-size: 2rem;
-    //     margin: 1.7px;
-    //     padding: 3px;
-    // }
+    @media (min-width: 360px) and (max-width: 374px) {
+        font-size: 2rem;
+        margin: 3px;
+        padding: 4px;
+    }
     
-    // @media (min-width: 320px) and (max-width: 359px) {
-    //     font-size: 2.1rem;
-    //     margin: .5px;
-    //     padding: 3px;
-    // }
+    @media (min-width: 320px) and (max-width: 359px) {
+        font-size: 2rem;
+        margin: 3px;
+        padding: 4px;
+    }
 }
 
 .projects-container .box .content .project-btn-1 {
@@ -221,6 +237,11 @@
     &:hover {
         height: 180%;
         color: $color-tertiary;
+
+        @media (max-width: 1024px) { 
+            height: initial;
+            color: $color-secondary;
+        }
     }
 
 }
@@ -236,6 +257,11 @@
     &:hover {
         height: 180%;
         color: $color-tertiary;
+
+        @media (max-width: 1024px) { 
+            height: initial;
+            color: $color-secondary;
+        }
     }
 }
 
