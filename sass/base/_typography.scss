@@ -23,8 +23,14 @@
     @media (min-width: 481px) and (max-width: 767px) { letter-spacing: .7rem; }
     @media (min-width: 560px) and (max-width: 640px) { font-size: 4rem; }
     @media (min-width: 481px) and (max-width: 559px) { font-size: 3.5rem; }
+
+    @media (min-width: 360px) and (max-width: 480px) {
+        font-size: 4.2rem;
+        letter-spacing: .3rem;
+        margin-bottom: 0;
+    }
     
-    @media (min-width: 320px) and (max-width: 480px) {
+    @media (min-width: 320px) and (max-width: 359px) {
         font-size: 3.5rem;
         letter-spacing: .3rem;
         margin-bottom: 0;
@@ -60,7 +66,13 @@
     // }
     
     // TODO: MAYBE FIX FZ ON THIS RANGE (?)
-    @media (min-width: 320px) and (max-width: 480px) {
+    @media (min-width: 360px) and (max-width: 480px) {
+        letter-spacing: .4rem;
+        font-size: 1.8rem;
+        margin-left: 3.8%;
+    }
+
+    @media (min-width: 320px) and (max-width: 359px) {
         letter-spacing: .4rem;
         font-size: 1.5rem;
         margin-left: 3.8%;
