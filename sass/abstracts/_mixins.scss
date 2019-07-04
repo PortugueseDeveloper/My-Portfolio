@@ -19,15 +19,10 @@
     transform: translate(-40%, -50%);
 }
 
-// Media queries mixins
-@mixin main-menu--bellow-768px() {
-    .main-menu {
-        text-transform: lowercase;
-    }
-}
-
-@mixin main-menu--bellow-481px() {
-    .main-menu {
-
-    }
+// "Project Box" elements transition
+@mixin project-box-elements-transition {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition-delay: .2s;
 }

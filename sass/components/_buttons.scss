@@ -1,18 +1,19 @@
 // Header section buttons
 .hamburger {
     position: absolute;
-    top: 12%;
+    top: 10%;
     // TODO: FIX THIS LATER
     left: 93.7%;
     visibility: hidden;
     z-index: 4;
     padding: 1em;     
     margin: -1em; 
-    transform: translate(-50%, -50%);
+    // transform: translate(-50%, -50%);
     animation: moveInRight 1s ease-in-out .50s;
     animation-fill-mode: backwards;
 
     @media (min-width: 375px) and (max-width: 767px) {
+        top: 8%;
         visibility: visible;    
     }
 
@@ -92,20 +93,20 @@
 }
 
 // "My Projects" section buttons
-.project-boxes-container .box .content .project-btn {
-    margin: 4px;
-    padding: 5px;
+.projects-container .box .content .project-btn {
+    font-size: 1.4rem;
     color: $color-secondary;
-    background: none;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    background: none;
+    margin: 2px;
+    padding: 3px;
     opacity: 0; 
     visibility: hidden;
     border: 1px solid $color-secondary;
     cursor: pointer;
-    transition: 1s;
     position: relative;
     overflow: hidden;
+    transition: .8s;
 
     &::before {
         content: "";
@@ -113,17 +114,118 @@
         left: 0;
         width: 100%;
         height: 0;
-        // TODO: ADD BETTER BACKGROUND COLOR ON HOVER
         background: $color-secondary;
+        border: none;
         z-index: -1;
-        transition: 1s; 
+        transition: .8s; 
+
+        @media (max-width: 1024px) { 
+            content: "";
+            position: initial;
+            left: initial;
+            width: initial;
+            height: initial;
+            background: $color-tertiary;
+            border: initial;
+            z-index: initial;
+            transition: initial; 
+        }
     }
 
-    &:hover::before { height: 180%; } 
+    &:hover::before { height: 180%; }
+
+    // TODO: FIX UPPER RANGE AFTER TRUE CONTENT IS ADDED
+
+    // TODO: FIX TWO BELLOW
+    @media (min-width: 1295px) and (max-width: 1366px) {
+        font-size: 1.2rem;
+        margin: .7px;
+        padding: 4px;
+    }
+    
+    @media (min-width: 1281px) and (max-width: 1294px) {
+        font-size: 1.2rem;
+        margin: .7px;
+        padding: 3px;
+    }
+    
+    @media (min-width: 1150px) and (max-width: 1280px) { 
+        font-size: 1.5rem;
+        margin: 7px;
+        padding: 5px;
+        // font-size: 1.5rem;
+        // margin: 8px;
+        // padding: 5px;
+    }
+    
+    @media (min-width: 1024px) and (max-width: 1149px) {
+        font-size: 1.5rem;
+        margin: 8px;
+        padding: 5px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        font-size: 1.6rem;
+        margin: 2px;
+        padding: 4px;
+    }
+
+    // @media (min-width: 836px) and (max-width: 895px) {
+    //     font-size: 1.6rem;
+    //     margin: 4px;
+    //     padding: 5px;
+    // }
+        
+    // @media (min-width: 768px) and (max-width: 835px) {
+    //     font-size: 1.5rem;
+    //     margin: 2px;
+    //     padding: 3px;
+    // }
+
+     @media (min-width: 567px) and (max-width: 767px) {
+        font-size: 2rem;
+        margin: 6px;
+        padding: 6px;
+    }
+
+    @media (min-width: 481px) and (max-width: 566px) {
+        font-size: 2rem;
+        margin: 3px;
+        padding: 4px;
+    }
+    
+    @media (min-width: 414px) and (max-width: 480px) {
+        font-size: 2rem;
+        margin: 3px;
+        padding: 4px;
+    }
+
+    @media (min-width: 411px) and (max-width: 413px) {
+        font-size: 2rem;
+        margin: 4px;
+        padding: 4px;   
+    }
+
+    @media (min-width: 375px) and (max-width: 410px) {
+        font-size: 2.2rem;
+        margin: 4px;
+        padding: 4px; 
+    }
+
+    @media (min-width: 360px) and (max-width: 374px) {
+        font-size: 2rem;
+        margin: 3px;
+        padding: 4px;
+    }
+    
+    @media (min-width: 320px) and (max-width: 359px) {
+        font-size: 2rem;
+        margin: 3px;
+        padding: 4px;
+    }
 }
 
-.project-boxes-container .box .content .project-btn-1 {
-    font-size: 13px;
+.projects-container .box .content .project-btn-1 {
     transform: translateX(-3rem);
 
     &::before {
@@ -134,12 +236,17 @@
     // TODO: FIX BTN'S COLOR
     &:hover {
         height: 180%;
-        color: #111;
+        color: $color-tertiary;
+
+        @media (max-width: 1024px) { 
+            height: initial;
+            color: $color-secondary;
+        }
     }
 
 }
 
-.project-boxes-container .box .content .project-btn-2 { 
+.projects-container .box .content .project-btn-2 { 
     transform: translateX(3rem);
 
     &::before {
@@ -149,8 +256,72 @@
 
     &:hover {
         height: 180%;
-        color: #111;
+        color: $color-tertiary;
+
+        @media (max-width: 1024px) { 
+            height: initial;
+            color: $color-secondary;
+        }
     }
 }
 
-// ADD FORM BTN HERE
+.projects-container .box:hover .content .project-btn {
+    @include project-box-elements-transition();
+}
+
+// "Contacts" section submit button
+.email-contact-container .submit-btn-wrapper { text-align: center; margin-top: 3rem; }
+
+.main-button {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: $color-tertiary;
+    padding: 12px 50px;
+    border: 1px solid #111;
+    background: none; 
+    z-index: 1;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: .8s;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: $color-tertiary;
+        z-index: -1;
+        transition: .8s;
+    }
+
+    &:hover::before { height: 180%; }
+
+    @media (min-width: 768px) and (max-width: 1023px) { font-size: 1.5rem; }
+    @media (min-width: 481px) and (max-width: 767px) { font-size: 1.7rem; }
+    @media (min-width: 411px) and (max-width: 480px) { font-size: 1.7rem; }
+} 
+
+.submit-contact-form-btn {
+    &:hover {
+        color: $color-secondary;
+    }
+
+    &::before {
+        bottom: 0;
+        border-radius: 50% 50% 0 0;
+    }
+
+    &:hover::before {
+        height: 200%;
+        color: $color-secondary;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) { padding: 10px 28px; }
+    @media (min-width: 411px) and (max-width: 480px) { padding: 10px 28px; }
+    @media (min-width: 375px) and (max-width: 410px) { padding: 10px 28px; }
+    @media (min-width: 360px) and (max-width: 374px) { padding: 10px 28px; }
+    @media (min-width: 320px) and (max-width: 359px) { padding: 8px 25.8px; }
+}
