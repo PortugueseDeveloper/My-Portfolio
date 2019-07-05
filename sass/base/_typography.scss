@@ -24,7 +24,13 @@
     @media (min-width: 560px) and (max-width: 640px) { font-size: 4rem; }
     @media (min-width: 481px) and (max-width: 559px) { font-size: 3.5rem; }
 
-    @media (min-width: 360px) and (max-width: 480px) {
+    @media (min-width: 375px) and (max-width: 480px) {
+        font-size: 3.8rem;
+        letter-spacing: .3rem;
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 360px) and (max-width: 374px) {
         font-size: 4.2rem;
         letter-spacing: .3rem;
         margin-bottom: 0;
@@ -64,9 +70,15 @@
     // @media (min-width: 551px) and (max-width: 640px) {
     //     font-size: 1.5rem;
     // }
+
+    @media (min-width: 375px) and (max-width: 480px) {
+        font-size: 1.6rem;
+        letter-spacing: .3rem;
+        margin-bottom: 0;
+    }
     
     // TODO: MAYBE FIX FZ ON THIS RANGE (?)
-    @media (min-width: 360px) and (max-width: 480px) {
+    @media (min-width: 360px) and (max-width: 374px) {
         letter-spacing: .4rem;
         font-size: 1.8rem;
         margin-left: 3.8%;
@@ -105,11 +117,11 @@
     text-align: center;
     letter-spacing: .2rem;
     color: $color-tertiary;
-    padding: 3rem;
+    margin-bottom: 1rem;
 
     @media (min-width: 1024px) and (max-width: 1366px) { padding: 2.5rem; }
 
-    @media (min-width: 768px) and (max-width: 1023px) { font-size: 2.8rem; }
+    @media (min-width: 768px) and (max-width: 1023px) { font-size: 2.8rem; margin: 3rem; }
 
     @media (min-width: 481px) and (max-width: 767px) {
         font-size: 3.3rem;
@@ -118,17 +130,17 @@
 
     @media (min-width: 414px) and (max-width: 480px) {
         font-size: 3.2rem;
-        // margin: 0rem;
+        margin: 3rem;
     }
 
     @media (min-width: 411px) and (max-width: 413px) {
         font-size: 3.2rem;
-        margin: -.3rem;
+        margin: 3rem;
     }
 
     @media (min-width: 375px) and (max-width: 410px) {
         font-size: 3.2rem;
-        margin: -.3rem;
+        margin: 3rem;
     }
 
     @media (min-width: 360px) and (max-width: 374px) {
@@ -158,13 +170,13 @@
 
 // TODO: FIX PHRASES ON MOBILE (MOV BUG)
 .about-phrases {
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     vertical-align: middle;
     color: $color-tertiary;
 
     // @media (min-width: 1024px) and (max-width: 1280px) { font-size: 1.5rem; }
-    @media (min-width: 1024px) and (max-width: 1280px) { font-size: 1.7rem; }
-    @media (min-width: 768px) and (max-width: 1023px) { font-size: 2.1rem; }
+    @media (min-width: 1024px) and (max-width: 1280px) { font-size: 2rem; }
+    @media (min-width: 768px) and (max-width: 1023px) { font-size: 2.3rem; }
     @media (min-width: 481px) and (max-width: 767px) { font-size: 2.1rem; }
     @media (min-width: 411px) and (max-width: 480px) { font-size: 2.4rem; }
     @media (min-width: 375px) and (max-width: 410px) { font-size: 2.56rem; }

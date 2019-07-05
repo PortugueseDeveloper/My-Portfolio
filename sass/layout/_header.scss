@@ -3,15 +3,13 @@
 // TODO: GENERAL - CHANGE ORIENTATION ON DEV TOOLS
 .header {
     height: 100vh;
-    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-    // background-image: linear-gradient(
-    //     to right bottom, 
-    //     $color-primary-light-transparent, 
-    //     $color-primary-dark-transparent),   
-    // url("img/placeholder-bg.jpg");
-    background: linear-gradient(to bottom, rgba(0, 0, 0, .8), rgba(0, 0, 0, .5)), url("img/main-bg.jpeg") center no-repeat;
+    background: url("img/main-bg.jpeg") no-repeat center center fixed; 
     background-size: cover;
-    // clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
     position: relative;
     font-weight: 400;
     line-height: 1.7;
