@@ -998,7 +998,7 @@ nav ul.main-menu .menu-items a {
   position: absolute;
   top: 50%;
   left: 10%;
-  transform: translateY(-50%);
+  transform: translateX(50%);
   height: 50px;
   overflow: hidden; }
 
@@ -1139,7 +1139,7 @@ nav ul.main-menu .menu-items a {
 
 .projects-container .box {
   position: relative;
-  background: #111;
+  background: rgba(0, 0, 0, 0);
   overflow: hidden; }
   .projects-container .box:nth-child(-n+3) {
     margin-top: 0; }
@@ -1173,7 +1173,8 @@ nav ul.main-menu .menu-items a {
     z-index: 1; }
   .projects-container .box:hover::after {
     transform: scaleY(1);
-    opacity: 1; }
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.1); }
   @media (min-width: 1024px) and (max-width: 1280px) {
     .projects-container .box {
       margin: 0 auto; } }
