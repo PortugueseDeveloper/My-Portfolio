@@ -47,14 +47,14 @@
     position: absolute;
     top: 50%;
     left: 10%;
-    // transform: translateY(-50%);
+    transform: translateY(-50%);
+    // transform: translateX(50%);
     // Making tests here (trying ways of changing structure to fix about phrases bug) 
-    transform: translateX(50%);
     height: 50px;
     overflow: hidden;
 }
 
 .about-phrases div {
     height: 50px;
-    transition: margin-top 1s ease-in-out;
+    transition: margin-bottom 1s ease-in-out;
 } 

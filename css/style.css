@@ -998,13 +998,13 @@ nav ul.main-menu .menu-items a {
   position: absolute;
   top: 50%;
   left: 10%;
-  transform: translateX(50%);
+  transform: translateY(-50%);
   height: 50px;
   overflow: hidden; }
 
 .about-phrases div {
   height: 50px;
-  transition: margin-top 1s ease-in-out; }
+  transition: margin-bottom 1s ease-in-out; }
 
 .projects-section {
   padding: 0 100px;
