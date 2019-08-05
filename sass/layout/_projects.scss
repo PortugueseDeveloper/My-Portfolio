@@ -1,13 +1,13 @@
 .projects-section {
     padding: 0 100px;
-    height: 132vh;
+    height: 200vh;
     background: url("img/projects-bg.jpeg") no-repeat center center fixed;
     background-size: cover;
      -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
     image-rendering: -webkit-optimize-contrast;
-    clip-path: polygon(0 0, 100% 8vh, 100% 124vh, 0 100%);
+    clip-path: polygon(0 0, 100% 8vh, 100% 192vh, 0 100%);
     position: relative;
 
     @media (min-width: 1024px) and (max-width: 1280px) {
