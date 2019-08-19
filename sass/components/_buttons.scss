@@ -94,12 +94,12 @@
 
 // "My Projects" section buttons
 .projects-container .box .content .project-btn {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: $color-secondary;
     text-transform: uppercase;
     background: none;
-    margin: 2px;
-    padding: 3px;
+    margin: 1rem .8rem;
+    padding: 5px;
     opacity: 0; 
     visibility: hidden;
     border: 1px solid $color-secondary;
@@ -137,11 +137,11 @@
     // TODO: FIX UPPER RANGE AFTER TRUE CONTENT IS ADDED
 
     // TODO: FIX TWO BELLOW
-    @media (min-width: 1295px) and (max-width: 1366px) {
-        font-size: 1.2rem;
-        margin: .7px;
-        padding: 4px;
-    }
+    // @media (min-width: 1295px) and (max-width: 1366px) {
+    //     font-size: 1.2rem;
+    //     margin: .7px;
+    //     padding: 4px;
+    // }
     
     @media (min-width: 1281px) and (max-width: 1294px) {
         font-size: 1.2rem;
