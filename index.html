@@ -12,6 +12,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/queries.css">
 
+    <!-- Aos scroll animations -->
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+
     <!-- Favicons -->
 
     <!-- Font families -->
@@ -80,11 +83,11 @@
         <!-- About section -->
         <section class="about-section">
     
-            <h2 class="about-heading">Who am I?</h2>
+            <h2 class="about-heading" data-aos="fade-down" data-os-delay="1500" data-aos-easing="ease-in-out">Who am I?</h2>
                 
                 <div class="about-info-container">
                    
-                    <div class="about-col-left">
+                    <div class="about-col-left" data-aos="fade-right" data-os-delay="1500" data-aos-easing="ease-in-out">
                         <div class="about-phrases">
                         
                             <div>
@@ -106,7 +109,7 @@
                         </div>
                     </div>
 
-                    <div class="about-col-right">
+                    <div class="about-col-right" data-aos="fade-left" data-os-delay="1500" data-aos-easing="ease-in-out">
                         
                             <p class="about-paragraph">
                                 Hey there! My name's Paulo. I'm from an island named São Miguel, part of the Azores archipelago, in
@@ -139,7 +142,7 @@
             <div class="projects-container">
                     
                     <!-- TODO: SOME PROJECTS WILL NOT HAVE CODE INCLUDED -->
-                    <div class="box">
+                    <div class="box" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
                         <div class="img-box">
                             <img src="img/bolt-tunes.jpg" alt="">
                         </div>
@@ -194,20 +197,20 @@
                         <div class="content">
                             <h2>Bird Watching app</h2>
                             <p>Interactive table built using Ionic and Angular for the front-end (aspect that I worked on) and Django for the back-end. The main focus of it is the bird watching activity on the island of Corvo. Important locations, fauna and flora were themes also represented. The code is not avaliable due to privacy reasons, images on the demo also unavailable.</p>
-                            <button class="project-btn project-btn-1">Show me the demo</button>
+                            <button class="project-btn project-btn-1">Show me a demo</button>
                             <!-- <button class="project-btn project-btn-2">Show me the code</button> -->
                         </div>
                     </div>
 
                     <div class="box">
                         <div class="img-box">
-                            <img src="img/project-color-ph.jpeg" alt="">
+                            <img src="img/openday-empresas.png" alt="">
                         </div>
                         <div class="content">
                             <h2>Job Searching app</h2>
-                            <p></p>
-                            <button class="project-btn project-btn-1">Show me the project</button>
-                            <button class="project-btn project-btn-2">Show me the code</button>
+                            <p>Built using Ionic and Angular for the front-end (aspect that I worked on) and Django for the back-end, this interactive table refers to job offers and programs from some islands of the Azores archipelago. Due to privacy reasons, the API data (search fields and results) is not avaliable.</p>
+                            <button class="project-btn project-btn-1">Show me a demo</button>
+                            <!-- <button class="project-btn project-btn-2">Show me the code</button> -->
                         </div>
                     </div>
 
@@ -301,7 +304,6 @@
             </div>
             
         </div>
-        
        
     </footer>
 
@@ -312,5 +314,13 @@
 
 <!-- Custom JavaScript -->
 <script src="js/main.js"></script>
+
+<!-- Aos scroll animations -->
+<script src="node_modules/aos/dist/aos.js"></script>
+<script>
+    AOS.init({
+        once: true
+    });
+</script>
 
 </html>
