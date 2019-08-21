@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "My personal web development portfolio",
   "main": "index.js",
+  "homepage": "https://portuguesedeveloper.github.io/My-Portfolio",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -15,12 +17,12 @@
   "bugs": {
     "url": "https://github.com/PortugueseDeveloper/My-Portfolio/issues"
   },
-  "homepage": "https://github.com/PortugueseDeveloper/My-Portfolio#readme",
   "devDependencies": {
     "node-sass": "^4.12.0"
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "gh-pages": "^2.1.1",
     "jquery": "^3.4.1",
     "smooth-scroll": "^16.1.0"
   }
