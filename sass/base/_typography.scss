@@ -1,5 +1,12 @@
 // TODO: GENERAL - NEED TO FIX HEADING SIZES (SAME PROPORTIONS FOR DIFFERENT SECTIONS)
 
+.header__logo-box li {
+    font-size: 1.4rem;
+    list-style-type: none;
+    color: #f2f2f2;    
+    letter-spacing: 2px;
+}
+
 // Header typography
 .heading-primary {
     color: $color-secondary;
