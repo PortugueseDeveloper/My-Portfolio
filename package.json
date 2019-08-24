@@ -17,9 +17,7 @@
   "bugs": {
     "url": "https://github.com/PortugueseDeveloper/My-Portfolio/issues"
   },
-  "devDependencies": {
-    "node-sass": "^4.12.0"
-  },
+  "devDependencies": {},
   "dependencies": {
     "aos": "^2.3.4",
     "gh-pages": "^2.1.1",
